@@ -1,0 +1,47 @@
+% my-latex-command: xelatex
+\input{tex/arab_fc_common.tex}
+
+{{
+use warnings; use strict;
+BEGIN { push @INC, "."; }
+use ArabicTeX;
+
+sub card {
+my ($english,$arabic,$ar_tl,$arabic_suff,$ars_tl) = @_;
+$arabic = arabic_fixup $arabic;
+$arabic_suff = arabic_fixup $arabic_suff;
+return <<EOF
+\\cardfrontfoot{Pronouns}
+\\begin{flashcard}{\\LARGE $english}
+\\begin{tabularx}{\\textwidth}{lXr}
+{\\sc Pronoun} & & {\\sc Possessive} \\vspace{1em}  \\\\
+\\LARGE $arabic & & \\LARGE $arabic_suff \\\\
+\\vspace{0.15em}
+$ar_tl & & $ars_tl
+\\end{tabularx}
+\\end{flashcard}
+EOF
+}
+
+}}
+
+\begin{document}
+\inputencoding{utf8}
+
+\cardfrontstyle{headings}
+
+{{
+open IN, "<", "pronouns.tab";
+while(<IN>) {
+   s/#.*$//;
+   chomp;
+   next if /^\s*$/;
+   my (@c) = split /:/, $_;
+   $out .= card (@c);
+}
+close IN;
+$out
+}}
+
+\end{document}
+

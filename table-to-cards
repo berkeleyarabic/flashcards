@@ -1,0 +1,160 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+BEGIN { push @INC, "."; }
+use ArabicTeX;
+
+use U;
+use PV;
+
+use Getopt::Long;
+Getopt::Long::Configure ("bundling", "no_ignore_case");
+
+sub usage {
+  warn "Usage: table-to-cards [-v] -f FOOT_FMT -o OUT_BASE -S SEARCH_STR  TABLE_FILES\n";
+  exit shift;
+}
+
+my (@tab_files,
+    $verbose,
+    $help,
+    $bad_args,
+    $foot_fmt,
+    $output_base,
+    $make_glossary,
+    $search
+    );
+GetOptions('-v' => \$verbose,
+           '-f|foot=s' => \$foot_fmt,
+           '-o' => \$output_base,
+           '-h|help' => \$help,
+           '-S|search=s' => \$search,
+           '-g|glossary' => \$make_glossary
+    ) or usage 1;
+
+usage 0 if $help;
+
+@tab_files = @ARGV or do {
+  die "Need to specify an input table\n";
+};
+
+my $outputting = !defined $search;
+my $out_tex;
+if($outputting) {
+  if(!defined $output_base) {
+    if(@tab_files>1) {
+      die "Need to specify output base when using multiple inputs";
+    } else {
+      ($output_base = $tab_files[0]) =~ s/\..*?$//;
+    }
+    warn "Writing to $output_base.*\n";
+    pv '$output_base';
+
+    $out_tex = "$output_base.gen.tex";
+    warn "Writing to $out_tex\n";
+    open OUT, ">", $out_tex or die "Couldn't open $out_tex for writing\n";
+
+    print OUT <<\EOF;
+% my-latex-command: xelatex
+\input{tex/arab_fc_common.tex}
+\begin{document}
+\cardfrontstyle{headings}
+EOF
+  }
+}
+
+my ($tab_fn, $curr_line);
+
+sub do_search {
+  my (@fields) = @_;
+  @fields = map { $_ || "" } @fields;
+  if(join(" ",@fields) =~ /$search/) {
+    print "$tab_fn: $curr_line\n";
+  }
+}
+
+sub format_group {
+  my ($group) = @_;
+  if(defined $group) {
+    $group =~ s/([+*-]+)$/\$^{$1}\$/;
+  } else {
+    $group = "";
+  }
+  if(!defined($foot_fmt)) {
+    return "";
+  }
+  my ($str) = $foot_fmt;
+#  pv '$str';
+  $str =~ s/%g/$group/g;
+  return $str;
+}
+
+sub card {
+  my ($arabic,$english,$group) = @_;
+  my ($foot) = format_group $group;
+  if($search) {
+    return do_search($arabic,$english,$foot);
+  }
+  my ($artransl);
+  if($arabic =~ /^(.*?)\s*\|\|\s*(.*)$/) {
+    ($arabic, $artransl) = ($1, $2);
+    $artransl = arabic_fixup $artransl;
+  }
+  $arabic = arabic_fixup $arabic;
+  $english = arabic_fixup $english;
+  pv '$foot';
+  pv '$group';
+  if(!defined $artransl) {
+    print OUT <<EOF;
+\\cardfrontfoot{$foot}
+\\begin{flashcard}{\\LARGE $english}
+\\LARGE $arabic
+\\end{flashcard}
+EOF
+  } else {
+    print OUT <<EOF;
+\\cardfrontfoot{$foot}
+\\begin{flashcard}{\\LARGE $english}
+\\LARGE
+\\begin{tabularx}{\\textwidth}{>{\\raggedright}X>{\\raggedleft}X}
+$artransl & $arabic \\\\
+\\end{tabularx}
+\\end{flashcard}
+EOF
+  }
+}
+
+for my $tf (@tab_files) {
+  $tab_fn = $tf;
+  -e $tab_fn or die "Table file $tab_fn does not exist\n";
+
+  warn "Reading from $tab_fn" if $verbose;
+
+  open IN, "<", $tab_fn or
+      die "Couldn't open $tab_fn for reading\n";
+
+  while(<IN>) {
+    chomp;
+    if(/^##\@\s*(.*)$/) {
+      $foot_fmt = $1;
+    }
+    s/#.*$//;
+    next if /^\s*$/;
+    $curr_line = $_;
+    my (@c) = split /:/, $_;
+    #    pv '\@c';
+    # remove spaces
+    @c = map { s/^\s*(.*?)\s*$/$1/; $_ } @c;
+
+    card @c;
+  }
+  close IN;
+}
+
+if($outputting) {
+  print OUT "\\end{document}\n";
+  close OUT;
+
+  sh ("my-pdflatex $out_tex < /dev/null");
+  sh ("mv", "$output_base.gen.pdf", "$output_base.pdf");
+}

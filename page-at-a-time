@@ -1,0 +1,23 @@
+#!/bin/zsh
+
+# Prints all pages by default; to specify a subset use e.g.:
+# PAGES=$(echo {4..7}) page-at-a-time doc.pdf
+
+IN=$1
+
+[[ $IN = *.pdf ]] || { >&2 echo Need a PDF file!; exit 1 }
+
+#NPAGES=$(pdfinfo $IN| grep Pages | cut -d : -f 2)
+NPAGES=$(pdfinfo $IN| perl -ne '/Pages:\s*([\d]+)/ && print $1')
+
+echo NPAGES=$NPAGES
+: ${PAGES:=$(echo {1..$NPAGES})}
+eval "pages=($PAGES)"
+echo PAGES=$PAGES
+last=$pages[-1]
+
+for i in $pages; do
+    >&2 echo "Printing page $i";
+    lp -o page-ranges=$i $IN;
+    [[ $i -lt $last ]] && read;
+done

@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+./table-to-cards *.tab --search "$(echo "$@")"

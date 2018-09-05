@@ -1,0 +1,22 @@
+% my-latex-command: xelatex
+\documentclass[avery5371,grid,frame]{flashcards}
+\usepackage{polyglossia}
+\usepackage{relsize}
+%\usepackage{tabularx}
+\setmainlanguage{english}
+\setotherlanguage{arabic}
+\newfontfamily\arabicfont[Script = Arabic]{Scheherazade-Bold}
+%\newfontfamily\arabicfont[Script = Arabic]{Scheherazade-Regular}
+%\newfontfamily\arabicfont[Script = Arabic]{Sazanami Gothic}
+
+\begin{document}
+
+\cardfrontfoot{MA Unit X}
+\begin{flashcard}{\LARGE Hello}
+  \LARGE
+\textarabic{\larger[2] أهلاً} (easy)
+\end{flashcard}
+
+
+
+\end{document}
