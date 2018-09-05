@@ -9,7 +9,7 @@ if [[ $# -ne 1 ]]; then
     exit 1
 fi
 FN=$1
-if [[ $(basename $FN) == README.md ]]; then
+if [[ $(basename $FN) == INDEX.md ]]; then
     OUT=$(dirname $FN)/index.html
 else
     OUT=${FN%.md}.html

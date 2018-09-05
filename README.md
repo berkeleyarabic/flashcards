@@ -1,12 +1,8 @@
-Title: Arabic Study Resources {{header.mdi}} <!-- -*- my-source-command: "./run-mmd %s; ./publish" -*- -->
+## GitHub page for Arabic flashcards
 
-<div markdown=1 id="page-wrap"> <!-- run-mmd inserts the closing tag at the bottom -->
+**Go to [public flashcards page](https://berkeleyarabic.github.io/flashcards/)**
 
-## Arabic study resources ##
+This is the Git repository for my Arabic flashcards project.
 
-### Flashcards
-
-Coming soon
-
-----
+You can use the above links to download the source files and submit "issues" (requests).
 
