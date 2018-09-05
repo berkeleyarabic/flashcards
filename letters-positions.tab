@@ -1,29 +1,29 @@
-
-'alif  \\ (a, as in ask) : ا ـا
-baa'  \\ (b, as in bravo) : ب بـ ـبـ ـب
-taa' \\ (t, as in tiger) : ت تـ ـتـ ـت
-thaa'  \\ (th, as in think) : ث ثـ ـثـ ـث
-jiim \\ (j, almost as in jeep, but no d sound with it) : ج جـ ـجـ ـج
-Haa' \\ (hh, no English--sharp h) : ح حـ ـحـ ـح
-khaa' \\ (KH, pronounced in front of the throat like the J in Spanish) : خ خـ ـخـ ـخ
-daal \\ (d, as in desk) : د ـد
-dhaal \\ (th, as in that) : ذ ـذ
-raa' \\ (r,  slightly rolled r sound like the dd as in yadda yadda yadda) : ر ـر
-zaay \\ (z, as in zoo) : ز ـز
-siin \\ (s, sit) : س سـ ـسـ ـس
-shiin \\ (sh, as in shine) : ش شـ ـشـ ـش
-Saad \\ (ss, as in soul, deeper) : ص صـ ـصـ ـص
-Daad \\ (dd, as in door, deeper) : ض ضـ ـضـ ـض
-Taa' \\ (tt, as in todo in Spanish, deeper) : ط طـ ـطـ ـط
-Zaa \\ (th, as in those, deeper) : ظ ظـ ـظـ ـظ
-ayn \\ (3, no English) : ع عـ ـعـ ـع
-ghayn \\ (gh, no English -- sort of like a gurgle or growl) : غ غـ ـغـ ـغ
-faa' \\ (f, as in friend) : ف فـ ـفـ ـف
-qaaf \\ (q,  no English -- deeper in throat) : ق قـ ـقـ ـق
-kaaf \\ (k, as in king) : ك كـ ـكـ ـك
-laam \\ (l, as in love but light flip of the tongue) : ل لـ ـلـ ـل
-miim \\ (m, as in me) : م مـ ـمـ ـم
-nuun \\ (n, as in now) : ن نـ ـنـ ـن
-haa' \\ (h, as in hi) : ه هـ ـهـ ـه
-waaw \\ (w, as in we) : و ـو
-yaa' \\ (y, as in you) : ي يـ ـيـ ـي
+##@ Alphabet
+ا ـا : 'alif  \\ (a, as in ask)
+ب بـ ـبـ ـب : baa'  \\ (b, as in bravo)
+ت تـ ـتـ ـت : taa' \\ (t, as in tiger)
+ث ثـ ـثـ ـث : thaa'  \\ (th, as in think)
+ج جـ ـجـ ـج : jiim \\ (j, almost as in jeep, but no d sound with it)
+ح حـ ـحـ ـح : Haa' \\ (hh, no English--sharp h)
+خ خـ ـخـ ـخ : khaa' \\ (KH, pronounced in front of the throat like the J in Spanish)
+د ـد : daal \\ (d, as in desk)
+ذ ـذ : dhaal \\ (th, as in that)
+ر ـر : raa' \\ (r,  slightly rolled r sound like the dd as in yadda yadda yadda)
+ز ـز : zaay \\ (z, as in zoo)
+س سـ ـسـ ـس : siin \\ (s, sit)
+ش شـ ـشـ ـش : shiin \\ (sh, as in shine)
+ص صـ ـصـ ـص : Saad \\ (ss, as in soul, deeper)
+ض ضـ ـضـ ـض : Daad \\ (dd, as in door, deeper)
+ط طـ ـطـ ـط : Taa' \\ (tt, as in todo in Spanish, deeper)
+ظ ظـ ـظـ ـظ : Zaa \\ (th, as in those, deeper)
+ع عـ ـعـ ـع : ayn \\ (3, no English)
+غ غـ ـغـ ـغ : ghayn \\ (gh, no English -- sort of like a gurgle or growl)
+ف فـ ـفـ ـف : faa' \\ (f, as in friend)
+ق قـ ـقـ ـق : qaaf \\ (q,  no English -- deeper in throat)
+ك كـ ـكـ ـك : kaaf \\ (k, as in king)
+ل لـ ـلـ ـل : laam \\ (l, as in love but light flip of the tongue)
+م مـ ـمـ ـم : miim \\ (m, as in me)
+ن نـ ـنـ ـن : nuun \\ (n, as in now)
+ه هـ ـهـ ـه : haa' \\ (h, as in hi)
+و ـو : waaw \\ (w, as in we)
+ي يـ ـيـ ـي : yaa' \\ (y, as in you)
