@@ -1,0 +1,40 @@
+#!/bin/sh
+
+# Custom script to compile a multimarkdown document into html
+
+# FHE 05 Sep 2018 adapted from study/arabic/
+
+if [[ $# -ne 1 ]]; then
+    >&2 echo Need to specify filename;
+    exit 1
+fi
+FN=$1
+if [[ $(basename $FN) == README.md ]]; then
+    OUT=$(dirname $FN)/index.html
+else
+    OUT=${FN%.md}.html
+fi
+
+>&2 echo Writing to $OUT
+
+multimarkdown $FN -o - | \
+    # get rid of <p> around main <div>
+    perl -pe '/<div id="page-wrap">/ && s/<\/?p>//g' | \
+    grep -v 'my-source-command' | \
+    # remove closing tags
+    head -n -3 \
+    > $OUT
+
+cat >> $OUT <<EOF
+<p><em>Last updated $(date +'%-d %B %y')</em></p>
+</div>
+</body>
+</html>
+EOF
+
+## Use this if you don't want "Last Updated":
+# cat >> $OUT <<EOF
+# </div>
+# </body>
+# </html>
+# EOF

@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+echo "commit and run 'git push origin master'"

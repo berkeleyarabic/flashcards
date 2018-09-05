@@ -1,0 +1,8 @@
+p,ul,ol,td { max-width: 50em; }
+
+ol,ul,blockquote {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 2em;
+    padding-right: 0px;
+}
