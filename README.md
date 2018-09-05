@@ -4,5 +4,4 @@
 
 This is the Git repository for my Arabic flashcards project.
 
-You can use the above links to download the source files and submit "issues" (requests).
-
+Here you can view the source files for the project and submit issues to correct mistakes and so on.

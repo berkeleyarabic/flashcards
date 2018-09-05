@@ -122,6 +122,13 @@ Dictionary](http://fuzzyarabic.herokuapp.com/), you can type in Latin
 transliteration, or a mix of Latin and Arabic, and it gives you the
 Arabic script and a short definition.
 
+### Contributing
+
+Please let me know if you find any errors. The best way to do so is by
+submitting an issue on the [project
+page](https://github.com/berkeleyarabic/flashcards). This is also a
+good way to make suggestions or contribute new material.
+
 <!--
 ### TODO list
 
