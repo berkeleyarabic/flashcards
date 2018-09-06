@@ -1,11 +1,12 @@
 #!/usr/bin/perl
 use warnings;
 use strict;
-BEGIN { push @INC, "."; }
+BEGIN { push @INC, ".", "utils", "perl"; }
+
 use ArabicTeX;
+use ReadTable;
 
 use U;
-use PV;
 
 use Getopt::Long;
 Getopt::Long::Configure ("bundling", "no_ignore_case");
@@ -19,27 +20,30 @@ my (@tab_files,
     $verbose,
     $help,
     $bad_args,
-    $foot_fmt,
     $output_base,
-    $make_glossary,
-    $search
+    $search,
+    $keep_aux
     );
+
 GetOptions('-v' => \$verbose,
            '-f|foot=s' => \$foot_fmt,
            '-o' => \$output_base,
            '-h|help' => \$help,
            '-S|search=s' => \$search,
-           '-g|glossary' => \$make_glossary
+           'keep-aux' => \$keep_aux
     ) or usage 1;
 
 usage 0 if $help;
+
+$PV::debug = $ReadTable::verbose = $verbose;
 
 @tab_files = @ARGV or do {
   die "Need to specify an input table\n";
 };
 
-my $outputting = !defined $search;
 my $out_tex;
+my $outputting = 1;
+
 if($outputting) {
   if(!defined $output_base) {
     if(@tab_files>1) {
@@ -63,30 +67,12 @@ EOF
   }
 }
 
-my ($tab_fn, $curr_line);
-
 sub do_search {
   my (@fields) = @_;
   @fields = map { $_ || "" } @fields;
   if(join(" ",@fields) =~ /$search/) {
     print "$tab_fn: $curr_line\n";
   }
-}
-
-sub format_group {
-  my ($group) = @_;
-  if(defined $group) {
-    $group =~ s/([+*-]+)$/\$^{$1}\$/;
-  } else {
-    $group = "";
-  }
-  if(!defined($foot_fmt)) {
-    return "";
-  }
-  my ($str) = $foot_fmt;
-#  pv '$str';
-  $str =~ s/%g/$group/g;
-  return $str;
 }
 
 sub card {
@@ -104,57 +90,38 @@ sub card {
   $english = arabic_fixup $english;
   pv '$foot';
   pv '$group';
+  my $arabic_side;
+
+  # if a transliteration is provided, use a tabularx to get left/right
+  # formatting
   if(!defined $artransl) {
-    print OUT <<EOF;
-\\cardfrontfoot{$foot}
-\\begin{flashcard}{\\LARGE $english}
-\\LARGE $arabic
-\\end{flashcard}
-EOF
+    $arabic_side = "\\LARGE $arabic";
   } else {
-    print OUT <<EOF;
+    $arabic_side =
+"\\LARGE \\begin{tabularx}{\\textwidth}{>{\\raggedright}X>{\\raggedleft}X}
+$artransl & $arabic \\\\
+\\end{tabularx}";
+  }
+  
+  print OUT <<EOF;
 \\cardfrontfoot{$foot}
 \\begin{flashcard}{\\LARGE $english}
-\\LARGE
-\\begin{tabularx}{\\textwidth}{>{\\raggedright}X>{\\raggedleft}X}
-$artransl & $arabic \\\\
-\\end{tabularx}
+$arabic_side
 \\end{flashcard}
 EOF
-  }
 }
 
-for my $tf (@tab_files) {
-  $tab_fn = $tf;
-  -e $tab_fn or die "Table file $tab_fn does not exist\n";
-
-  warn "Reading from $tab_fn" if $verbose;
-
-  open IN, "<", $tab_fn or
-      die "Couldn't open $tab_fn for reading\n";
-
-  while(<IN>) {
-    chomp;
-    if(/^##\@\s*(.*)$/) {
-      $foot_fmt = $1;
-    }
-    s/#.*$//;
-    next if /^\s*$/;
-    $curr_line = $_;
-    my (@c) = split /:/, $_;
-    #    pv '\@c';
-    # remove spaces
-    @c = map { s/^\s*(.*?)\s*$/$1/; $_ } @c;
-
-    card @c;
-  }
-  close IN;
-}
+read_table(\&card, \@tab_files);
 
 if($outputting) {
   print OUT "\\end{document}\n";
   close OUT;
 
-  sh ("my-pdflatex $out_tex < /dev/null");
-  sh ("mv", "$output_base.gen.pdf", "$output_base.pdf");
+  sh ("xelatex $out_tex < /dev/null");
+  rename ("$output_base.gen.pdf", "$output_base.pdf");
+  if(!$keep_aux) {
+    unlink "$output_base.gen.log";
+    unlink "$output_base.gen.aux";
+    unlink "$output_base.gen.tex";
+  }
 }

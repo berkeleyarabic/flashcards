@@ -1,0 +1,58 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+BEGIN { push @INC, ".", "utils", "perl"; }
+
+#use ArabicTeX;
+use ReadTable;
+
+#use U;
+
+use Getopt::Long;
+Getopt::Long::Configure ("bundling", "no_ignore_case");
+
+sub usage {
+  warn "Usage: search-cards [-v] SEARCH_STR TABLE_FILES\n";
+  exit shift;
+}
+
+my (@tab_files,
+    $verbose,
+    $help,
+    $bad_args,
+    $search_str,
+    $whole_word
+    );
+
+GetOptions('-v' => \$verbose,
+           '-w' => \$whole_word,
+           '-h|help' => \$help,
+    ) or usage 1;
+
+usage 0 if $help;
+
+$ReadTable::verbose = $verbose;
+
+@ARGV or die "Need to provide a search string\n";
+
+$search_str = shift;
+$search_str = "\\b$search_str\\b" if $whole_word;
+
+@tab_files = @ARGV or 
+  die "Need to specify an input table\n";
+
+sub do_search {
+  my (@fields) = @_;
+  @fields = map { $_ || "" } @fields;
+  if(join(" ",@fields) =~ /$search_str/) {
+    print "$tab_fn: $curr_line\n";
+  }
+}
+
+sub card {
+  my ($arabic,$english,$group) = @_;
+  my ($foot) = format_group $group;
+  return do_search($arabic,$english,$foot);
+}
+
+read_table(\&card, \@tab_files);

@@ -2,11 +2,11 @@
 use warnings;
 use strict;
 
-BEGIN { push @INC, "."; }
+BEGIN { push @INC, ".", "utils", "perl"; }
 use ArabicTeX;
 
 while(<>) {
   #  /[\p{Script=Arabic}]/ && print "Found Arabic\n";
   chomp;
-    print arabic_fixup($_),"\n";
+  print arabic_fixup($_),"\n";
 }

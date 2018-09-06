@@ -1,0 +1,114 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Cwd 'abs_path';
+
+use Getopt::Long;
+Getopt::Long::Configure ("bundling", "no_ignore_case");
+
+my($verbose, $just_print, $quiet, $whole_file,
+   $no_save, @diff_args, 
+   $op, $bad_args, $prereplace_command);
+$verbose = 1;
+GetOptions('-v' => \$verbose,
+           '-n' => \$just_print,
+           '-S' => \$no_save,
+           '-q' => \$quiet,
+           '-w' => \$whole_file,
+           '-c=s' => \$prereplace_command,
+           '-d=s' => \@diff_args) or $bad_args = 1;
+$op = shift	or $bad_args = 1; 
+
+$verbose = 0 if $quiet;
+
+die "Usage: replace [-v | -n | -S | -d args | -c command] perlexpr [filenames]\n"
+    if $bad_args;
+
+if($whole_file) {
+  $/ = undef;
+}
+
+if (!@ARGV) {
+    print "reading filenames from STDIN\n" if $verbose;
+    @ARGV = <STDIN>;
+    chop(@ARGV);
+}
+
+$verbose=1 if $just_print;
+my $backup_suffix="~";
+
+@diff_args = map { split(' ', $_) } @diff_args;
+
+my $mod_file_count=0;
+my $mod_total_count=0;
+
+my $tmp_counter=0;
+
+sub my_replace {
+    my ($file, $op)=@_;
+    my ($in, $out, $backup);
+    if($file =~ /$backup_suffix$/) {
+        print STDERR "Skipping backup file $file\n";
+        return;
+    }
+    $in=$file;
+    $out="/tmp/replace.$$.".($tmp_counter++).".".
+        (sprintf "%07.0d", int(rand(1e7)));
+    $backup="$file.$backup_suffix";
+    chomp($out);
+    open R, "<$in" or die "couldn't open $file for reading";
+    open W, ">$out" or die "couldn't open $out for writing";
+    my $have_diff=0;
+    local %_ = ();
+    while(<R>) {
+      my $was = $_;
+      do {
+        no strict;
+        eval $op;
+      };
+        die $@ if $@;
+        print W $_;
+        if(!($_ eq $was)) {
+          $have_diff=1;
+          $mod_total_count++;
+        }
+    }
+    close R;
+    close W;
+
+    $mod_file_count++ if($have_diff);
+
+    if($verbose && $have_diff) {
+        print "### changes to '$file'\n";
+        system("diff",@diff_args,$in,$out);
+    }
+
+    if(!$just_print && $have_diff) {
+        $file = abs_path $file;
+        if($prereplace_command) {
+            my $cmd="$prereplace_command \Q$file\E";
+            system($cmd) == 0 || die "Error: $cmd exited with status ".($?>>8);
+        }
+        system("chmod --reference=\Q$file\E \Q$out\E");
+        if($no_save) {
+            unlink $file;
+        } else {
+            rename($file, $backup) or die "couldn't rename $file to $backup";
+        }
+        # rename won't work across file systems
+        system("mv \Q$out\E \Q$file\E") == 0 or die "couldn't move $out to $file";
+    } else {
+        unlink($out)==1 or die "couldn't unlink $out";
+    }
+}
+
+for (@ARGV) {
+    my_replace($_,$op);
+}
+
+# TODO count lines correctly when -w is specified
+if($verbose) {
+    print STDERR ($just_print?"Would have modified":"Modified").
+        " $mod_total_count lines in $mod_file_count files\n";
+}

@@ -3,7 +3,7 @@
 
 {{
 use warnings; use strict;
-BEGIN { push @INC, "."; }
+BEGIN { push @INC, ".", "utils", "perl"; }
 use ArabicTeX;
 
 sub card {
