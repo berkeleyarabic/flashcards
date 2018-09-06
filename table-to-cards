@@ -12,7 +12,7 @@ use Getopt::Long;
 Getopt::Long::Configure ("bundling", "no_ignore_case");
 
 sub usage {
-  warn "Usage: table-to-cards [-v] -f FOOT_FMT -o OUT_BASE -S SEARCH_STR  TABLE_FILES\n";
+  warn "Usage: table-to-cards [-v] -f FOOT_FMT -o OUT_BASE  TABLE_FILES\n";
   exit shift;
 }
 
@@ -21,7 +21,6 @@ my (@tab_files,
     $help,
     $bad_args,
     $output_base,
-    $search,
     $keep_aux
     );
 
@@ -29,7 +28,6 @@ GetOptions('-v' => \$verbose,
            '-f|foot=s' => \$foot_fmt,
            '-o' => \$output_base,
            '-h|help' => \$help,
-           '-S|search=s' => \$search,
            'keep-aux' => \$keep_aux
     ) or usage 1;
 
@@ -67,20 +65,9 @@ EOF
   }
 }
 
-sub do_search {
-  my (@fields) = @_;
-  @fields = map { $_ || "" } @fields;
-  if(join(" ",@fields) =~ /$search/) {
-    print "$tab_fn: $curr_line\n";
-  }
-}
-
 sub card {
   my ($arabic,$english,$group) = @_;
   my ($foot) = format_group $group;
-  if($search) {
-    return do_search($arabic,$english,$foot);
-  }
   my ($artransl);
   if($arabic =~ /^(.*?)\s*\|\|\s*(.*)$/) {
     ($arabic, $artransl) = ($1, $2);
