@@ -1,0 +1,5 @@
+- glossary generation
+
+- regression testing based on pdftotext and "git show"
+
+- PV.pm, U.pm - remove unnecessary stuff
