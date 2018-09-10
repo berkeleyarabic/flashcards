@@ -26,3 +26,6 @@ pronouns.pdf : pronouns.tab pronouns.Ttex
 
 all-words.html : $(TABLES)
 	./make-glossary $^ -o all
+
+TAGS:
+	etags perl/*.pm
