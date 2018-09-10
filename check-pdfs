@@ -3,4 +3,4 @@
 
 TABLES=(letters-positions.tab numerals.tab bcc-workbook-words.tab ma-units-1-4.tab ma-units-5-7.tab ma-units-9-10.tab ma-units-11-13.tab ma-unit-14.tab ma-unit-16.tab classroom-vocab.tab colors.tab pronouns-possessives.tab capitals.tab verb-conj-ktb.tab)
 
-OLD="HEAD~1" CURR= ./git-diff-pdf ${^TABLES%%.*}.pdf
+./git-diff-pdf ${^TABLES%%.*}.pdf
