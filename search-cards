@@ -21,11 +21,13 @@ my (@tab_files,
     $help,
     $bad_args,
     $search_str,
-    $whole_word
+    $whole_word,
+    $foreign_only
     );
 
 GetOptions('-v' => \$verbose,
            '-w' => \$whole_word,
+           '-F' => \$foreign_only,
            '-h|help' => \$help,
     ) or usage 1;
 
@@ -44,7 +46,7 @@ $search_str = "\\b$search_str\\b" if $whole_word;
 sub do_search {
   my (@fields) = @_;
   @fields = map { $_ || "" } @fields;
-  if(join(" ",@fields) =~ /$search_str/) {
+  if(join(" ",@fields) =~ /$search_str/i) {
     print "$tab_fn: $curr_line\n";
   }
 }
@@ -52,7 +54,8 @@ sub do_search {
 sub card {
   my ($arabic,$english,$group) = @_;
   my ($foot) = format_group $group;
-  return do_search($arabic,$english,$foot);
+  return do_search($arabic) if($foreign_only);
+  return do_search($arabic, $english, $foot);
 }
 
-read_table(\&card, \@tab_files);
+read_vocab_table(\&card, \@tab_files);

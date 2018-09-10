@@ -26,9 +26,9 @@ my (@tab_files,
 
 GetOptions('-v' => \$verbose,
            '-f|foot=s' => \$foot_fmt,
-           '-o' => \$output_base,
+           '-o=s' => \$output_base,
            '-h|help' => \$help,
-           'keep-aux' => \$keep_aux
+           '-K|keep-aux' => \$keep_aux
     ) or usage 1;
 
 usage 0 if $help;
@@ -45,7 +45,7 @@ my $outputting = 1;
 if($outputting) {
   if(!defined $output_base) {
     if(@tab_files>1) {
-      die "Need to specify output base when using multiple inputs";
+      die "Need to specify output basename when using multiple inputs";
     } else {
       ($output_base = $tab_files[0]) =~ s/\..*?$//;
     }
@@ -66,15 +66,13 @@ EOF
 }
 
 sub card {
-  my ($arabic,$english,$group) = @_;
-  my ($foot) = format_group $group;
-  my ($artransl);
-  if($arabic =~ /^(.*?)\s*\|\|\s*(.*)$/) {
-    ($arabic, $artransl) = ($1, $2);
-    $artransl = arabic_fixup $artransl;
-  }
+  my ($arabic,$artransl,$english,$foot) = @_;
+  $artransl = arabic_fixup $artransl if defined $artransl;
   $arabic = arabic_fixup $arabic;
   $english = arabic_fixup $english;
+  
+  # $arabic = arabic_fixup $arabic;
+  # $english = arabic_fixup $english;
   pv '$foot';
   pv '$group';
   my $arabic_side;
@@ -98,7 +96,7 @@ $arabic_side
 EOF
 }
 
-read_table(\&card, \@tab_files);
+read_vocab_table(\&card, \@tab_files);
 
 if($outputting) {
   print OUT "\\end{document}\n";
