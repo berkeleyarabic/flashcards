@@ -4,11 +4,22 @@
 
 # FHE 05 Sep 2018 adapted from study/arabic/
 
+#local OPTIND
+while getopts "D" x; do
+    case $x in
+        D) insert_date=1;;
+    esac
+done
+shift $(($OPTIND - 1))
+#echo insert_date=$insert_date
+
 if [[ $# -ne 1 ]]; then
     >&2 echo Need to specify filename;
     exit 1
 fi
 FN=$1
+if [[ -z "$FN" ]]; then >&2 echo Empty filename; exit 1; fi
+
 if [[ $(basename $FN) == INDEX.md ]]; then
     OUT=$(dirname $FN)/index.html
 else
@@ -25,16 +36,18 @@ multimarkdown $FN -o - | \
     head -n -3 \
     > $OUT
 
-cat >> $OUT <<EOF
-<p><em>Last updated $(date +'%-d %B %y')</em></p>
+if [[ $insert_date -ne 0 ]]; then
+    >&2 echo inserting date
+    cat >> $OUT <<EOF
+<p><em>Last updated: $(date +'%-d %B %Y')</em></p>
 </div>
 </body>
 </html>
 EOF
-
-## Use this if you don't want "Last Updated":
-# cat >> $OUT <<EOF
-# </div>
-# </body>
-# </html>
-# EOF
+else
+    cat >> $OUT <<EOF
+</div>
+</body>
+</html>
+EOF
+fi

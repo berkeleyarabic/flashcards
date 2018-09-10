@@ -1,8 +1,10 @@
-Title: Arabic flashcards {{header.mdi}} <!-- -*- my-source-command: "./run-mmd %s; ./publish" -*- -->
+Title: Arabic flashcards {{header.mdi}} <!-- -*- my-source-command: "./run-mmd -D %s; ./publish" -*- -->
 
 <div markdown=1 id="page-wrap"> <!-- run-mmd inserts the closing tag at the bottom -->
 
-## Arabic flashcards ##
+**Arabic flashcards**
+
+{{TOC}}
 
 Here are some PDFs which can be used to make the paper flashcards I've
 used to study Arabic at Berkeley City College.
@@ -130,13 +132,13 @@ page](https://github.com/berkeleyarabic/flashcards). This is also a
 good way to make suggestions or contribute new material.
 
 <!--
-### TODO list
+// TODO list
 
 - Input "Mastering Arabic" words from next few units
 - Names of diacritics
 - Classroom expressions
 
-### Change history
+// Change history
 
 - 19 Jul 2018 fix "until" in bcc-workbook-words.tab
 - 16 Jul 2018 added prepositions from p. 128 and "bag" from p. 130
