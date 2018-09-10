@@ -1,4 +1,4 @@
-Title: Arabic flashcards {{header.mdi}} <!-- -*- my-source-command: "./run-mmd -D %s; ./publish" -*- -->
+Title: Arabic flashcards {{header.mdi}} <!-- -*- my-source-command: "./run-mmd -D %s" -*- -->
 
 <div markdown=1 id="page-wrap"> <!-- run-mmd inserts the closing tag at the bottom -->
 
@@ -9,31 +9,32 @@ Title: Arabic flashcards {{header.mdi}} <!-- -*- my-source-command: "./run-mmd -
 Here are some PDFs which can be used to make the paper flashcards I've
 used to study Arabic at Berkeley City College.
 
-- [Alphabet with positions](letters-positions.pdf), sourced from quizlet *([table](letters-positions.tab), 28 cards)*
-- Dr. Walton-Price's [BCC workbook words](bcc-workbook-words.pdf) *([table](bcc-workbook-words.tab), 99 cards)*
+- [Alphabet with positions](letters-positions.pdf), sourced from quizlet *([word list](letters-positions-words.html), 28 words)*
+- Dr. Walton-Price's [BCC workbook words](bcc-workbook-words.pdf) *([word list](bcc-workbook-words-words.html), 99 words)*
 
 Vocabulary from our textbook Wightwick & Gaafar "Mastering Arabic 1":
 
 Units covered in BCC Arabic 1A:
 
-- [Mastering Arabic Units 1-4](ma-units-1-4.pdf) *([table](ma-units-1-4.tab), 79 cards)*
-- [Mastering Arabic Units 5-7](ma-units-5-7.pdf) *([table](ma-units-5-7.tab), 88 cards)*
-- [Mastering Arabic Units 9-10](ma-units-9-10.pdf) *([table](ma-units-9-10.tab), 81 cards)*
-- [Mastering Arabic Units 11-13](ma-units-11-13.pdf) *([table](ma-units-11-13.tab), 184 cards)*
+- [Mastering Arabic Units 1-4](ma-units-1-4.pdf) *([word list](ma-units-1-4-words.html), 79 words)*
+- [Mastering Arabic Units 5-7](ma-units-5-7.pdf) *([word list](ma-units-5-7-words.html), 88 words)*
+- [Mastering Arabic Units 9-10](ma-units-9-10.pdf) *([word list](ma-units-9-10-words.html), 81 words)*
+- [Mastering Arabic Units 11-13](ma-units-11-13.pdf) *([word list](ma-units-11-13-words.html), 184 words)*
 
 BCC Arabic 1B (in progress):
 
-- [Mastering Arabic Units 14](ma-unit-14.pdf) *([table](ma-unit-14.tab), 61 cards)*
-- [Mastering Arabic Units 16](ma-unit-16.pdf) *([table](ma-unit-16.tab), 44 cards)*
+- [Mastering Arabic Units 14](ma-unit-14.pdf) *([word list](ma-unit-14-words.html), 61 words)*
+- [Mastering Arabic Units 16](ma-unit-16.pdf) *([word list](ma-unit-16-words.html), 44 words)*
 
 Miscellaneous:
 
-- [Numerals with Arabic pronunciation](numerals.pdf) *([table](numerals-names.tab), 11 cards)*
-- [Classroom vocabulary](classroom-vocab.pdf) *([table](classroom-vocab.tab), 38 cards)*
-- [Colors from MA Unit 11](colors.pdf) *([table](colors.tab), 7 cards)*
-- [Pronouns, with possessive suffixes](pronouns.pdf) *([table](pronouns.tab), [printable table](pronouns.html), 12 cards)*
-- [Past and present conjugations of "read"](verb-conj-ktb.pdf) *([table](verb-conj-ktb.tab), 26 cards)*
-- [Middle-East country capitals](capitals.pdf) *([table](capitals.tab), 10 cards)*
+- [Numerals with Arabic pronunciation](numerals.pdf) *([word list](numerals-names-words.html), 11 words)*
+- [Classroom vocabulary](classroom-vocab.pdf) *([word list](classroom-vocab-words.html), 38 words)*
+- [Pronouns, with possessive suffixes](pronouns-possessives.pdf) *([word list](pronouns-possessives-words.html), 12 words)*
+- [Past and present conjugations of "read"](verb-conj-ktb.pdf) *([word list](verb-conj-ktb-words.html), 26 words)*
+- [Middle-East country capitals](capitals.pdf) *([word list](capitals-words.html), 10 words)*
+
+[List of all words](all-words.html)
 
 ### Notes
 
