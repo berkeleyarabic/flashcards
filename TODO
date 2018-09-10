@@ -1,5 +1,18 @@
-- glossary generation
+- use e.g. % instead of : in tables
 
-- regression testing based on pdftotext and "git show"
+- clean up notes, fill them in.
+
+- change glossary to use CGI::HTML::Functions, rather than
+  multimarkdown
+
+- html version of arabic_fixup - put only arabic in a span
+
+- proportional column widths
+
+- glossary generation, html and pdf (done html)
+
+\- change "table" links to point to HTML vocabulary tables with notes
+
+\- regression testing based on pdftotext and "git show"
 
 - PV.pm, U.pm - remove unnecessary stuff
