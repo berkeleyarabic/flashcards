@@ -1,0 +1,9 @@
+#!/bin/zsh
+
+# FHE 20 Aug 2018
+
+# Tool to add missing unit numbers to vocab table after typing new
+# entries
+
+#perl -pe '(/#.*unit ([\d]+)/i) and $unit=$1; (split /:/) == 2 && s/$/:$unit+/' $1
+replace '(/#.*unit ([\d]+)/i) and $unit=$1; (split /:/) == 2 && s/$/:$unit+/' "$@"
