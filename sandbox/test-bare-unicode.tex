@@ -1,0 +1,32 @@
+% my-latex-command: xelatex
+\documentclass[12pt]{article}
+\usepackage{polyglossia}
+
+\newfontfamily\arabicfont[Script = Arabic]{Scheherazade-Regular}
+%\newfontfamily\arabicfont[Script = Arabic]{Sazanami Gothic}
+
+%\usepackage[utf8x]{inputenc}
+
+%\defaultfontfeatures{Scale=MatchUppercase, Ligatures=TeX}
+
+\newfontfamily{\defaultfont}{Arial Black}[Scale=1.0, Ligatures={Common, TeX}]
+%\newfontfamily{\greekfont}{Arial Unicode MS}
+
+\usepackage[Arabic,Syriac,Hebrew]{ucharclasses}
+
+\setDefaultTransitions{\defaultfont}{}
+\setTransitionTo{Arabic}{\arabicfont}
+%% \setTransitionTo{Syriac}{\arabicfont}
+%% \setTransitionTo{Hebrew}{\arabicfont}
+
+\begin{document}
+
+Some English text.
+
+أَهْلًا وَسَهْلًا
+
+From Middle Persian dptl (daftar), from Aramaic דפתרא‎ / ܕܦܬܪܐ‎, from Ancient Greek διφθέρα (diphthéra).
+
+More English.
+
+\end{document}

@@ -1,0 +1,95 @@
+% my-latex-command: xelatex
+\documentclass[10pt]{article}
+\usepackage[showframe,margin=0.5in,includefoot]{geometry}
+\usepackage{color}
+\usepackage{array}
+\usepackage{supertabular}
+
+\input{tex/arabic_common.tex}
+\begin{document}
+\noindent here is some text \\
+
+\renewcommand{\arraystretch}{1.2}
+%\setlength{\tabcolsep}{0pt}
+
+\parindent=0pt
+\begin{center} %% this gets rid of strange space on left
+  \tablehead{\hline
+{\sc Arabic} & \multicolumn{2}{l}{{\sc English} \hfill {\sc Unit}} & {\sc Notes} \\
+    \hline}
+  \noindent\begin{supertabular*}{\textwidth}{p{0.2\textwidth}p{0.3\textwidth}p{1.5em}|p{0.38\textwidth}}
+  \multicolumn{4}{l}{\sc MA Unit 1}  \\
+  \hline
+%% \begin{supertabular*}{\textwidth}{p{0.2\textwidth}>{\noindent\color{red}}p{0.3\textwidth}p{2em}|p{0.5\textwidth-2em-8\tabcolsep}}
+%% \hline
+%% {\sc Arabic} & {\sc English} & {\sc Unit} & {\sc Notes} \\
+%%     \hline 
+\ta{دَفْتَر،دَفاتِر} & notebook & 7 & \ta{From Middle Persian dptl (daftar), from Aramaic דפתרא‎ / ܕܦܬܪܐ‎, from Ancient Greek διφθέρα (diphthéra). ``ω = ∇ × u''} \\
+\ta{بِنْت} & girl, daughter & 1 \\
+\ta{بَيْت} & house & 1 \\
+\ta{بُنّ} & coffee beans & 1+ \\
+\ta{بَيْنَ} & between & 1+ \\
+\ta{تِبْن} & hay & 1+ \\
+\ta{تِين} & figs & 1+ & This is a test of a long note. This is a test of a long note. This is a test of a long note. This is a test of a long note. This is a test of a long note. \\
+\ta{أَهْلًا} & hello & 1+  &  1. Meaning ``familiarly'' \\
+\ta{أَهْلًا وَسَهْلًا} & hello and welcome & 1+ & 2. ``Familiarly and easily'' \\
+\ta{أَهْلًا بِك/بِكِ} & hello to you & 1+ & 3. Reply to \ta{أَهْلًا وَسَهْلًا} \\
+\ta{صَباح الخَير} & good morning & 1+ \\
+\ta{صَباح النُّور} & good morning (reply) & 1+ \\
+\ta{مَساء الخَير} & good evening/afternoon & 1+ \\
+\ta{مَساء النُّور} & good evening/afternoon (reply) & 1+ \\
+\ta{بِنْت} & girl, daughter & 1 \\
+\ta{بَيْت} & house & 1 \\
+\ta{بُنّ} & coffee beans & 1+ \\
+\ta{بَيْنَ} & between & 1+ \\
+\ta{تِبْن} & hay & 1+ \\
+\ta{تِين} & figs & 1+ & This is a test of a long note. This is a test of a long note. This is a test of a long note. This is a test of a long note. This is a test of a long note. \\
+\ta{أَهْلًا} & hello & 1+  &  1. Meaning ``familiarly'' \\
+\ta{أَهْلًا وَسَهْلًا} & hello and welcome & 1+ & 2. ``Familiarly and easily'' \\
+\ta{أَهْلًا بِك/بِكِ} & hello to you & 1+ & 3. Reply to \ta{أَهْلًا وَسَهْلًا} \\
+\ta{صَباح الخَير} & good morning & 1+ \\
+\ta{صَباح النُّور} & good morning (reply) & 1+ \\
+\ta{مَساء الخَير} & good evening/afternoon & 1+ \\
+\ta{مَساء النُّور} & good evening/afternoon (reply) & 1+ \\
+\ta{بِنْت} & girl, daughter & 1 \\
+\ta{بَيْت} & house & 1 \\
+\ta{بُنّ} & coffee beans & 1+ \\
+\ta{بَيْنَ} & between & 1+ \\
+\ta{تِبْن} & hay & 1+ \\
+\ta{تِين} & figs & 1+ & This is a test of a long note. This is a test of a long note. This is a test of a long note. This is a test of a long note. This is a test of a long note. \\
+\ta{أَهْلًا} & hello & 1+  &  1. Meaning ``familiarly'' \\
+\ta{أَهْلًا وَسَهْلًا} & hello and welcome & 1+ & 2. ``Familiarly and easily'' \\
+\ta{أَهْلًا بِك/بِكِ} & hello to you & 1+ & 3. Reply to \ta{أَهْلًا وَسَهْلًا} \\
+\ta{صَباح الخَير} & good morning & 1+ \\
+\ta{صَباح النُّور} & good morning (reply) & 1+ \\
+\ta{مَساء الخَير} & good evening/afternoon & 1+ \\
+\ta{مَساء النُّور} & good evening/afternoon (reply) & 1+ \\
+\ta{بِنْت} & girl, daughter & 1 \\
+\ta{بَيْت} & house & 1 \\
+\ta{بُنّ} & coffee beans & 1+ \\
+\ta{بَيْنَ} & between & 1+ \\
+\ta{تِبْن} & hay & 1+ \\
+\ta{تِين} & figs & 1+ & This is a test of a long note. This is a test of a long note. This is a test of a long note. This is a test of a long note. This is a test of a long note. \\
+\ta{أَهْلًا} & hello & 1+  &  1. Meaning ``familiarly'' \\
+\ta{أَهْلًا وَسَهْلًا} & hello and welcome & 1+ & 2. ``Familiarly and easily'' \\
+\ta{أَهْلًا بِك/بِكِ} & hello to you & 1+ & 3. Reply to \ta{أَهْلًا وَسَهْلًا} \\
+\ta{صَباح الخَير} & good morning & 1+ \\
+\ta{صَباح النُّور} & good morning (reply) & 1+ \\
+\ta{مَساء الخَير} & good evening/afternoon & 1+ \\
+\ta{مَساء النُّور} & good evening/afternoon (reply) & 1+ \\
+\ta{بِنْت} & girl, daughter & 1 \\
+\ta{بَيْت} & house & 1 \\
+\ta{بُنّ} & coffee beans & 1+ \\
+\ta{بَيْنَ} & between & 1+ \\
+\ta{تِبْن} & hay & 1+ \\
+\ta{تِين} & figs & 1+ & This is a test of a long note. This is a test of a long note. This is a test of a long note. This is a test of a long note. This is a test of a long note. \\
+\ta{أَهْلًا} & hello & 1+  &  1. Meaning ``familiarly'' \\
+\ta{أَهْلًا وَسَهْلًا} & hello and welcome & 1+ & 2. ``Familiarly and easily'' \\
+\ta{أَهْلًا بِك/بِكِ} & hello to you & 1+ & 3. Reply to \ta{أَهْلًا وَسَهْلًا} \\
+\ta{صَباح الخَير} & good morning & 1+ \\
+\ta{صَباح النُّور} & good morning (reply) & 1+ \\
+\ta{مَساء الخَير} & good evening/afternoon & 1+ \\
+\ta{مَساء النُّور} & good evening/afternoon (reply) & 1+ \\
+\end{supertabular*}
+\end{center}
+\end{document}

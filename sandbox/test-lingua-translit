@@ -1,0 +1,13 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+
+use Lingua::Translit;
+
+my $tr = new Lingua::Translit("Common ARA");
+
+while(<>) {
+  my $text_tr = $tr->translit($_);
+  print $_;
+  print $text_tr;
+}

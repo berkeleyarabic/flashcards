@@ -1,0 +1,4 @@
+
+# count all scripts used in tab files
+cat *.tab |./charinfo | grep script | perl -nle "/=> '(.*)'/ && print \$1" | sort | uniq -c
+

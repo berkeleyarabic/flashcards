@@ -1,0 +1,25 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Unicode::UCD 'charinfo';
+use charnames qw(:full);
+use Data::Dumper;
+use Encode;
+binmode STDOUT, ':utf8';
+
+# my $charinfo   = charinfo(
+#         ord( "\N{SMILING CAT FACE WITH OPEN MOUTH}" )
+#         );
+# print Dumper( $charinfo );
+
+while(<>) {
+  chomp;
+  $_ = decode('utf-8', $_);
+  my (@cs) = split //, $_;
+  for my $c (@cs) {
+    print "$c\n";
+    # $c =~ /\p{Arabic}/ && print "Is Arabic\n";
+    print Dumper(charinfo(ord($c)));
+  }
+}

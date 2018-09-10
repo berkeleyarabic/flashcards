@@ -1,0 +1,26 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Unicode::UCD qw(charinfo charscript charprop);
+use charnames qw(:full);
+use Encode;
+binmode STDOUT, ':utf8';
+
+while(<>) {
+  chomp;
+  $_ = decode('utf-8', $_);
+  my (@cs) = split //, $_;
+  for my $c (@cs) {
+## 9.5 seconds
+#      print charinfo(ord($c))->{script}, "\n";
+## 1.1 seconds
+#      print charscript(ord($c)), "\n";
+## really slow
+#      print charprop(ord($c),"category"), "\n";
+#      print charprop(ord($c),"General_Category"), "\n"; # same
+#      print charscript($c), "\n";
+## 0.17 seconds
+      print (($c =~ /\p{Arabic}/), "\n");
+  }
+}

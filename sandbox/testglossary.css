@@ -1,0 +1,27 @@
+p,ul,ol,td { max-width: 50em; }
+
+ol,ul,blockquote {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 2em;
+    padding-right: 0px;
+}
+
+table { border-collapse:collapse; }
+table thead th { border-bottom: 1px solid #000; }
+/* table tbody { border-bottom: 1px solid #000; } */
+/* select the unit groups */
+tbody > tr:only-child > td:only-child { border-top: 1px solid #000; }
+
+tr > th:first-child,td:first-child {padding-left:0em;}
+
+/* sub="align with subscript baseline of parent" */
+td,th {padding:0.2em 0em 0em 1em;
+          vertical-align: sub;}
+td:nth-child(2) {
+    color: red;
+}
+td:first-child { font-size: 150%; }
+td:last-child { font-size: 100%; }
+
+.test {color: blue}
