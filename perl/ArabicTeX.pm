@@ -35,6 +35,8 @@ sub wrap_if_arabic {
   /$c1/ ? "\\ta{$_}" : $_;
 }
 
+# FHE 09 Jul 2018 old version, worked badly on arabic words joined by
+# punctuation and spaces
 sub arabic_fixup1 {
   local $_ = shift;
   $_ = decode('utf-8', $_);
@@ -48,12 +50,14 @@ sub arabic_fixup1 {
 }
 
 # FHE 09 Jul 2018 new version, split into words and join consecutive
-# words of same language
+# words of same language. FHE 10 Sep 2018 XXX need to clean this up by
+# splitting parts into more general function
 sub arabic_fixup {
   local $_ = shift;
   die "undefined argument in arabic_fixup" if !defined $_;
   $_ = decode('utf-8', $_);
   $_ = tex_fixup $_;
+  # assuming OK to lose whitespace info
   my (@w) = split /\s+/, $_;
   my (@ls) = map {/$c1/?"arabic":
                       (/[a-zA-Z]/?
@@ -69,9 +73,12 @@ sub arabic_fixup {
        || $last_l eq ""
        || $ls[$i] eq $last_l
         ) {
+      # combine two consecutive language-segments if one or the other
+      # is "" or if they are the same language
       push @{$j[$#j]}, $w[$i];
       $last_l = $last_l || $ls[$i];
     } else {
+      # otherwise start a new language
       push @j, [$w[$i]];
       $last_l = $ls[$i];
     }
