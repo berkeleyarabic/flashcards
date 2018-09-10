@@ -1,0 +1,26 @@
+#!/bin/zsh
+
+: ${OLD:="HEAD~1"}
+: ${CURR:=""}
+
+echo OLD=$OLD CURR=$CURR
+
+#setopt err_exit
+
+_show () {
+    case $1 in
+        :*) cat ${1#:};;
+        *:*) git show $1;;
+    esac
+}
+
+for f in "$@"; do
+    of=$(mktemp --tmpdir $(basename $f).old.XXXXXX)
+    nf=$(mktemp --tmpdir $(basename $f).new.XXXXXX)
+    echo # of=$of nf=$nf
+
+    pdftotext =(_show $OLD:$f) $of
+    pdftotext =(_show $CURR:$f) $nf
+    
+    diff -u $of $nf 
+done  2>&1 | less
