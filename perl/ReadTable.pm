@@ -47,6 +47,10 @@ sub read_vocab_table ($$) {
       next if /^\s*$/;
       $curr_line = $_;
       my (@c) = split /:/, $_;
+      if(@c>4) {
+        print "$_\n";
+        die "Too many fields: colon in Notes?";
+      }
       #    pv '\@c';
       # remove spaces
       @c = map { s/^\s*(.*?)\s*$/$1/; $_ } @c;
