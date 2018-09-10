@@ -127,10 +127,10 @@ Arabic script and a short definition.
 
 ### Contributing
 
-Please let me know if you find any errors. The best way to do so is by
-submitting an issue on the [project
-page](https://github.com/berkeleyarabic/flashcards). This is also a
-good way to make suggestions or contribute new material.
+Please let me know if you find any errors, either through Dr.
+Walton-Price or by submitting an issue on the [project
+page](https://github.com/berkeleyarabic/flashcards). Suggestions also
+welcome.
 
 <!--
 // TODO list
