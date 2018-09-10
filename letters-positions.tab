@@ -1,5 +1,6 @@
 ##@ Alphabet
-ا ـا : 'alif  \\ (a, as in ask)
+# we use a unicode ’ (&#8217;) in front of alif to avoid confusing mmd
+ا ـا : ’alif  \\ (a, as in ask)
 ب بـ ـبـ ـب : baa'  \\ (b, as in bravo)
 ت تـ ـتـ ـت : taa' \\ (t, as in tiger)
 ث ثـ ـثـ ـث : thaa'  \\ (th, as in think)
