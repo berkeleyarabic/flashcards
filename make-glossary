@@ -1,6 +1,4 @@
 #!/usr/bin/perl
-# -*- my-source-command: "./make-glossary -v ma-unit*.tab -o ma-all-units" -*-
-# -*- my-source-command: "./make-glossary -v numerals.tab -K" -*-
 use warnings;
 use strict;
 BEGIN { push @INC, ".", "utils", "perl"; }
