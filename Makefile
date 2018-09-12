@@ -9,7 +9,12 @@ TABLES=letters-positions.tab numerals.tab \
 
 all: $(TABLES:.tab=.pdf) \
 	$(TABLES:.tab=-words.html) all-words.html \
-	index.html
+	index.html all-glossary.pdf
+
+clean:
+	rm -f $(TABLES:.tab=.pdf) \
+		$(TABLES:.tab=-words.html) all-words.html \
+		index.html
 
 index.html: INDEX.md
 	./run-mmd -D $<
