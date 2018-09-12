@@ -33,7 +33,8 @@ all-words.html : $(TABLES)
 	./make-wordlist $^ -o all
 
 all-glossary.pdf : $(TABLES)
-	./make-glossary --e2a --a2e -K $(filter-out capitals.tab,$(TABLES)) -o all
+	./make-glossary --e2a --a2e -K \
+		$(filter-out capitals.tab,$(TABLES)) -o all
 
 TAGS:
 	etags perl/*.pm
