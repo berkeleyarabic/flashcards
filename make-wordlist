@@ -1,0 +1,137 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+BEGIN { push @INC, ".", "utils", "perl"; }
+
+use ArabicTeX;
+use ReadTable;
+
+use U;
+
+use Getopt::Long;
+Getopt::Long::Configure ("bundling", "no_ignore_case");
+
+sub usage {
+  warn "Usage: make-index -o OUT_BASE  TABLE_FILES\n";
+  exit shift;
+}
+
+my (@tab_files,
+    $verbose,
+    $help,
+    $bad_args,
+    $output_base,
+    $keep_aux
+    );
+
+GetOptions('-v' => \$verbose,
+           '-f|foot=s' => \$foot_fmt,
+           '-o=s' => \$output_base,
+           '-h|help' => \$help,
+           '-K|keep-aux' => \$keep_aux
+    ) or usage 1;
+
+usage 0 if $help;
+
+$PV::debug = $ReadTable::verbose = $verbose;
+
+@tab_files = @ARGV or do {
+  die "Need to specify an input table\n";
+};
+
+my $out_md;
+my $outputting = 1;
+
+my $fnsuff = "-words";
+
+if($outputting) {
+  if(!defined $output_base) {
+    if(@tab_files>1) {
+      die "Need to specify output basename when using multiple inputs";
+    } else {
+      ($output_base = $tab_files[0]) =~ s/\..*?$//;
+    }
+  }
+  pv '$output_base';
+  $out_md = "$output_base$fnsuff.gen.md";
+  warn "Writing to $out_md\n" if $verbose;
+  open OUT, ">", $out_md or die "Couldn't open $out_md for writing";
+
+  print OUT <<\EOF;
+Title: Word list {{wlhead.mdi}} <!-- -*- my-source-command: "./run-mmd %s" -*- -->
+
+Arabic  | English | Notes
+------- | ------- | -------
+EOF
+}
+
+my @entries;
+
+sub add_entry {
+  my ($arabic,$artransl,$english,$foot,$notes) = @_;
+  push @entries, {
+    arabic=>$arabic,
+    artransl=>$artransl,
+    english=>$english,
+    foot=>$foot,
+    notes=>$notes
+  };
+}
+
+read_vocab_table(\&add_entry, \@tab_files);
+
+my %entries_by_feet;
+#pv '\@entries';
+
+for my $e (@entries) {
+  push @{$entries_by_feet{$e->{foot}}}, $e;
+}
+
+do "./foot_fmt.pl";
+
+sub markdown_fixup {
+  ($_)=@_;
+  return undef unless defined $_;
+  s/\\\\//g;
+  $_
+}
+
+if($outputting) {
+  my $prev_ffmt=undef;
+  for my $f (sort {foot_cmp($a,$b)} keys %entries_by_feet) {
+
+#    my $ffmt = foot_fold $f;
+    my $ffmt = foot_fmt($f);
+#    pv 'foot_sortable $f';
+    if(!defined $prev_ffmt || $ffmt ne $prev_ffmt) {
+      print OUT "<div class=\"foothead\">$ffmt</div> |||\n\n";
+    } else {
+#      print OUT "\n";
+    }
+    $prev_ffmt = $ffmt;
+    
+    my @es = @{$entries_by_feet{$f}};
+    for my $e (@es) {
+      # pv '$e';
+      my ($ar,$art,$en,$no) =
+          map {markdown_fixup $_}
+          @$e{qw(arabic artransl english notes)};
+      print OUT "<span class=\"arabic\">$ar</span>";
+      if(defined $art) {
+        print OUT "<span class=\"translit\">&nbsp;<em>($art)</em></span>";
+      }
+      $no = "" unless defined $no;
+      print OUT " | $en | $no\n";
+    }
+    print OUT "\n";
+  }
+  close OUT;
+
+  sh ("./run-mmd",$out_md);
+  rename ("$output_base$fnsuff.gen.html",
+          "$output_base$fnsuff.html");
+  if(!$keep_aux) {
+    unlink "$output_base$fnsuff.gen.md";
+  }
+}
+

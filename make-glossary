@@ -6,6 +6,9 @@ BEGIN { push @INC, ".", "utils", "perl"; }
 use ArabicTeX;
 use ReadTable;
 
+use Encode;
+use utf8;
+
 use U;
 
 use Getopt::Long;
@@ -21,15 +24,21 @@ my (@tab_files,
     $help,
     $bad_args,
     $output_base,
-    $keep_aux
+    $keep_aux,
+    $a2e,
+    $e2a
     );
 
 GetOptions('-v' => \$verbose,
            '-f|foot=s' => \$foot_fmt,
            '-o=s' => \$output_base,
            '-h|help' => \$help,
-           '-K|keep-aux' => \$keep_aux
+           '-K|keep-aux' => \$keep_aux,
+           '--a2e' => \$a2e,
+           '--e2a' => \$e2a
     ) or usage 1;
+
+die "Need --a2e or --e2a" unless $a2e || $e2a;
 
 usage 0 if $help;
 
@@ -39,10 +48,10 @@ $PV::debug = $ReadTable::verbose = $verbose;
   die "Need to specify an input table\n";
 };
 
-my $out_md;
+my $out_tex;
 my $outputting = 1;
 
-my $fnsuff = "-words";
+my $fnsuff = "-glossary";
 
 if($outputting) {
   if(!defined $output_base) {
@@ -53,15 +62,29 @@ if($outputting) {
     }
   }
   pv '$output_base';
-  $out_md = "$output_base$fnsuff.gen.md";
-  warn "Writing to $out_md\n" if $verbose;
-  open OUT, ">", $out_md or die "Couldn't open $out_md for writing";
+  $out_tex = "$output_base$fnsuff.gen.tex";
+  warn "Writing to $out_tex\n" if $verbose;
+  open OUT, ">", $out_tex or die "Couldn't open $out_tex for writing";
 
   print OUT <<\EOF;
-Title: Glossary {{glosshead.mdi}} <!-- -*- my-source-command: "./run-mmd %s" -*- -->
-
-Arabic  | English | Notes
-------- | ------- | -------
+% my-latex-command: xelatex
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8
+%% longtable doesn't work with multiple columns, but there is a
+%% workaround:
+%% https://tex.stackexchange.com/questions/230646/supertabular-with-many-rows-in-multicols-env-does-not-fill-up-columns-on-subsequ
+\documentclass[10pt]{article}
+\usepackage[margin=0.5in,includefoot]{geometry}
+\usepackage{multicol,supertabular,longtable}
+\renewcommand{\arraystretch}{1.2}
+\parindent=0pt
+\input{tex/arabic_common.tex}
+\begin{document}
+\newbox\myb
+\setbox\myb\vbox\bgroup\hsize=\dimexpr(\textwidth-\columnsep)/2\relax
+\makeatletter
+\chardef\LT@end@pen\z@
+\makeatother
 EOF
 }
 
@@ -80,106 +103,108 @@ sub add_entry {
 
 read_vocab_table(\&add_entry, \@tab_files);
 
-my %entries_by_feet;
-#pv '\@entries';
+my %entries_by_arabic;
+my %entries_by_english;
+
+do "./foot_fmt.pl";
+
 
 for my $e (@entries) {
-  push @{$entries_by_feet{$e->{foot}}}, $e;
+  # my $arf = entry_fold $e->{arabic};
+  # my $enf = entry_fold $e->{english};
+  # push @{$entries_by_arabic{$arf}} = $e;
+  # push @{$entries_by_english{$enf}} = $e;
+  $entries_by_arabic{$e->{arabic}} = $e;
+  $entries_by_english{$e->{english}} = $e;
 }
 
-sub foot_fold {
-  my ($f) = @_;
-  $f =~ s/\$\^\{(.*)\}\$/$1/;
-  $f =~ s/^MA /Mastering Arabic /;
-  return $f;
+# change above to use 'push'
+# entry_fold
+# choose longest entry for each fold collision
+# write collisions to file
+# manually resolve some collisions if necessary
+
+sub entry_fixup {
+  my ($t) = @_;
+  $t = arabic_fixup $t;
+  $t =~ s/\\\\//g;
+  $t = decode('utf-8', $t);
+  $t =~ s/(\w)([\(\/])/$1\\allowbreak $2/gu;
+  $t;
 }
 
-sub foot_fmt {
-  my ($f) = @_;
-  $f = foot_fold $f;
-  $f =~ s/[?+-]*$//g;
-  return $f;
+sub entry_sortable {
+  my ($t) = @_;
+  my $o=$t;
+  $t = decode('utf-8', $t);
+  $t = pad_digits($t);
+  # need "u" modifier so \w gets Arabic too
+  $t =~ s/^\W*//u;
+  # erase "tatweel"
+  $t =~ s/ـ//g;
+  # erase all "nonspacing marks" (diacritics)
+  $t =~ s/\p{gc:Mn}//gu;
+  $t = CORE::fc $t;
+  $t = encode('utf-8', $t);
+#  warn "$o -> $t\n";
+  return $t;
 }
 
-sub pad_digits {
-  # assumes we won't have any numbers longer than 6 digits
-  my ($s) = @_;
-  $s =~ s/(\d+)/@{["0"x(6-length($1)).$1]}/g;
-  return $s;
-}
-
-sub foot_sortable {
-  my ($f) = @_;
-  $f = pad_digits(foot_fold $f);
-  my $order;
-  $order = 1 if $f =~ /^BCC/i;
-  $order = 2 if $f =~ /^MA|Mastering Arabic/i;
-  $order = 3 if $f =~ /^Classroom vocab/i;
-  $order = 4 if $f =~ /^Numerals/i;
-  $order = 5 if $f =~ /^Pronouns/i;
-  $order = 6 if $f =~ /^Possessive/i;
-  $order = 7 if $f =~ /^Past Conj/i;
-  $order = 8 if $f =~ /^Present Conj/i;
-  $order = 9 if $f =~ /^Capitals/i;
-  $order = 10 if $f =~ /^Colors/i;
-  $order = 11 if $f =~ /^Alphabet/i;
-  unless(defined $order) {
-    warn "Unrecognized footnote type $f, sorting to end";
-    $order = 1000;
+if($a2e) {
+  print OUT <<\EOF;
+\section*{Arabic-English glossary}
+\begin{longtable}{p{0.12\textwidth}p{0.23\textwidth}>{\scriptsize}p{0.08\textwidth}}
+EOF
+  my @l = sort { (entry_sortable $a) cmp
+                     (entry_sortable $b) } keys %entries_by_arabic;
+  for my $k (@l) {
+    my $e = $entries_by_arabic{$k};
+    my ($ar) = entry_fixup $k;
+    my ($en) = entry_fixup $e->{english};
+    my ($ft) = foot_fmt_idx($e->{foot});
+    print OUT "$ar & $en & $ft \\\\\n"
+        if $outputting;
   }
-  $f = pad_digits($order).$f;
+  print OUT <<\EOF;
+\end{longtable}
+EOF
 }
-
-sub foot_cmp {
-  my ($a,$b)=@_;
-  $a = foot_sortable $a;
-  $b = foot_sortable $b;
-  return ($a cmp $b);
-}
-
-sub markdown_fixup {
-  ($_)=@_;
-  return undef unless defined $_;
-  s/\\\\//g;
-  $_
+if($e2a) {
+  print OUT <<\EOF;
+\pagebreak
+\section*{English-Arabic glossary}
+\begin{longtable}{p{0.12\textwidth}p{0.23\textwidth}>{\scriptsize}p{0.08\textwidth}}
+EOF
+  my @l = sort { (entry_sortable $a) cmp
+                     (entry_sortable $b) } keys %entries_by_english;
+  for my $k (@l) {
+    my $e = $entries_by_english{$k};
+    my ($ar) = entry_fixup $e->{arabic};
+    my ($en) = entry_fixup $k;
+    my ($ft) = foot_fmt_idx($e->{foot});
+    print OUT "$ar & $en & $ft \\\\\n"
+        if $outputting;
+  }
+  print OUT <<\EOF;
+\end{longtable}
+EOF
 }
 
 if($outputting) {
-  my $prev_ffmt=undef;
-  for my $f (sort {foot_cmp($a,$b)} keys %entries_by_feet) {
-
-#    my $ffmt = foot_fold $f;
-    my $ffmt = foot_fmt $f;
-#    pv 'foot_sortable $f';
-    if(!defined $prev_ffmt || $ffmt ne $prev_ffmt) {
-      print OUT "<div class=\"foothead\">$ffmt</div> |||\n\n";
-    } else {
-#      print OUT "\n";
-    }
-    $prev_ffmt = $ffmt;
-    
-    my @es = @{$entries_by_feet{$f}};
-    for my $e (@es) {
-      # pv '$e';
-      my ($ar,$art,$en,$no) =
-          map {markdown_fixup $_}
-          @$e{qw(arabic artransl english notes)};
-      print OUT "<span class=\"arabic\">$ar</span>";
-      if(defined $art) {
-        print OUT "<span class=\"translit\">&nbsp;<em>($art)</em></span>";
-      }
-      $no = "" unless defined $no;
-      print OUT " | $en | $no\n";
-    }
-    print OUT "\n";
-  }
+  print OUT <<\EOF;
+\egroup
+\setlength{\columnseprule}{0.4pt}
+\begin{multicols*}{2}
+\unvbox\myb
+\end{multicols*}
+\end{document}
+EOF
   close OUT;
-
-  sh ("./run-mmd",$out_md);
-  rename ("$output_base$fnsuff.gen.html",
-          "$output_base$fnsuff.html");
+  sh ("xelatex $out_tex < /dev/null");
+  rename ("$output_base$fnsuff.gen.pdf", "$output_base$fnsuff.pdf");
   if(!$keep_aux) {
-    unlink "$output_base$fnsuff.gen.md";
+    unlink "$output_base$fnsuff.gen.log";
+    unlink "$output_base$fnsuff.gen.aux";
+    unlink "$output_base$fnsuff.gen.tex";
   }
 }
-

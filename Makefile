@@ -22,10 +22,13 @@ pronouns.pdf : pronouns.tab pronouns.Ttex
 	./table-to-cards $<
 
 %-words.html : %.tab
-	./make-glossary $<
+	./make-wordlist $<
 
 all-words.html : $(TABLES)
-	./make-glossary $^ -o all
+	./make-wordlist $^ -o all
+
+all-glossary.pdf : $(TABLES)
+	./make-glossary --e2a --a2e -K $(filter-out capitals.tab,$(TABLES)) -o all
 
 TAGS:
 	etags perl/*.pm
