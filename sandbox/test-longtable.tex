@@ -1,0 +1,44 @@
+% my-latex-command: xelatex
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8
+\documentclass[a4paper, 12pt, twoside, openright]{article}
+
+\usepackage[showframe,left=2cm,right=2cm,top=2cm,bottom=3cm]{geometry}
+\usepackage{multicol,supertabular,ifthen,longtable}
+
+%% \makeatletter
+%% \let\mcnewpage=\newpage
+%% \newcommand{\TrickSupertabularIntoMulticols}{%
+%% \renewcommand\newpage{%
+%%     \if@firstcolumn%
+%%         \hrule width\linewidth height0pt%
+%%             \columnbreak%
+%%         \else%
+%%           \mcnewpage%
+%%         \fi%
+%% }%
+%% }
+%% \makeatother
+
+\begin{document}
+
+\def\r{Aaaa & 0010\stepcounter{enumi}\theenumi & text \\}
+\def\rr{\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r}
+\newbox\myb
+\setbox\myb\vbox{\hsize=\dimexpr(\textwidth-\columnsep)/2\relax
+\makeatletter
+\chardef\LT@end@pen\z@
+\makeatother
+\begin{longtable}{lll}
+\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr
+\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr
+\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr
+\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr
+\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr
+\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr\rr
+\end{longtable}}
+
+\begin{multicols*}{2}
+\unvbox\myb
+\end{multicols*}
+\end{document}
