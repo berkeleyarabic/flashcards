@@ -39,13 +39,13 @@ sub wrap_if_arabic {
 # punctuation and spaces
 sub arabic_fixup1 {
   local $_ = shift;
-  $_ = decode('utf-8', $_);
+  # $_ = decode('utf-8', $_);
   $_ = tex_fixup $_;
 #  my $c = qr/[\p{Bidi_Class=r}\.]/;
   #  my $c = qr/\p{Arabic}/;
 
   s/($c(?:$c| )*$c|$c1)/@{[wrap_if_arabic $1]}/g;
-  $_ = encode('utf-8', $_);
+  # $_ = encode('utf-8', $_);
   $_;
 }
 
@@ -55,7 +55,7 @@ sub arabic_fixup1 {
 sub arabic_fixup {
   local $_ = shift;
   die "undefined argument in arabic_fixup" if !defined $_;
-  $_ = decode('utf-8', $_);
+  # $_ = decode('utf-8', $_);
   $_ = tex_fixup $_;
   # assuming OK to lose whitespace info
   my (@w) = split /\s+/, $_;
@@ -91,7 +91,7 @@ sub arabic_fixup {
   # pv '\@w';
   # pv '\@j';
   # pv '$res';
-  $res = encode('utf-8', $res);
+  # $res = encode('utf-8', $res);
   $res;
 }
 

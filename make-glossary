@@ -6,8 +6,9 @@ BEGIN { push @INC, ".", "utils", "perl"; }
 use ArabicTeX;
 use ReadTable;
 
-use Encode;
 use utf8;
+binmode(STDOUT, ":utf8");
+binmode(STDERR, ":utf8");
 
 use U;
 
@@ -64,7 +65,7 @@ if($outputting) {
   pv '$output_base';
   $out_tex = "$output_base$fnsuff.gen.tex";
   warn "Writing to $out_tex\n" if $verbose;
-  open OUT, ">", $out_tex or die "Couldn't open $out_tex for writing";
+  open OUT, ">:encoding(UTF-8)", $out_tex or die "Couldn't open $out_tex for writing";
 
   print OUT <<\EOF;
 % my-latex-command: xelatex
@@ -128,7 +129,7 @@ sub entry_fixup {
   my ($t) = @_;
   $t = arabic_fixup $t;
   $t =~ s/\\\\//g;
-  $t = decode('utf-8', $t);
+  # $t = decode('utf-8', $t);
   $t =~ s/(\w)([\(\/])/$1\\allowbreak $2/gu;
   $t;
 }
@@ -136,7 +137,7 @@ sub entry_fixup {
 sub entry_sortable {
   my ($t) = @_;
   my $o=$t;
-  $t = decode('utf-8', $t);
+#  $t = decode('utf-8', $t);
   $t = pad_digits($t);
   # need "u" modifier so \w gets Arabic too
   $t =~ s/^\W*//u;
@@ -145,7 +146,7 @@ sub entry_sortable {
   # erase all "nonspacing marks" (diacritics)
   $t =~ s/\p{gc:Mn}//gu;
   $t = CORE::fc $t;
-  $t = encode('utf-8', $t);
+#  $t = encode('utf-8', $t);
 #  warn "$o -> $t\n";
   return $t;
 }

@@ -35,7 +35,7 @@ sub read_vocab_table ($$) {
 
     warn "Reading from $tab_fn\n" if $verbose;
 
-    open IN, "<", $tab_fn or
+    open IN, "<:encoding(UTF-8)", $tab_fn or
         die "Couldn't open $tab_fn for reading\n";
 
     while(<IN>) {

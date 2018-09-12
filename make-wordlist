@@ -6,6 +6,10 @@ BEGIN { push @INC, ".", "utils", "perl"; }
 use ArabicTeX;
 use ReadTable;
 
+use utf8;
+binmode(STDOUT, ":utf8");
+binmode(STDERR, ":utf8");
+
 use U;
 
 use Getopt::Long;
@@ -55,7 +59,7 @@ if($outputting) {
   pv '$output_base';
   $out_md = "$output_base$fnsuff.gen.md";
   warn "Writing to $out_md\n" if $verbose;
-  open OUT, ">", $out_md or die "Couldn't open $out_md for writing";
+  open OUT, ">:encoding(UTF-8)", $out_md or die "Couldn't open $out_md for writing";
 
   print OUT <<\EOF;
 Title: Word list {{wlhead.mdi}} <!-- -*- my-source-command: "./run-mmd %s" -*- -->
