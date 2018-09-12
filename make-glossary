@@ -201,7 +201,7 @@ if($outputting) {
 \end{document}
 EOF
   close OUT;
-  sh ("xelatex $out_tex < /dev/null");
+  sh ("xelatex $out_tex </dev/null >/dev/null 2>&1");
   rename ("$output_base$fnsuff.gen.pdf", "$output_base$fnsuff.pdf");
   if(!$keep_aux) {
     unlink "$output_base$fnsuff.gen.log";
