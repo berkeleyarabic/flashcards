@@ -1,11 +1,19 @@
-- use e.g. % instead of : in tables
+- move encode/decode to ReadTable?
 
-- clean up notes, fill them in.
+- pdf index of words, alphabetized
 
 - change glossary to use CGI::HTML::Functions, rather than
   multimarkdown
 
+    - checkbox to hide notes?
+
+- use e.g. % instead of : in tables
+
+- clean up notes, fill them in.
+
 - html version of arabic_fixup - put only arabic in a span
+
+- generalize fixup subs to multiple scripts?
 
 - proportional column widths
 
