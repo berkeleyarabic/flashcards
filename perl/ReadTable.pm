@@ -83,7 +83,7 @@ sub read_vocab_table ($$) {
       my $pdict = {};
       if(length($props)) {
         $pdict = parse_props $props;
-        pv '$pdict';
+#        pv '$pdict';
       }
       
       &$callback($arabic,$artransl,$english,$foot,$notes,$pdict);
