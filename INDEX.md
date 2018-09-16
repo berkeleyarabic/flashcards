@@ -63,6 +63,8 @@ them](https://en.wikipedia.org/wiki/Arabic_grammar#Pronouns) first.
 Note the Mastering Arabic cards already include pronouns and endings
 as they are introduced by the textbook.
 
+A few cards have transliterations provided. These are formatted so that the transliteration is on the left, and the Arabic is on the right. This is supposed to make it easy to cover the transliteration with your thumb in case you don't want to see it.
+
 ### Printing flashcards
 
 Ideally these should be duplex-printed on *card stock* paper, and cut
