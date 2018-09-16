@@ -1,3 +1,4 @@
 #!/bin/zsh
 
-./search-cards "$@" *.tab
+. ./tables.zsh
+./search-cards "$@" $TABLES

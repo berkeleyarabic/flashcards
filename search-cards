@@ -6,13 +6,15 @@ BEGIN { push @INC, ".", "utils", "perl"; }
 #use ArabicTeX;
 use ReadTable;
 
+binmode(STDOUT, ":utf8");
+binmode(STDERR, ":utf8");
 #use U;
 
 use Getopt::Long;
 Getopt::Long::Configure ("bundling", "no_ignore_case");
 
 sub usage {
-  warn "Usage: search-cards [-v] SEARCH_STR TABLE_FILES\n";
+  warn "Usage: search-cards [-v] [-F] SEARCH_STR TABLE_FILES\n";
   exit shift;
 }
 
