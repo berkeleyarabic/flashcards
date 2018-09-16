@@ -27,6 +27,23 @@ sub format_group {
   return $str;
 }
 
+# FHE 16 Sep 2018 the properties field is the 5th column of tables, it
+# was introduced to add indexing hints to certain words which have
+# homographs. at the time there were only 5 homograph words in the
+# main tables (with 789 entries) so it seemed to make sense to treat
+# them all individually
+sub parse_props ($) {
+  my ($p) = @_;
+  my (@l) = split /;/, $p;
+  my (%props) = ();
+  for my $kv (@l) {
+    $kv =~ /^\s*(\w+)\s*=(.*)$/ or die "Malformed key-value \"$kv\" in $p";
+    my ($k,$v) = ($1,$2);
+    $props{$k} = $v;
+  }
+  return \%props;
+}
+
 sub read_vocab_table ($$) {
   my ($callback, $tab_files) = @_;
   for my $tf (@$tab_files) {
@@ -47,24 +64,29 @@ sub read_vocab_table ($$) {
       next if /^\s*$/;
       $curr_line = $_;
       my (@c) = split /:/, $_;
-      if(@c>4) {
+      if(@c>5) {
         print "$_\n";
-        die "Too many fields: colon in Notes?";
+        die "Too many fields";
       }
-      #    pv '\@c';
+
       # remove spaces
       @c = map { s/^\s*(.*?)\s*$/$1/; $_ } @c;
 
       # at this point we make assumptions about table columns, this
       # code could be moved to another routine
-      my ($arabic,$english,$group,$notes) = @c;
+      my ($arabic,$english,$group,$notes,$props) = @c;
       my ($foot) = format_group $group;
       my ($artransl);
       if($arabic =~ /^(.*?)\s*\|\|\s*(.*)$/) {
         ($arabic, $artransl) = ($1, $2);
       }
+      my $pdict = {};
+      if(length($props)) {
+        $pdict = parse_props $props;
+        pv '$pdict';
+      }
       
-      &$callback($arabic,$artransl,$english,$foot,$notes);
+      &$callback($arabic,$artransl,$english,$foot,$notes,$pdict);
     }
     close IN;
   }
