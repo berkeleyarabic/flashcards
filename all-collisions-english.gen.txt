@@ -16,7 +16,7 @@ door:باب،أَبْواب:باب،أَبْواب:BCC Words 1	door:باب:با�
 easy:سَهْل،سَهْلة:سَهْل،سَهْلة:BCC Words 8	easy:سَهْل:سَهْل:Mastering Arabic Unit 1
 eggs:بَيْض:بَيْض:BCC Words 9	eggs:بَيْض:بَيْض:Mastering Arabic Unit 12
 eight:ثَمانية:ثَمانية:Numerals	eight:ثَمانِيَة:ثَمانِيَة:Mastering Arabic Unit 10
-five:خَمْسة:خَمْسة:Numerals	five:خَمْسَة:خَمْسَة:Mastering Arabic Unit 10
+five:خَمْسَة:خَمْسَة:Numerals	five:خَمْسَة:خَمْسَة:Mastering Arabic Unit 10
 forty:أَرْبَعِينَ:أَرْبَعِينَ:Mastering Arabic Unit 12	forty:أربعين:أربعين:Mastering Arabic Unit 14
 four:أربَعة:أربَعة:Numerals	four:أرْبَعَة:أرْبَعَة:Mastering Arabic Unit 10
 from:مِن،مِن ال:مِن،مِن ال:BCC Words 5	from:مِنْ:مِنْ:Mastering Arabic Unit 9

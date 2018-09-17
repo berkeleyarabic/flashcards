@@ -16,6 +16,7 @@
 ثَلاثَة:ثَلاثَة:three:Numerals	ثَلاثَة:ثَلاثَة:three:Mastering Arabic Unit 10
 حَتَّى:حَتَّى:until:BCC Words 3	حَتَّى:حَتَّى:until:Mastering Arabic Unit 11
 خُبْز:خُبْز:bread:BCC Words 6	خُبْز:خُبْز:bread:Mastering Arabic Unit 12
+خَمْسَة:خَمْسَة:five:Numerals	خَمْسَة:خَمْسَة:five:Mastering Arabic Unit 10
 دَجاج:دَجاج:chicken:BCC Words 6	دَجاج:دَجاج:chicken:Mastering Arabic Unit 5	دَجاج:دَجاج:chicken:Mastering Arabic Unit 12
 سَبْعَة:سَبْعَة:seven:Numerals	سَبْعَة:سَبْعَة:seven:Mastering Arabic Unit 10
 سُكَّر:سُكَّر:sugar:BCC Words 2	سُكَّر:سُكَّر:sugar:Mastering Arabic Unit 12
