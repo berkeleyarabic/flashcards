@@ -2,24 +2,26 @@ Title: Arabic flashcards {{header.mdi}} <!-- -*- my-source-command: "./run-mmd -
 
 <div markdown=1 id="page-wrap"> <!-- run-mmd inserts the closing tag at the bottom -->
 
-**Arabic flashcards**
+**Arabic Flashcards and Word Lists**
 
 {{TOC}}
+
+### Flashcards
 
 Here are some PDFs which can be used to make the paper flashcards I've
 used to study Arabic at Berkeley City College.
 
-- [Alphabet with positions](letters-positions.pdf), sourced from quizlet *([word list](letters-positions-words.html), 28 words)*
+- [Alphabet with positions](letters-positions.pdf) *([word list](letters-positions-words.html), 28 words)*
 - Dr. Walton-Price's [BCC workbook words](bcc-workbook-words.pdf) *([word list](bcc-workbook-words-words.html), 99 words)*
 
 Vocabulary from our textbook Wightwick & Gaafar "Mastering Arabic 1":
 
 Units covered in BCC Arabic 1A:
 
-- [Mastering Arabic Units 1-4](ma-units-1-4.pdf) *([word list](ma-units-1-4-words.html), 79 words)*
-- [Mastering Arabic Units 5-7](ma-units-5-7.pdf) *([word list](ma-units-5-7-words.html), 88 words)*
-- [Mastering Arabic Units 9-10](ma-units-9-10.pdf) *([word list](ma-units-9-10-words.html), 81 words)*
-- [Mastering Arabic Units 11-13](ma-units-11-13.pdf) *([word list](ma-units-11-13-words.html), 184 words)*
+- [Mastering Arabic Units 1-4](ma-unit-1-4.pdf) *([word list](ma-unit-1-4-words.html), 82 words)*
+- [Mastering Arabic Units 5-7](ma-unit-5-7.pdf) *([word list](ma-unit-5-7-words.html), 88 words)*
+- [Mastering Arabic Units 9-10](ma-unit-9-10.pdf) *([word list](ma-unit-9-10-words.html), 88 words)*
+- [Mastering Arabic Units 11-13](ma-unit-11-13.pdf) *([word list](ma-unit-11-13-words.html), 178 words)*
 
 BCC Arabic 1B (in progress):
 
@@ -28,15 +30,32 @@ BCC Arabic 1B (in progress):
 
 Miscellaneous:
 
-- [Numerals with Arabic pronunciation](numerals.pdf) *([word list](numerals-names-words.html), 11 words)*
-- [Classroom vocabulary](classroom-vocab.pdf) *([word list](classroom-vocab-words.html), 38 words)*
+- [Numerals with Arabic pronunciation](numerals.pdf) *([word list](numerals-words.html), 11 words)*
+- [Classroom vocabulary](classroom-vocab.pdf) *([word list](classroom-vocab-words.html), 37 words)*
 - [Pronouns, with possessive suffixes](pronouns-possessives.pdf) *([word list](pronouns-possessives-words.html), 12 words)*
 - [Past and present conjugations of "read"](verb-conj-ktb.pdf) *([word list](verb-conj-ktb-words.html), 26 words)*
 - [Middle-East country capitals](capitals.pdf) *([word list](capitals-words.html), 10 words)*
+- [Colors](colors.pdf) *([word list](colors-words.html), 11 words)*
 
-[List of all words](all-words.html)
+### Word lists and glossary
 
-### Notes
+* [English-Arabic and Arabic-English
+glossary](berkeleyarabic-glossary.pdf) for the above card decks (PDF)
+* [List of all words](all-words.html) with some notes (HTML)
+
+The glossary includes all of the Mastering Arabic 1 words (up to Unit
+16). It may be useful for review and also for reference, since the
+glossary in the Mastering Arabic book is only English to Arabic and
+doesn't list chapter numbers.
+
+Etymologies in the word list notes are mostly copied from Wiktionary.
+Most of the words don't have them; I added them for words that I
+thought were confusing. I can add more if there is interest.
+
+### Deck notes
+
+**Alphabet with positions**: List with pronunciations sourced from
+quizlet.com. I added hamza.
 
 **BCC workbook words:** There are slight differences between the
 vocabulary lists in the printed workbook versus the eyeVocab software.
@@ -95,8 +114,8 @@ then I turn it over to see if I made any errors. Sometimes I just try
 to visualize the spelling, which is faster than writing the word out,
 but difficult for long words. I use a system similar to the one
 suggested in the Mastering Arabic textbook: if I pick up a card one
-day and get it right the first time, I put it in an "easy" envelope,
-and don't look at it for a time.
+day and get it right the first time, I put it in one of several "easy"
+envelopes, which I eventually throw away.
 
 Sometimes I use silly mnemonics to remember an Arabic word - if "big"
 is "kabīr" كَبير then I could think of a beer or a bear or something
@@ -122,40 +141,17 @@ search feature, which is often preferable for Arabic:
 <input type="submit" name="fulltext" value="Full text search">
 </form>
 
-Also try Michelle Fullwood's [Fuzzy Arabic
+Also try Michelle Fullwood's excellent [Fuzzy Arabic
 Dictionary](http://fuzzyarabic.herokuapp.com/), you can type in Latin
 transliteration, or a mix of Latin and Arabic, and it gives you the
 Arabic script and a short definition.
 
-### Contributing
+### Contributing fixes
 
 Please let me know if you find any errors, either through Dr.
 Walton-Price or by submitting an issue on the [project
-page](https://github.com/berkeleyarabic/flashcards). Suggestions also
-welcome.
-
-<!--
-// TODO list
-
-- Input "Mastering Arabic" words from next few units
-- Names of diacritics
-- Classroom expressions
-
-// Change history
-
-- 19 Jul 2018 fix "until" in bcc-workbook-words.tab
-- 16 Jul 2018 added prepositions from p. 128 and "bag" from p. 130
-- 14 Jul 2018 add MA 11-12. fix "nice" in BCC workbook words
-- 12 Jul 2018 add MA 9-10
-- 09 Jul 2018 fix some right-to-left ordering issues in ma-units-1-7-not-in-memrise.pdf
-- 08 Jul 2018 numerals-names.pdf: minor typo in spelling of "two"
-- 08 Jul 2018 ma-units-1-7-not-in-memrise.pdf: found more typos: "whole/unbroken", "fine, thanks", "pupil"
-- 08 Jul 2018 added cards for colors, pronouns
-- 07 Jul 2018 fixed typos in non-memrise cards, there were mistakes in "hay", "goodbye", "donkey", "an office" [(all changes)](changes-to-ma-not-in-memrise-2018-07-07.diff.txt)
-- 07 Jul 2018 fixed font size issues for English text mixed with Arabic
-- 06 Jul 2018 added diacritics to memrise words
-- 06 Jul 2018 created web page
--->
+page](https://github.com/berkeleyarabic/flashcards). Suggestions are
+also welcome through the same channels.
 
 ----
 
