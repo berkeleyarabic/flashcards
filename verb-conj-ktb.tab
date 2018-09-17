@@ -15,13 +15,13 @@
 كَتَبْنَ   ||   katab-na      :  They (f) wrote      :+
 ##@ Present Conjugations %g
 أَكْتُبُ    ||   a-ktub-u     :  I write             :
-تَكْتُبُ    ||   ta-ktub-u    :  You (m) write       :
+تَكْتُبُ    ||   ta-ktub-u    :  You (m) write       : ::indexby=you
 تَكْتُبِينَ  ||   ta-ktub-īna  :  You (f) write       :
 يَكْتُبُ    ||   ya-ktub-u    :  He writes           :
-تَكْتُبُ    ||   ta-ktub-u    :  She writes          :
-تَكْتُبَانِ ||   ta-ktub-āni   :  You two write       :+
+تَكْتُبُ    ||   ta-ktub-u    :  She writes          : ::indexby=she
+تَكْتُبَانِ ||   ta-ktub-āni   :  You two write       :+ ::indexby=you
 يَكْتُبَانِ ||   ya-ktub-āni   :  They (m) two write  :+
-تَكْتُبَانِ ||   ta-ktub-āni   :  They (f) two write  :+
+تَكْتُبَانِ ||   ta-ktub-āni   :  They (f) two write  :+ ::indexby=they
 نَكْتُبُ    ||   na-ktub-u    :  We write            :
 تَكْتُبُونَ  ||   ta-ktub-ūna  :  You all (m) write   :
 تَكْتُبْنَ   ||   ta-ktub-na   :  You all (f) write   :+

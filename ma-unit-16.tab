@@ -5,13 +5,13 @@
 
 أشْرَبُ:I drink:16+
 
-تَشْرَبُ:you (m) drink:16+
+تَشْرَبُ:you (m) drink:16+ :: indexby=you
 
 يَشْرَبينَ:you (f) drink:16+
 
 يَشْرَبُ:he drinks:16+
 
-تَشْرَبُ:she drinks:16+
+تَشْرَبُ:she drinks:16+ :: indexby=she
 
 نَشْرَبُ:we drink:16+
 
