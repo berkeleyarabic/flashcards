@@ -1,4 +1,4 @@
-##@ Colors
+##@ Colors %g
 لَوْن(أَلْوان) : color
 أَبْيَض(بَيْضَاء) : white
 أَسْوَد(سَوْدَاء) : black
@@ -6,3 +6,10 @@
 أَحْمَر(حَمْرَاء) : red
 أَزْرَق(زَرْقَاء) : blue
 أَصْفَر(صَفْراَء) : yellow
+
+# other colors, not in textbook
+
+وَرْدِيّ : pink (synonym 1) : + :
+بَمْبِيّ : pink (synonym 2) : + :
+بُرْتُقَانِيّ : orange (color) : + : Nisbah of orange (fruit)
+بُنِّيّ : brown, coffee-colored : + : Nisbah of coffee beans
