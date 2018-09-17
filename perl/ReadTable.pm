@@ -24,14 +24,14 @@ sub format_group {
   my ($str) = $foot_fmt;
 #  pv '$str';
   $str =~ s/%g/$group/g;
+  # remove leading and trailing space
+  $str =~ s/^\s+//g;
+  $str =~ s/\s+$//g;
   return $str;
 }
 
 # FHE 16 Sep 2018 the properties field is the 5th column of tables, it
-# was introduced to add indexing hints to certain words which have
-# homographs. at the time there were only 5 homograph words in the
-# main tables (with 789 entries) so it seemed to make sense to treat
-# them all individually
+# was introduced to add indexing hints, see make-glossary
 sub parse_props ($) {
   my ($p) = @_;
   my (@l) = split /;/, $p;
