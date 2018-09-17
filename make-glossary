@@ -16,7 +16,7 @@ use Getopt::Long;
 Getopt::Long::Configure ("bundling", "no_ignore_case");
 
 sub usage {
-  warn "Usage: make-glossary -o OUT_BASE  TABLE_FILES\n";
+  warn "Usage: make-glossary -o OUT_BASE [--a2e | --e2a]  TABLE_FILES\n";
   exit shift;
 }
 
@@ -25,16 +25,19 @@ my (@tab_files,
     $help,
     $bad_args,
     $output_base,
+    $parse_only,
     $keep_aux,
     $a2e,
     $e2a
     );
+my $outputting = 1;
 
 GetOptions('-v' => \$verbose,
            '-f|foot=s' => \$foot_fmt,
            '-o=s' => \$output_base,
            '-h|help' => \$help,
            '-K|keep-aux' => \$keep_aux,
+           '-P' => \$parse_only,
            '--a2e' => \$a2e,
            '--e2a' => \$e2a
     ) or usage 1;
@@ -50,7 +53,6 @@ $PV::debug = $ReadTable::verbose = $verbose;
 };
 
 my $out_tex;
-my $outputting = 1;
 
 my $fnsuff = "-glossary";
 
@@ -92,13 +94,14 @@ EOF
 my @entries;
 
 sub add_entry {
-  my ($arabic,$artransl,$english,$foot,$notes) = @_;
+  my ($arabic,$artransl,$english,$foot,$notes,$props) = @_;
   push @entries, {
     arabic=>$arabic,
     artransl=>$artransl,
     english=>$english,
     foot=>$foot,
-    notes=>$notes
+    notes=>$notes,
+    %$props
   };
 }
 
@@ -109,14 +112,61 @@ my %entries_by_english;
 
 do "./foot_fmt.pl";
 
+# "indexby" is an indexing hint, a 5th column was added to vocabulary
+# tables for this purpose. indexby=X is added to certain words which
+# have homographs (and homonyms) (e.g. she writes, you (m) write,
+# "min" (from) vs "man" (who)). at the time there were only 5
+# homograph words in the main tables (with 789 entries) so it seemed
+# to make sense to treat them all individually. however maybe a better
+# solution should be invented. in particular there maybe is a need to
+# share notes between identical words in different decks, and this
+# calls for a more generic way of treating card identity
+
+sub entry_fold {
+  my ($lang,$e) = @_;
+  my $otherlang = $lang eq "arabic" ? "english" : "arabic";
+
+  my $s = $e->{$lang};
+  $s = CORE::fc($s); # case-fold
+  # remove leading and trailing space
+  $s =~ s/^\s+//u;
+  $s =~ s/\s+$//u;
+
+  # FHE 16 Sep 2018 XXX too much work (and error-prone) to collapse
+  # similar entries, we'll just list them separately
+  if(0) {
+    # remove diacritics?
+    # first change shadda to % to preserve it
+    $s =~ s/ّ/%/gu;
+    $s =~ s/\p{gc:Mn}//gu;
+    $s =~ s/%/ّ/gu;
+
+    # if we start with a letter, remove everything after \( or / (this
+    # removes plurals, feminine forms, present tense of verbs, etc.,
+    # which might not be provided for some entries)
+    
+    my $l = q{\pL\pM'’\d};
+    my $letter = qr|[$l]|u;
+    my $notletter = qr|[^$l]|u;
+    $s =~ s/^($letter($letter|\s)*)[\/()،,,؟].*/$1/gu;
+    $s =~ s/\s+$//u;
+  }
+  
+  if($e->{indexby}) {
+    $s = $s."/".$e->{indexby};
+  }
+
+  warn "entry_fold: ".$e->{$lang}." -> $s (".(foot_fmt($e->{foot})).")\n"
+      if $verbose;
+
+  return $s;
+}
 
 for my $e (@entries) {
-  # my $arf = entry_fold $e->{arabic};
-  # my $enf = entry_fold $e->{english};
-  # push @{$entries_by_arabic{$arf}} = $e;
-  # push @{$entries_by_english{$enf}} = $e;
-  $entries_by_arabic{$e->{arabic}} = $e;
-  $entries_by_english{$e->{english}} = $e;
+  my $arf = entry_fold "arabic", $e;
+  my $enf = entry_fold "english", $e;
+  push @{$entries_by_arabic{$arf}}, $e;
+  push @{$entries_by_english{$enf}}, $e;
 }
 
 # change above to use 'push'
@@ -137,7 +187,7 @@ sub entry_fixup {
 sub entry_sortable {
   my ($t) = @_;
   my $o=$t;
-#  $t = decode('utf-8', $t);
+
   $t = pad_digits($t);
   # need "u" modifier so \w gets Arabic too
   $t =~ s/^\W*//u;
@@ -146,49 +196,149 @@ sub entry_sortable {
   # erase all "nonspacing marks" (diacritics)
   $t =~ s/\p{gc:Mn}//gu;
   $t = CORE::fc $t;
-#  $t = encode('utf-8', $t);
+  
+  # remove infinitive marker when sorting English
+  $t =~ s/^to //g;
+  
 #  warn "$o -> $t\n";
   return $t;
 }
 
+sub write_entries {
+  my ($l1) = @_;
+  # l1 = index language
+  # l2 = other language
+  my $collfn = "$output_base-collisions-$l1.gen.txt";
+  warn "Writing collisions to $collfn\n" if $verbose;
+  open COLL, ">:encoding(UTF-8)", $collfn or
+      die "Couldn't open $collfn for writing";
+
+  my ($entries, $l2);
+  my ($acol, $ecol, $fcol) =
+      ('p{0.12\textwidth}','p{0.23\textwidth}','>{\scriptsize}p{0.08\textwidth}');
+  if($l1 eq "arabic") {
+    $l2 = "english";
+    $entries = \%entries_by_arabic;
+    # FHE 17 Sep 2018
+    # Include alphabet-order header for reference
+    print OUT <<\EOF;
+\section*{Arabic-English glossary}
+\begin{center}
+\small\ta{\input{alphabet-order}}
+\end{center}\vspace{-1em}
+EOF
+    print OUT <<EOF;
+\\begin{longtable}{$acol$ecol$fcol}
+EOF
+  } elsif($l1 eq "english") {
+    $l2 = "arabic";
+    $entries = \%entries_by_english;
+    print OUT <<EOF;
+\\section*{English-Arabic glossary}
+\\begin{longtable}{$ecol$acol$fcol}
+EOF
+  } else { die }
+  my @l = sort {
+    (entry_sortable $a) cmp
+        (entry_sortable $b) ||
+        # stabilize with last-resort comparisons
+        ($a cmp $b) ||
+        # last-resort: compare word text in other-language
+        ($entries->{$a}->{$l2}
+         cmp $entries->{$b}->{$l2})
+  } keys %$entries;
+  for my $k (@l) {
+    # get all the collisions for $k
+    my @e = @{$entries->{$k}};
+    # sort in descending order of length of text of entries (we'll
+    # choose the longest one of each language)
+    my @es1 = sort { length($b->{$l1}) <=>
+                         length($a->{$l1}) } @e;
+    my @es2 = sort { length($b->{$l2}) <=>
+                         length($a->{$l2}) } @e;
+    my ($t1) = entry_fixup $es1[0]->{$l1};
+    my ($t2) = entry_fixup $es2[0]->{$l2};
+    # list all the footers in order
+    my ($ft) = join(", ",
+                    map {foot_fmt_idx($_)}
+                    sort { (foot_sortable($a) cmp 
+                            foot_sortable($b)) }
+                    map {$_->{foot}} @e);
+    print OUT "$t1 & $t2 & $ft \\\\\n"
+        if $outputting;
+    if(@e > 1) {
+      print COLL join("\t", map {
+        my $e=$_;
+        my $f=entry_fold "arabic", $e;
+        $e->{$l1}.":".$f.":".$e->{$l2}.":".foot_fmt($e->{foot})
+                      } @e),"\n";
+    }
+  }
+  print OUT <<\EOF;
+\end{longtable}
+EOF
+
+  close COLL;
+}
+
 if($a2e) {
+  write_entries "arabic";
+}
+if($e2a) {
+  if($a2e) {
+    print OUT "\\pagebreak\n";
+  }
+  write_entries "english";
+}
+
+# original version of write_entries before both language directions
+# were folded into one subroutine
+if(0) {
+  my $collfn = "$output_base-collisions.gen.txt";
+  warn "Writing collisions to $collfn\n" if $verbose;
+  open COLL, ">:encoding(UTF-8)", $collfn or
+      die "Couldn't open $collfn for writing";
+  
   print OUT <<\EOF;
 \section*{Arabic-English glossary}
 \begin{longtable}{p{0.12\textwidth}p{0.23\textwidth}>{\scriptsize}p{0.08\textwidth}}
 EOF
-  my @l = sort { (entry_sortable $a) cmp
-                     (entry_sortable $b) } keys %entries_by_arabic;
+  my @l = sort {
+    (entry_sortable $a) cmp
+        (entry_sortable $b) ||
+        # stabilize with last-resort comparisons
+        ($a cmp $b) ||
+        ($entries_by_arabic{$a}->{english}
+            cmp $entries_by_arabic{$b}->{english})
+    } keys %entries_by_arabic;
   for my $k (@l) {
-    my $e = $entries_by_arabic{$k};
-    my ($ar) = entry_fixup $k;
-    my ($en) = entry_fixup $e->{english};
-    my ($ft) = foot_fmt_idx($e->{foot});
+    # get all the collisions for $k
+    my @e = @{$entries_by_arabic{$k}};
+    # sort in descending order of length of text of entry (we'll
+    # choose the longest one)
+    @e = sort { length($b->{arabic}) <=>
+                    length($a->{arabic}) } @e;
+    my ($ar) = entry_fixup $e[0]->{arabic};
+    my ($en) = entry_fixup $e[0]->{english};
+    # list all the footers in order
+    my ($ft) = join(", ",
+                    map {foot_fmt_idx($_)}
+                    sort { (foot_sortable($a) cmp 
+                            foot_sortable($b)) }
+                    map {$_->{foot}} @e);
     print OUT "$ar & $en & $ft \\\\\n"
-        if $outputting;
+                    if $outputting;
+    if(@e > 1) {
+      print COLL join("\t", map {
+        $_->{arabic}.":".$_->{english}.":".foot_fmt($_->{foot})
+                      } @e),"\n";
+    }
   }
   print OUT <<\EOF;
 \end{longtable}
 EOF
-}
-if($e2a) {
-  print OUT <<\EOF;
-\pagebreak
-\section*{English-Arabic glossary}
-\begin{longtable}{p{0.12\textwidth}p{0.23\textwidth}>{\scriptsize}p{0.08\textwidth}}
-EOF
-  my @l = sort { (entry_sortable $a) cmp
-                     (entry_sortable $b) } keys %entries_by_english;
-  for my $k (@l) {
-    my $e = $entries_by_english{$k};
-    my ($ar) = entry_fixup $e->{arabic};
-    my ($en) = entry_fixup $k;
-    my ($ft) = foot_fmt_idx($e->{foot});
-    print OUT "$ar & $en & $ft \\\\\n"
-        if $outputting;
-  }
-  print OUT <<\EOF;
-\end{longtable}
-EOF
+  
+  close COLL;
 }
 
 if($outputting) {
@@ -201,8 +351,10 @@ if($outputting) {
 \end{document}
 EOF
   close OUT;
-  sh ("xelatex $out_tex </dev/null >/dev/null 2>&1");
-  rename ("$output_base$fnsuff.gen.pdf", "$output_base$fnsuff.pdf");
+  unless($parse_only) {
+    sh ("xelatex $out_tex </dev/null >/dev/null 2>&1");
+    rename ("$output_base$fnsuff.gen.pdf", "$output_base$fnsuff.pdf");
+  }
   if(!$keep_aux) {
     unlink "$output_base$fnsuff.gen.log";
     unlink "$output_base$fnsuff.gen.aux";
