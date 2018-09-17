@@ -45,8 +45,8 @@ glossary](berkeleyarabic-glossary.pdf) for the above card decks (PDF)
 
 The glossary includes all of the Mastering Arabic 1 words (up to Unit
 16). It may be useful for review and also for reference, since the
-glossary in the Mastering Arabic book is only English to Arabic and
-doesn't list chapter numbers.
+glossary in the Mastering Arabic book is only in the English to Arabic
+direction, and doesn't list chapter numbers.
 
 Etymologies in the word list notes are mostly copied from Wiktionary.
 Most of the words don't have them; I added them for words that I
