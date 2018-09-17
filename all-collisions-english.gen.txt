@@ -13,37 +13,38 @@ cold:بارِد:بارِد:BCC Words 6	cold:بارِد:بارِد:Mastering Arab
 color:لَوْن(أَلْوان):لَوْن(أَلْوان):Mastering Arabic Unit 11	color:لَوْن(أَلْوان):لَوْن(أَلْوان):Colors
 doctor:دُكْتور،دُكْتورة:دُكْتور،دُكْتورة:BCC Words 6	doctor:طَبيب:طَبيب:Mastering Arabic Unit 9
 door:باب،أَبْواب:باب،أَبْواب:BCC Words 1	door:باب:باب:Mastering Arabic Unit 6
+easy:سَهْل،سَهْلة:سَهْل،سَهْلة:BCC Words 8	easy:سَهْل:سَهْل:Mastering Arabic Unit 1
 eggs:بَيْض:بَيْض:BCC Words 9	eggs:بَيْض:بَيْض:Mastering Arabic Unit 12
 eight:ثَمانية:ثَمانية:Numerals	eight:ثَمانِيَة:ثَمانِيَة:Mastering Arabic Unit 10
 five:خَمْسة:خَمْسة:Numerals	five:خَمْسَة:خَمْسَة:Mastering Arabic Unit 10
 forty:أَرْبَعِينَ:أَرْبَعِينَ:Mastering Arabic Unit 12	forty:أربعين:أربعين:Mastering Arabic Unit 14
 four:أربَعة:أربَعة:Numerals	four:أرْبَعَة:أرْبَعَة:Mastering Arabic Unit 10
-from:مِن،مِن ال/from:مِن،مِن ال:BCC Words 5	from:مِنْ/from:مِنْ:Mastering Arabic Unit 9
+from:مِن،مِن ال:مِن،مِن ال:BCC Words 5	from:مِنْ:مِنْ:Mastering Arabic Unit 9
 green:أَخْضَر:أَخْضَر:BCC Words 9	green:أَخْضَر(خَضْرَاء):أَخْضَر(خَضْرَاء):Mastering Arabic Unit 11	green:أَخْضَر(خَضْرَاء):أَخْضَر(خَضْرَاء):Colors
 he writes:يَكْتُب:يَكْتُب:BCC Words 2	He writes:يَكْتُبُ:يَكْتُبُ:Present Conjugations
 house:بَيْت،بُيُوت:بَيْت،بُيُوت:BCC Words 1	house:بَيْت:بَيْت:Mastering Arabic Unit 1
 man:رَجُل،رِجال:رَجُل،رِجال:BCC Words 5	man:رَجُل/رِجَال:رَجُل/رِجَال:Mastering Arabic Unit 14
 market:سوق/أَسْوَاق:سوق/أَسْوَاق:Mastering Arabic Unit 10	market:سوق(أسْواق):سوق(أسْواق):Mastering Arabic Unit 11
 morning:صَباح:صَباح:BCC Words 8	morning:صَبَاح:صَبَاح:Mastering Arabic Unit 13
-nine:تِسعة:تِسعة:Numerals	nine:تِسْعَة:تِسْعَة:Mastering Arabic Unit 10
+nine:تِسْعَة:تِسْعَة:Numerals	nine:تِسْعَة:تِسْعَة:Mastering Arabic Unit 10
 no:لا:لا:BCC Words 3	no:لا:لا:Mastering Arabic Unit 6
 one:واحِد:واحِد:Numerals	one:واحِد:واحِد:Mastering Arabic Unit 10
 plate:طَبَق/أَطْبَاق:طَبَق/أَطْبَاق:Mastering Arabic Unit 10	plate:طَبَق(أَطْباق):طَبَق(أَطْباق):Mastering Arabic Unit 11
 red:أَحْمَر(حَمْرَاء):أَحْمَر(حَمْرَاء):Mastering Arabic Unit 11	red:أَحْمَر(حَمْرَاء):أَحْمَر(حَمْرَاء):Colors
 river:نَهْر:نَهْر:Mastering Arabic Unit 3	river:نَهْر:نَهْر:Mastering Arabic Unit 6
 room:غُرْفة،غُرَف:غُرْفة،غُرَف:BCC Words 7	room:غُرْفة:غُرْفة:Mastering Arabic Unit 7
-seven:سَبعة:سَبعة:Numerals	seven:سَبْعَة:سَبْعَة:Mastering Arabic Unit 10
+seven:سَبْعَة:سَبْعَة:Numerals	seven:سَبْعَة:سَبْعَة:Mastering Arabic Unit 10
 sister:أُخْت،أَخَوات:أُخْت،أَخَوات:BCC Words 5	sister:أُخت:أُخت:Mastering Arabic Unit 3
 six:سِتّة:سِتّة:Numerals	six:سِتَّة:سِتَّة:Mastering Arabic Unit 10
-sugar:سُكَّر:سُكَّر:BCC Words 2	sugar:سُكَّر:سُكَّر:Mastering Arabic Unit 12
+sugar:سُكَّر:سُكَّر:BCC Words 2	sugar:سُكَّر:سُكَّر:Mastering Arabic Unit 12
 tea:شاي:شاي:BCC Words 3	tea:شاي:شاي:Mastering Arabic Unit 12
 ten:عَشْرة:عَشْرة:Numerals	ten:عَشَرَة:عَشَرَة:Mastering Arabic Unit 10
 The Middle East:الشَّرْق الأَوْسَط:الشَّرْق الأَوْسَط:BCC Words 8	The Middle East:الشَّرْق الأَوْسَط:الشَّرْق الأَوْسَط:Mastering Arabic Unit 9
-three:ثَلاثة:ثَلاثة:Numerals	three:ثَلاثة،۳:ثَلاثة،۳:BCC Words 4	three:ثَلاثَة:ثَلاثَة:Mastering Arabic Unit 10
+three:ثَلاثَة:ثَلاثَة:Numerals	three:ثَلاثة،۳:ثَلاثة،۳:BCC Words 4	three:ثَلاثَة:ثَلاثَة:Mastering Arabic Unit 10
 two:اِثْنَان:اِثْنَان:Numerals	two:اِثْنان:اِثْنان:Mastering Arabic Unit 10
 until:حَتَّى:حَتَّى:BCC Words 3	until:حَتَّى:حَتَّى:Mastering Arabic Unit 11
 water:ماء:ماء:BCC Words 5	water:مَاء:مَاء:Mastering Arabic Unit 13
-when?:مَتى؟:مَتى؟:Mastering Arabic Unit 13	when?:متى؟:متى؟:Mastering Arabic Unit 16
+when?:مَتى؟:مَتى؟:Mastering Arabic Unit 13	when?:مَتى؟:مَتى؟:Mastering Arabic Unit 16
 white:أبْيَض:أبْيَض:Mastering Arabic Unit 5	white:أَبْيَض(بَيْضَاء):أَبْيَض(بَيْضَاء):Mastering Arabic Unit 11	white:أَبْيَض(بَيْضَاء):أَبْيَض(بَيْضَاء):Colors
 who?:مَن؟:مَن؟:BCC Words 5	who?:مَن؟:مَن؟:Mastering Arabic Unit 3	who?:مَن:مَن:Mastering Arabic Unit 3
 with:مَعَ:مَعَ:Mastering Arabic Unit 3	with:مَعَ:مَعَ:Mastering Arabic Unit 13
