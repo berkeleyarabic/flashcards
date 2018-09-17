@@ -9,7 +9,7 @@ TABLES=letters-positions.tab numerals.tab \
 
 all: $(TABLES:.tab=.pdf) \
 	$(TABLES:.tab=-words.html) all-words.html \
-	index.html all-glossary.pdf
+	index.html all-glossary.pdf berkeleyarabic-glossary.pdf 
 
 clean:
 	rm -f $(TABLES:.tab=.pdf) \
@@ -32,11 +32,12 @@ pronouns.pdf : pronouns.tab pronouns.Ttex
 all-words.html : $(TABLES)
 	./make-wordlist $^ -o all
 
-all-glossary.pdf : $(TABLES)
+berkeleyarabic-glossary.pdf : $(TABLES)
 # exclude capitals from glossary because it looks funny to have Arabic
 # in wrong column
 	./make-glossary --e2a --a2e -K \
-		$(filter-out capitals.tab,$(TABLES)) -o all
+		$(filter-out capitals.tab,$(TABLES)) -o berkeleyarabic \
+		-t "Berkeley Arabic Glossary"
 
 TAGS: perl/*.pm *.pl
 	etags $^
