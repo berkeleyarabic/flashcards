@@ -26,6 +26,10 @@ sub tex_fixup {
   local $_ = shift;
   s/\b"/''/g; s/"\b/``/g;
   s/_/\\_/g;
+  # how to escape square brackets:
+  # https://tex.stackexchange.com/questions/305167/using-square-bracket-in-text-mode
+  s/\[/{[}/g;
+  s/\]/{]}/g;
   $_;
 }
 
