@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+
+# Tool to check that alphabet-order, from Wikipedia, agrees with
+# Perl's (unicode's?) sorting order
+
+binmode(STDOUT, ":utf8");
+binmode(STDIN, ":utf8");
+binmode(STDERR, ":utf8");
+
+open IN, "<:encoding(UTF-8)", "alphabet-order" or die;
+
+my @l;
+while(<IN>) {
+  chomp;
+  my @e = split /\s+/, $_;
+  push @l,@e;
+}
+#print join("\n",reverse @l),"\n";
+@l = sort @l;
+print join("\n",@l),"\n";
