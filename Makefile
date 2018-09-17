@@ -38,5 +38,5 @@ all-glossary.pdf : $(TABLES)
 	./make-glossary --e2a --a2e -K \
 		$(filter-out capitals.tab,$(TABLES)) -o all
 
-TAGS:
-	etags perl/*.pm
+TAGS: perl/*.pm *.pl
+	etags $^
