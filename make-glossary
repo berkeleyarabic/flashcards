@@ -51,7 +51,8 @@ my (@tab_files,
     $parse_only,
     $keep_aux,
     $a2e,
-    $e2a
+    $e2a,
+    $title
     );
 my $outputting = 1;
 
@@ -62,7 +63,8 @@ GetOptions('-v' => \$verbose,
            '-K|keep-aux' => \$keep_aux,
            '-P' => \$parse_only,
            '--a2e' => \$a2e,
-           '--e2a' => \$e2a
+           '--e2a' => \$e2a,
+           '-t|title=s' => \$title
     ) or usage 1;
 
 die "Need --a2e or --e2a" unless $a2e || $e2a;
@@ -101,6 +103,16 @@ if($outputting) {
 \documentclass[10pt]{article}
 \usepackage[margin=0.5in,includefoot]{geometry}
 \usepackage{multicol,supertabular,longtable}
+EOF
+  # set the PDF metadata title if we have a title
+  if(defined($title)) {
+    print OUT
+        "\\usepackage[pdftitle={$title}]{hyperref}\n"
+  } else {
+    print OUT
+        "\\usepackage{hyperref}\n"
+  }
+  print OUT <<\EOF;
 \renewcommand{\arraystretch}{1.2}
 \parindent=0pt
 \input{tex/arabic_common.tex}
@@ -111,6 +123,9 @@ if($outputting) {
 \chardef\LT@end@pen\z@
 \makeatother
 EOF
+  if(defined($title)) {
+    print OUT "\\section*{$title}\n";
+  }
 }
 
 my @entries;
@@ -205,6 +220,10 @@ sub entry_sortable {
   my $o=$t;
 
   $t = pad_digits($t);
+  
+  # remove infinitive marker when sorting English
+  $t =~ s/^to (\w)/$1/g;
+
   # need "u" modifier so \w gets Arabic too
   $t =~ s/^\W*//u;
   # erase "tatweel"
@@ -214,9 +233,6 @@ sub entry_sortable {
 
   # case-fold: we sort upper-case entries together with lower-case
   $t = CORE::fc $t;
-  
-  # remove infinitive marker when sorting English
-  $t =~ s/^to //g;
   
 #  warn "$o -> $t\n";
   return $t;
@@ -240,21 +256,22 @@ sub write_entries {
     # FHE 17 Sep 2018
     # Include alphabet-order header for reference
     print OUT <<\EOF;
-\section*{Arabic-English glossary}
+\subsection*{Arabic-English}
 \begin{center}
-\small\ta{\input{alphabet-order}}
+\ta{
+ء ا ب ت ث ج ح خ د ذ ر ز س ش \\
+ص ض ط ظ ع غ ف ق ك ل م ن ه و ي 
+}
 \end{center}\vspace{-1em}
 EOF
-    print OUT <<EOF;
-\\begin{longtable}{$acol$ecol$fcol}
-EOF
+    print OUT "\\begin{longtable}{$acol$ecol$fcol}\n";
   } elsif($l1 eq "english") {
     $l2 = "arabic";
     $entries = \%entries_by_english;
-    print OUT <<EOF;
-\\section*{English-Arabic glossary}
-\\begin{longtable}{$ecol$acol$fcol}
+    print OUT <<\EOF;
+\subsection*{English-Arabic}
 EOF
+    print OUT "\\begin{longtable}{$ecol$acol$fcol}\n";
   } else { die }
   my @l = sort {
     (entry_sortable $a) cmp
@@ -299,15 +316,17 @@ EOF
   close COLL;
 }
 
-# Write the glossaries that were requested
-if($a2e) {
-  write_entries "arabic";
-}
-if($e2a) {
+if($outputting) {
+  # Write the glossaries that were requested
   if($a2e) {
-    print OUT "\\pagebreak\n";
+    write_entries "arabic";
   }
-  write_entries "english";
+  if($e2a) {
+    if($a2e) {
+      print OUT "\\pagebreak\n";
+    }
+    write_entries "english";
+  }
 }
 
 # FHE 17 Sep 2018 original version of write_entries before both
@@ -362,6 +381,8 @@ EOF
 
 if($outputting) {
   print OUT <<\EOF;
+\vfill
+{\em Website: \url{http://berkeleyarabic.github.io/}}
 \egroup
 \setlength{\columnseprule}{0.4pt}
 \begin{multicols*}{2}
