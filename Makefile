@@ -9,7 +9,7 @@ TABLES=letters-positions.tab numerals.tab \
 
 all: $(TABLES:.tab=.pdf) \
 	$(TABLES:.tab=-words.html) all-words.html \
-	index.html all-glossary.pdf berkeleyarabic-glossary.pdf 
+	index.html berkeleyarabic-glossary.pdf
 
 clean:
 	rm -f $(TABLES:.tab=.pdf) \
