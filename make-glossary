@@ -1,4 +1,27 @@
 #!/usr/bin/perl
+
+# Create an Arabic-English and English-Arabic PDF glossary from
+# flashcard table files using LaTeX.
+
+# It was hard to figure out which tabular environment to use here.
+# Supertabular was a contender but gets the lengths wrong. Longtable
+# was thought not to work on multiple columns, but I discovered a
+# workaround for this, see URL in tex code below.
+
+# Uses ./foot_fmt.pl from make-wordlist to control formatting of card
+# footers for representation the index. Folds identical entries into
+# one using entry_fold (although we're cautious about folding, and
+# some entries which should be folded are not). Uses new "indexby"
+# label (in fith column from card tables) to avoid folding
+# homonyms/homographs.
+
+# When two entries are folded together, the translation is often
+# different, in which case the longest version is chosen.
+
+# Collisions (groups of folded entries) are output to
+# ${BASE}-collisions-{arabic,english}.gen.txt. These should be
+# version-controlled and checked for regressions.
+
 use warnings;
 use strict;
 BEGIN { push @INC, ".", "utils", "perl"; }
@@ -64,7 +87,6 @@ if($outputting) {
       ($output_base = $tab_files[0]) =~ s/\..*?$//;
     }
   }
-  pv '$output_base';
   $out_tex = "$output_base$fnsuff.gen.tex";
   warn "Writing to $out_tex\n" if $verbose;
   open OUT, ">:encoding(UTF-8)", $out_tex or die "Couldn't open $out_tex for writing";
@@ -132,7 +154,7 @@ sub entry_fold {
   $s =~ s/^\s+//u;
   $s =~ s/\s+$//u;
 
-  # FHE 16 Sep 2018 XXX too much work (and error-prone) to collapse
+  # FHE 16 Sep 2018 too much work (and error-prone) to collapse
   # similar entries, we'll just list them separately
   if(0) {
     # remove diacritics?
@@ -169,12 +191,6 @@ for my $e (@entries) {
   push @{$entries_by_english{$enf}}, $e;
 }
 
-# change above to use 'push'
-# entry_fold
-# choose longest entry for each fold collision
-# write collisions to file
-# manually resolve some collisions if necessary
-
 sub entry_fixup {
   my ($t) = @_;
   $t = arabic_fixup $t;
@@ -195,6 +211,8 @@ sub entry_sortable {
   $t =~ s/ـ//g;
   # erase all "nonspacing marks" (diacritics)
   $t =~ s/\p{gc:Mn}//gu;
+
+  # case-fold: we sort upper-case entries together with lower-case
   $t = CORE::fc $t;
   
   # remove infinitive marker when sorting English
@@ -281,6 +299,7 @@ EOF
   close COLL;
 }
 
+# Write the glossaries that were requested
 if($a2e) {
   write_entries "arabic";
 }
@@ -291,8 +310,8 @@ if($e2a) {
   write_entries "english";
 }
 
-# original version of write_entries before both language directions
-# were folded into one subroutine
+# FHE 17 Sep 2018 original version of write_entries before both
+# language directions were folded into one subroutine
 if(0) {
   my $collfn = "$output_base-collisions.gen.txt";
   warn "Writing collisions to $collfn\n" if $verbose;
