@@ -3,6 +3,17 @@ use warnings;
 use strict;
 BEGIN { push @INC, ".", "utils", "perl"; }
 
+# Generate an HTML word list from flashcard vocabulary table files.
+# These include etymology notes and we chose HTML because that makes
+# it easier to represent the many scripts which appear in etymologies
+# (Hebrew, Syriac, Greek, etc.). Also, conceivably at some point we
+# could add javascript to allow the user to select groups of words, or
+# hide the notes.
+
+# Uses ./foot_fmt.pl to configure how card footers are formatted for
+# the HTML wordlists. Footers which differ from the previous footer
+# only by an appended "+" or "-" are indicated with a horizontal line.
+
 use ArabicTeX;
 use ReadTable;
 
@@ -85,7 +96,6 @@ sub add_entry {
 read_vocab_table(\&add_entry, \@tab_files);
 
 my %entries_by_feet;
-#pv '\@entries';
 
 for my $e (@entries) {
   push @{$entries_by_feet{$e->{foot}}}, $e;
@@ -104,19 +114,15 @@ if($outputting) {
   my $prev_ffmt=undef;
   for my $f (sort {foot_cmp($a,$b)} keys %entries_by_feet) {
 
-#    my $ffmt = foot_fold $f;
     my $ffmt = foot_fmt($f);
-#    pv 'foot_sortable $f';
+    # Footer changed, print a new header
     if(!defined $prev_ffmt || $ffmt ne $prev_ffmt) {
       print OUT "<div class=\"foothead\">$ffmt</div> |||\n\n";
-    } else {
-#      print OUT "\n";
     }
     $prev_ffmt = $ffmt;
     
     my @es = @{$entries_by_feet{$f}};
     for my $e (@es) {
-      # pv '$e';
       my ($ar,$art,$en,$no) =
           map {markdown_fixup $_}
           @$e{qw(arabic artransl english notes)};
