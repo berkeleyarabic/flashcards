@@ -4,14 +4,18 @@ sub foot_fold {
   return $f;
 }
 
+# Format card footer for word lists
 sub foot_fmt {
   my ($f) = @_;
   $f = foot_fold $f;
   $f =~ s/^MA /Mastering Arabic /;
   $f =~ s/[?+-]*$//g;
+  $f =~ s/\s+$//g;
+  $f =~ s/^\s+//g;
   return $f;
 }
 
+# Format card footer for index
 sub foot_fmt_idx {
   my ($f) = @_;
 #  $f = foot_fold $f;
