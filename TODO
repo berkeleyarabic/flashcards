@@ -1,3 +1,23 @@
+- move "how to study" to separate document
+
+    - talk about deficiencies of computer-only flashcard systems
+    - use of glossaries and word-lists
+    - importance of using flashcard together with course or reading material
+
+- change indexby words to have hints in Arabic?
+
+    - e.g. dhahab (material) : gold
+    - e.g. dhahab (not verb) : gold
+    - e.g. taktubu (not she) : you (m) write
+
+- experiment with four-word cards
+
+- Qur'an vocab
+
+- https://quizlet.com/10941689/the-99-names-of-allah-flash-cards/
+
+- glossary for just BCC Arabic 1A
+
 - change wordlist to use CGI::HTML::Functions, rather than
   multimarkdown
 
