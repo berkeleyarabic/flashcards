@@ -36,3 +36,7 @@ berkeleyarabic-glossary.pdf : $(TABLES)
 
 TAGS: perl/*.pm *.pl
 	etags $^
+
+# https://stackoverflow.com/questions/16467718/how-to-print-out-a-variable-in-makefile
+# modified to produce zsh arrays
+print-%  : ; @echo $*="(" $($*) ")"
