@@ -1,7 +1,13 @@
 #!/bin/zsh
 
+# Script to print a document one page at a time, in case you don't
+# have a duplex printer. Uses ghostscript and CUPS.
+
 # Prints all pages by default; to specify a subset use e.g.:
 # PAGES=$(echo {4..7}) page-at-a-time doc.pdf
+
+# FHE 12 Oct 2018 change to using gs instead of page-ranges because of
+# a cups-filters bug where page-ranges won't work on remote printers
 
 IN=$1
 
@@ -16,8 +22,12 @@ eval "pages=($PAGES)"
 echo PAGES=$PAGES
 last=$pages[-1]
 
+SEL=$(mktemp -t page-at-a-time.XXXXXXX.pdf)
+
 for i in $pages; do
     >&2 echo "Printing page $i";
-    lp -o page-ranges=$i $IN;
+    gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dFirstPage=$i -dLastPage=$i -sOutputFile=$SEL $IN
+#    lp -o page-ranges=$i $IN;
+    lp $SEL;
     [[ $i -lt $last ]] && read;
 done
