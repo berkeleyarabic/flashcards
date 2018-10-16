@@ -21,7 +21,7 @@ use utf8;
 binmode(STDOUT, ":utf8");
 binmode(STDERR, ":utf8");
 
-use U;
+use U qw(sh pv);
 
 use Getopt::Long;
 Getopt::Long::Configure ("bundling", "no_ignore_case");
