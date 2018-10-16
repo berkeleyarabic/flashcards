@@ -5,16 +5,18 @@ TABLES=letters-positions.tab numerals.tab \
 	classroom-vocab.tab \
 	colors.tab pronouns-possessives.tab \
 	capitals.tab \
-	verb-conj-ktb.tab
+	verb-conj-ktb.tab \
+	bas-verbs.tab \
+	bas-countryside.tab
 
-all: $(TABLES:.tab=.pdf) \
+ALLDEPS=$(TABLES:.tab=.pdf) \
 	$(TABLES:.tab=-words.html) all-words.html \
 	index.html berkeleyarabic-glossary.pdf
 
+all: $(ALLDEPS)
+
 clean:
-	rm -f $(TABLES:.tab=.pdf) \
-		$(TABLES:.tab=-words.html) all-words.html \
-		index.html
+	rm -f $(ALLDEPS)
 
 index.html: INDEX.md
 	./run-mmd -D $<
