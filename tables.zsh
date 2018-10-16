@@ -1,1 +1,0 @@
-TABLES=($(cat tables.txt))

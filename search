@@ -1,4 +1,5 @@
 #!/bin/zsh
 
-. ./tables.zsh
+eval $(make print-TABLES)
+
 ./search-cards "$@" $TABLES
