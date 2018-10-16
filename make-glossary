@@ -398,6 +398,9 @@ EOF
   if(!$keep_aux) {
     unlink "$output_base$fnsuff.gen.log";
     unlink "$output_base$fnsuff.gen.aux";
-    unlink "$output_base$fnsuff.gen.tex";
+
+    # FHE 16 Oct 2018 we should keep this around for regression
+    # testing between glossary versions
+#    unlink "$output_base$fnsuff.gen.tex";
   }
 }
