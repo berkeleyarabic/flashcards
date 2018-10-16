@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+eval $(make print-ALLDEPS print-TABLES)
+
+git diff "$@" -- ':(exclude)*.gen.*' ':(exclude)'${^ALLDEPS}

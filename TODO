@@ -1,3 +1,7 @@
+- do something like publish-latest to manage generated files? https://blog.kentcdodds.com/why-i-don-t-commit-generated-files-to-master-a4d76382564?gi=c8d63c52d50d
+
+    \- for now use git-diff-sources
+
 - check that scripts don't depend on anything in my home directory
 
 - move "how to study" to separate document
