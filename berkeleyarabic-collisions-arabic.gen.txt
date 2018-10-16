@@ -21,6 +21,7 @@
 سَبْعَة:سَبْعَة:seven:Numerals	سَبْعَة:سَبْعَة:seven:Mastering Arabic Unit 10
 سُكَّر:سُكَّر:sugar:BCC Words 2	سُكَّر:سُكَّر:sugar:Mastering Arabic Unit 12
 شاي:شاي:tea:BCC Words 3	شاي:شاي:tea:Mastering Arabic Unit 12
+شَجَر:شَجَر:trees:Mastering Arabic Unit 7	شَجَر:شَجَر:tree:BAS Countryside
 صِفْر:صِفْر:zero:Numerals	صِفْر:صِفْر:zero:Mastering Arabic Unit 10	صِفْر:صِفْر:zero:Mastering Arabic Unit 14
 عُنْوان:عُنْوان:address, title of book:BCC Words 9	عُنْوان:عُنْوان:address:Mastering Arabic Unit 10
 قَبْلَ:قَبْلَ:before, prior to:BCC Words 6	قَبْلَ:قَبْلَ:before:Mastering Arabic Unit 13
@@ -33,7 +34,7 @@
 مَن؟:مَن؟:who?:BCC Words 5	مَن؟:مَن؟:who?:Mastering Arabic Unit 3
 نَحْنُ:نَحْنُ:we:Mastering Arabic Unit 4	نَحْنُ:نَحْنُ:we (1st m/f dual/pl):Pronouns
 نِصْف:نِصْف:half or middle:Mastering Arabic Unit 10	نِصْف:نِصْف:half:Mastering Arabic Unit 16
-نَهْر:نَهْر:river:Mastering Arabic Unit 3	نَهْر:نَهْر:river:Mastering Arabic Unit 6
+نَهْر:نَهْر:river:Mastering Arabic Unit 3	نَهْر:نَهْر:river:Mastering Arabic Unit 6	نَهْر:نَهْر:river:BAS Countryside
 هُمْ:هُمْ:they (masc.):Mastering Arabic Unit 4	هُمْ:هُمْ:they (males) (3rd m pl):Pronouns
 هُوَ:هُوَ:he (and it, masc.):Mastering Arabic Unit 3	هُوَ:هُوَ:he (3rd m sg):Pronouns
 هِيَ:هِيَ:she (and it, fem.):Mastering Arabic Unit 3	هِيَ:هِيَ:she (3rd f sg):Pronouns
