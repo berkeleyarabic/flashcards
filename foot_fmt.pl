@@ -53,7 +53,9 @@ sub foot_sortable {
   $order = 8 if $f =~ /^Present Conj/i;
   $order = 9 if $f =~ /^Capitals/i;
   $order = 10 if $f =~ /^Colors/i;
-  $order = 11 if $f =~ /^Alphabet/i;
+  $order = 11 if $f =~ /^BAS Countryside/i;
+  $order = 12 if $f =~ /^BAS Verbs/i;
+  $order = 20 if $f =~ /^Alphabet/i;
   unless(defined $order) {
     warn "Unrecognized footnote type $f, sorting to end";
     $order = 1000;
