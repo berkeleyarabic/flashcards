@@ -35,7 +35,12 @@ Miscellaneous:
 - [Pronouns, with possessive suffixes](pronouns-possessives.pdf) *([word list](pronouns-possessives-words.html), 12 words)*
 - [Past and present conjugations of "read"](verb-conj-ktb.pdf) *([word list](verb-conj-ktb-words.html), 26 words)*
 - [Middle-East country capitals](capitals.pdf) *([word list](capitals-words.html), 10 words)*
-- [Colors](colors.pdf) *([word list](colors-words.html), 11 words)*
+- [Colors](colors.pdf) *([word list](colors-words.html), 13 words)*
+
+Vocabulary lists from Berkeley Adult School:
+
+- [Countryside words](bas-countryside.pdf) *([word list](bas-countryside-words.html), 12 words)*
+- [Verbs](bas-verbs.pdf) *([word list](bas-verbs-words.html), 21 words)*
 
 ### Word lists and glossary
 
@@ -48,9 +53,12 @@ The glossary includes all of the Mastering Arabic 1 words (up to Unit
 glossary in the Mastering Arabic book is only in the English to Arabic
 direction, and doesn't list chapter numbers.
 
-Etymologies in the word list notes are mostly copied from Wiktionary.
-Most of the words don't have them; I added them for words that I
-thought were confusing. I can add more if there is interest.
+Etymologies in the word list notes are mostly copied from each word's
+entry in [Wiktionary](https://en.wiktionary.org), which are in turn
+copied from various dictionaries. Most of the words don't have notes;
+I added them for words that I thought were especially interesting or
+confusing. The notes are a work in progress and I am happy to make
+corrections or additions.
 
 ### Deck notes
 
@@ -86,23 +94,28 @@ A few cards have transliterations provided. These are formatted so that the tran
 
 ### Printing flashcards
 
-Ideally these should be duplex-printed on *card stock* paper, and cut
-out using a paper cutter. I print them at my local print shop, Sukam
-Copy, at University and 7th, for $0.25/page. This translates to $5 per
-100 words. They also have a paper cutter which you can use for free
-(but it is dull!). If you own a good duplex printer then you can buy
-your own card stock and print the cards at home for cheaper.
+Ideally these should be printed on *card stock* paper, duplex (meaning
+two-sided), and cut out using a paper cutter. I print them at my local
+print shop, Sukam Copy, at University and 7th, for $0.25/page. This
+translates to $5 per 100 words. They also have a paper cutter which
+you can use for free (but it is dull!). If you own a good duplex
+printer then you can buy your own card stock and print the cards at
+home for cheaper. If you don't have card stock, you can use colored
+paper, which will help to hide what's on the other side of the card.
+There is also the option of printing the cards single-sided and then
+gluing alternate sheets back-to-back.
 
 ### How to study
 
 Generally I learn words Arabic to English first, a few at a time. This
-can be done by taking a few cards out of the deck, like with Mr.
-Becker's "splits" in eyeVocab; or you can hold the full deck and
-insert each card just below the top until you've learned it. As I go
-through the cards in this way, I try to guess how long I'll be able to
-remember each word, and I insert it at a corresponding depth in the
-deck: harder words go close to the top, easier words go further down.
-When I feel I have mastered a word I put it at the bottom.
+can be done by taking a few cards out of the deck and learning them
+separately (like with Mr. Becker's "splits" in eyeVocab). Or you can
+hold the full deck and insert each card just below the top until
+you've learned it. As I go through the cards in this way, I try to
+guess how long I'll be able to remember each word, and I insert it at
+a corresponding depth in the deck: harder words go close to the top,
+easier words go further down. When I feel I have mastered a word I put
+it at the bottom.
 
 Eventually I can go through the deck in one pass and guess all the
 English words correctly. At that point I turn the deck over and learn
@@ -120,7 +133,8 @@ envelopes, which I eventually throw away.
 Sometimes I use silly mnemonics to remember an Arabic word - if "big"
 is "kabīr" كَبير then I could think of a beer or a bear or something
 big. But I find that it is generally preferable to look up the word (I
-use Wiktionary) and get the [definition and
+use [Wiktionary](https://en.wiktionary.org)) and get the [definition
+and
 etymology](https://en.wiktionary.org/wiki/%D9%83%D8%A8%D9%8A%D8%B1),
 then we see that "kabīr" shares the same
 [root](https://en.wiktionary.org/wiki/%D9%83_%D8%A8_%D8%B1#Arabic) as
