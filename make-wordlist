@@ -27,7 +27,7 @@ use Getopt::Long;
 Getopt::Long::Configure ("bundling", "no_ignore_case");
 
 sub usage {
-  warn "Usage: make-index -o OUT_BASE  TABLE_FILES\n";
+  warn "Usage: make-wordlist -o OUT_BASE  TABLE_FILES\n";
   exit shift;
 }
 
