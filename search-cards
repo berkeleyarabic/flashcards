@@ -8,13 +8,13 @@ use ReadTable;
 
 binmode(STDOUT, ":utf8");
 binmode(STDERR, ":utf8");
-#use U;
+use U qw(pv);
 
 use Getopt::Long;
 Getopt::Long::Configure ("bundling", "no_ignore_case");
 
 sub usage {
-  warn "Usage: search-cards [-v] [-F] SEARCH_STR TABLE_FILES\n";
+  warn "Usage: search-cards [-v] [-F|-N] SEARCH_STR TABLE_FILES\n";
   exit shift;
 }
 
@@ -24,12 +24,14 @@ my (@tab_files,
     $bad_args,
     $search_str,
     $whole_word,
-    $foreign_only
+    $foreign_only,
+    $notes_only
     );
 
 GetOptions('-v' => \$verbose,
            '-w' => \$whole_word,
            '-F' => \$foreign_only,
+           '-N' => \$notes_only,
            '-h|help' => \$help,
     ) or usage 1;
 
@@ -48,15 +50,16 @@ $search_str = "\\b$search_str\\b" if $whole_word;
 sub do_search {
   my (@fields) = @_;
   @fields = map { $_ || "" } @fields;
-  if(join(" ",@fields) =~ /$search_str/i) {
+  my $str = join(" ",@fields);
+  if($str =~ /$search_str/i) {
     print "$tab_fn: $curr_line\n";
   }
 }
 
 sub card {
-  my ($arabic,$english,$group) = @_;
-  my ($foot) = format_group $group;
-  return do_search($arabic) if($foreign_only);
+  my ($arabic,$artransl,$english,$foot,$notes,$pdict) = @_;
+  return do_search($arabic) if $foreign_only;
+  return do_search($notes) if $notes_only;
   return do_search($arabic, $english, $foot);
 }
 
