@@ -22,10 +22,10 @@ pronouns.pdf : pronouns.tab pronouns.Ttex
 	./table-to-cards $<
 
 %-words.html : %.tab
-	./make-wordlist $<
+	./make-wordlist-cgi $<
 
 all-words.html : $(TABLES)
-	./make-wordlist $^ -o all
+	./make-wordlist-cgi $^ -o all
 
 berkeleyarabic-glossary.pdf : $(TABLES)
 # exclude capitals from glossary because it looks funny to have Arabic
