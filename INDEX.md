@@ -41,6 +41,7 @@ Vocabulary lists from Berkeley Adult School:
 
 - [Countryside words](bas-countryside.pdf) *([word list](bas-countryside-words.html), 12 words)*
 - [Verbs](bas-verbs.pdf) *([word list](bas-verbs-words.html), 21 words)*
+- [Body parts](bas-body-parts.pdf) *([word list](bas-body-parts-words.html), 12 words)*
 
 ### Word lists and glossary
 
@@ -90,7 +91,19 @@ them](https://en.wikipedia.org/wiki/Arabic_grammar#Pronouns) first.
 Note the Mastering Arabic cards already include pronouns and endings
 as they are introduced by the textbook.
 
-A few cards have transliterations provided. These are formatted so that the transliteration is on the left, and the Arabic is on the right. This is supposed to make it easy to cover the transliteration with your thumb in case you don't want to see it.
+**Berkeley Adult School words:** These are some words from Mr. Omer's
+Arabic class at the Berkeley Adult School. The "body parts" list is a
+work in progress, I tried to include the plurals from Wiktionary but
+most entries have multiple plurals corresponding to different usages.
+For example "dog with three heads" vs "heads of state" would use
+different forms of the plural noun "heads" in Arabic. The problem is
+that I don't know which is which, so the cards just list all
+possibilities.
+
+A few cards have transliterations provided. These are formatted so
+that the transliteration is on the left, and the Arabic is on the
+right. This is supposed to make it easy to cover the transliteration
+with your thumb in case you don't want to see it.
 
 ### Printing flashcards
 
