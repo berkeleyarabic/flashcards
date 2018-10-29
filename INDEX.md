@@ -44,6 +44,10 @@ Vocabulary lists from Berkeley Adult School:
 - [Verbs](bas-verbs.pdf) *([word list](bas-verbs-words.html), 21 words)*
 - [Body parts](bas-body-parts.pdf) *([word list](bas-body-parts-words.html), 12 words)*
 
+Blank flashcard sheet:
+
+- [Blanks](blanks.pdf)
+
 ### Word lists and glossary
 
 * [English-Arabic and Arabic-English
