@@ -17,15 +17,22 @@ gluing alternate sheets back-to-back.
 
 ## How to study with flashcards
 
-Generally I learn words Arabic to English first, a few at a time. This
-can be done by taking a few cards out of the deck and learning them
-separately (like with Mr. Becker's "splits" in eyeVocab). Or you can
-hold the full deck and insert each card just below the top until
-you've learned it. As I go through the cards in this way, I try to
-guess how long I'll be able to remember each word, and I insert it at
-a corresponding depth in the deck: harder words go close to the top,
-easier words go further down. When I feel I have mastered a word I put
-it at the bottom.
+It is best to use flashcards as part of a language course, so that
+once you have learned a word, you can have an opportunity to hear it
+pronounced, and to see it and use it in example sentences. If I try to
+learn words in isolation then I find that I have nothing to connect
+them to, and they are easily forgotten.
+
+When studying with these cards I learn words Arabic to English first.
+To make sure new words are reinforced before moving out of short-term
+memory, you can take a few cards out of the deck and learn them
+together as a small group (the approach of memrise.com and eyeVocab).
+Or you can hold the full deck and insert each card just below the top
+until you've learned it well. As I go through the cards in this way, I
+try to guess how long I'll be able to remember each word, and I insert
+it at a corresponding depth in the deck: unfamiliar or difficult words
+go close to the top, familiar or easy words go further down. When I
+feel I have mastered a word I put it at the bottom.
 
 Eventually I can go through the deck in one pass and guess all the
 English words correctly. At that point I turn the deck over and learn
