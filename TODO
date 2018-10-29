@@ -1,6 +1,14 @@
-- do something like publish-latest to manage generated files? https://blog.kentcdodds.com/why-i-don-t-commit-generated-files-to-master-a4d76382564?gi=c8d63c52d50d
+- introduce labels for each line. base-64:
 
-    \- for now use git-diff-sources
+    <@gKGR1d> line of text
+    <@gKGR1d< new line of text
+
+    script to read and write each file, resulting in
+
+    <@gKGR1d> new line of text
+    <@gKGR1d> new line of text
+
+    produces error if a label has more than one "<@<"
 
 - check that scripts don't depend on anything in my home directory
 
@@ -40,6 +48,10 @@
 - generalize fixup subs to multiple language scripts?
 
 - PV.pm, U.pm - remove unnecessary stuff
+
+- do something like publish-latest to manage generated files? https://blog.kentcdodds.com/why-i-don-t-commit-generated-files-to-master-a4d76382564?gi=c8d63c52d50d
+
+    \- for now use git-diff-sources
 
 ----------------
 
