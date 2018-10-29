@@ -15,3 +15,4 @@ verb-conj-ktb.tab
 bas-verbs.tab
 bas-countryside.tab
 bas-body-parts.tab
+weekdays.tab

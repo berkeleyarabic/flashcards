@@ -36,6 +36,7 @@ Miscellaneous:
 - [Past and present conjugations of "to write"](verb-conj-ktb.pdf) *([word list](verb-conj-ktb-words.html), 26 words)*
 - [Middle-East country capitals](capitals.pdf) *([word list](capitals-words.html), 10 words)*
 - [Colors](colors.pdf) *([word list](colors-words.html), 13 words)*
+- [Weekdays](weekdays.pdf) *([word list](weekdays-words.html), 8 words)*
 
 Vocabulary lists from Berkeley Adult School:
 
