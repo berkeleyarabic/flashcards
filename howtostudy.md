@@ -2,6 +2,19 @@ Title: Flashcards study tips {{header.mdi}} <!-- -*- my-source-command: "./run-m
 
 <div markdown=1 id="page-wrap"> <!-- run-mmd inserts the closing tag at the bottom -->
 
+## Printing flashcards
+
+Ideally these should be printed on *card stock* paper, duplex (meaning
+two-sided), and cut out using a paper cutter. I print them at my local
+print shop, Sukam Copy, at University and 7th, for $0.25/page. This
+translates to $5 per 100 words. They also have a paper cutter which
+you can use for free (but it is dull!). If you own a good duplex
+printer then you can buy your own card stock and print the cards at
+home for cheaper. If you don't have card stock, you can use colored
+paper, which will help to hide what's on the other side of the card.
+There is also the option of printing the cards single-sided and then
+gluing alternate sheets back-to-back.
+
 ## How to study with flashcards
 
 Generally I learn words Arabic to English first, a few at a time. This
