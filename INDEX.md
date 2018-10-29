@@ -33,7 +33,7 @@ Miscellaneous:
 - [Numerals with Arabic pronunciation](numerals.pdf) *([word list](numerals-words.html), 11 words)*
 - [Classroom vocabulary](classroom-vocab.pdf) *([word list](classroom-vocab-words.html), 37 words)*
 - [Pronouns, with possessive suffixes](pronouns-possessives.pdf) *([word list](pronouns-possessives-words.html), 12 words)*
-- [Past and present conjugations of "read"](verb-conj-ktb.pdf) *([word list](verb-conj-ktb-words.html), 26 words)*
+- [Past and present conjugations of "to write"](verb-conj-ktb.pdf) *([word list](verb-conj-ktb-words.html), 26 words)*
 - [Middle-East country capitals](capitals.pdf) *([word list](capitals-words.html), 10 words)*
 - [Colors](colors.pdf) *([word list](colors-words.html), 13 words)*
 
