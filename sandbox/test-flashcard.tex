@@ -1,0 +1,25 @@
+% my-latex-command: xelatex
+\documentclass[avery5371,grid,frame]{flashcards}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{arabic}
+%\newfontfamily\arabicfont[Script = Arabic]{Simplified Arabic}
+\newfontfamily\arabicfont[Script = Arabic]{Scheherazade-Regular}
+%\usepackage[free]{ARfonts}
+
+\usepackage[utf8x]{inputenc}
+
+\usepackage{relsize}
+\newcommand{\ta}[1]{\textarabic{\larger[2] #1}}
+
+\begin{document}
+
+\cardfrontstyle{headings}
+\cardfrontfoot{Body Parts}
+
+\begin{flashcard}{\LARGE arm}
+\LARGE \ta{ذِرَاع / أَذْرُع, ذُرْعَان} (f)
+\end{flashcard}
+
+
+\end{document}
