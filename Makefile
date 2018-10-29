@@ -4,7 +4,7 @@ TABLES:=$(shell cat tables.txt)
 
 ALLDEPS=$(TABLES:.tab=.pdf) \
 	$(TABLES:.tab=-words.html) all-words.html \
-	index.html berkeleyarabic-glossary.pdf
+	index.html howtostudy.html berkeleyarabic-glossary.pdf
 
 all: $(ALLDEPS)
 
@@ -12,6 +12,9 @@ clean:
 	rm -f $(ALLDEPS)
 
 index.html: INDEX.md
+	./run-mmd -D $<
+
+howtostudy.html: howtostudy.md
 	./run-mmd -D $<
 
 # FHE 10 Sep 2018 This is old and not part of 'all'
