@@ -7,6 +7,9 @@ ma-unit-9-10.tab
 ma-unit-11-13.tab
 ma-unit-14.tab
 ma-unit-16.tab
+ma-unit-17.tab
+ma-unit-18.tab
+ma-unit-19.tab
 classroom-vocab.tab
 colors.tab
 pronouns-possessives.tab
