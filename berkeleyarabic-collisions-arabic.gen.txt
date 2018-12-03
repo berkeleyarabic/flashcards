@@ -2,11 +2,14 @@
 أَحْمَر(حَمْرَاء):أَحْمَر(حَمْرَاء):red:Mastering Arabic Unit 11	أَحْمَر(حَمْرَاء):أَحْمَر(حَمْرَاء):red:Colors
 أَخْضَر(خَضْرَاء):أَخْضَر(خَضْرَاء):green:Mastering Arabic Unit 11	أَخْضَر(خَضْرَاء):أَخْضَر(خَضْرَاء):green:Colors
 أَزْرَق(زَرْقَاء):أَزْرَق(زَرْقَاء):blue:Mastering Arabic Unit 11	أَزْرَق(زَرْقَاء):أَزْرَق(زَرْقَاء):blue:Colors
+أُسْبُوع:أُسْبُوع:week:Mastering Arabic Unit 14	أُسْبُوع:أُسْبُوع:week:Mastering Arabic Unit 17
 أَسْوَد(سَوْدَاء):أَسْوَد(سَوْدَاء):black:Mastering Arabic Unit 11	أَسْوَد(سَوْدَاء):أَسْوَد(سَوْدَاء):black:Colors
 أَصْفَر(صَفْراَء):أَصْفَر(صَفْراَء):yellow:Mastering Arabic Unit 11	أَصْفَر(صَفْراَء):أَصْفَر(صَفْراَء):yellow:Colors
+أَفْضَل:أَفْضَل:best:Mastering Arabic Unit 11	أَفْضَل:أَفْضَل:better/best:Mastering Arabic Unit 17
 أَنْتَ:أَنْتَ:you (male):Mastering Arabic Unit 2	أَنْتَ:أَنْتَ:you male (2nd m sg):Pronouns
 أَنْتِ:أَنْتِ:you (female):Mastering Arabic Unit 2	أَنْتِ:أَنْتِ:you female (2nd f sg):Pronouns
 أَنْتُمْ:أَنْتُمْ:you (plural):Mastering Arabic Unit 9	أَنْتُمْ:أَنْتُمْ:you all males (2nd m pl):Pronouns
+الآن:الآن:now:BCC Words 4	الآن:الآن:now:Mastering Arabic Unit 17
 الشَّرْق الأَوْسَط:الشَّرْق الأَوْسَط:The Middle East:BCC Words 8	الشَّرْق الأَوْسَط:الشَّرْق الأَوْسَط:The Middle East:Mastering Arabic Unit 9
 بارِد:بارِد:cold:BCC Words 6	بارِد:بارِد:cold:Mastering Arabic Unit 12
 بَعْدَ ذٰلِكَ:بَعْدَ ذٰلِكَ:after that:Mastering Arabic Unit 12	بَعْدَ ذٰلِكَ:بَعْدَ ذٰلِكَ:after that:Mastering Arabic Unit 13
@@ -14,7 +17,8 @@
 بَيْنَ:بَيْنَ:between:Mastering Arabic Unit 1	بَيْنَ:بَيْنَ:between:Mastering Arabic Unit 6
 تِسْعَة:تِسْعَة:nine:Numerals	تِسْعَة:تِسْعَة:nine:Mastering Arabic Unit 10
 ثَلاثَة:ثَلاثَة:three:Numerals	ثَلاثَة:ثَلاثَة:three:Mastering Arabic Unit 10
-حَتَّى:حَتَّى:until:BCC Words 3	حَتَّى:حَتَّى:until:Mastering Arabic Unit 11
+حَتَّى:حَتَّى:until:BCC Words 3	حَتَّى:حَتَّى:until:Mastering Arabic Unit 11	حَتَّى:حَتَّى:until:Mastering Arabic Unit 18
+خارِج:خارِج:outside (of):Mastering Arabic Unit 16	خارِج:خارِج:outside of:Mastering Arabic Unit 18
 خُبْز:خُبْز:bread:BCC Words 6	خُبْز:خُبْز:bread:Mastering Arabic Unit 12
 خَمْسَة:خَمْسَة:five:Numerals	خَمْسَة:خَمْسَة:five:Mastering Arabic Unit 10
 دَجاج:دَجاج:chicken:BCC Words 6	دَجاج:دَجاج:chicken:Mastering Arabic Unit 5	دَجاج:دَجاج:chicken:Mastering Arabic Unit 12
@@ -24,7 +28,7 @@
 شَجَر:شَجَر:trees:Mastering Arabic Unit 7	شَجَر:شَجَر:tree:BAS Countryside
 صِفْر:صِفْر:zero:Numerals	صِفْر:صِفْر:zero:Mastering Arabic Unit 10	صِفْر:صِفْر:zero:Mastering Arabic Unit 14
 عُنْوان:عُنْوان:address, title of book:BCC Words 9	عُنْوان:عُنْوان:address:Mastering Arabic Unit 10
-قَبْلَ:قَبْلَ:before, prior to:BCC Words 6	قَبْلَ:قَبْلَ:before:Mastering Arabic Unit 13
+قَبْلَ:قَبْلَ:before, prior to:BCC Words 6	قَبْلَ:قَبْلَ:before:Mastering Arabic Unit 13	قَبْلَ:قَبْلَ:before:Mastering Arabic Unit 17
 قَلَم:قَلَم:pen, pencil:BCC Words 6	قَلَم:قَلَم:pen:Mastering Arabic Unit 5
 كُلّ:كُلّ:all/every:Mastering Arabic Unit 11	كُلّ:كُلّ:every/all:Mastering Arabic Unit 16
 لا:لا:no:BCC Words 3	لا:لا:no:Mastering Arabic Unit 6

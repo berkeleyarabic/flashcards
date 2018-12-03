@@ -1,6 +1,7 @@
 after that:بَعْدَ ذٰلِكَ:بَعْدَ ذٰلِكَ:Mastering Arabic Unit 12	after that:بَعْدَ ذٰلِكَ:بَعْدَ ذٰلِكَ:Mastering Arabic Unit 13
 and:وَ:وَ:BCC Words 1	and:وَ:وَ:Mastering Arabic Unit 2
 beautiful:جَميل،جَميلة:جَميل،جَميلة:BCC Words 5	beautiful:جَميل:جَميل:Mastering Arabic Unit 5
+before:قَبْلَ:قَبْلَ:Mastering Arabic Unit 13	before:قَبْلَ:قَبْلَ:Mastering Arabic Unit 17
 between:بَيْنَ:بَيْنَ:Mastering Arabic Unit 1	between:بَيْنَ:بَيْنَ:Mastering Arabic Unit 6
 black:أَسْوَد:أَسْوَد:Mastering Arabic Unit 5	black:أَسْوَد(سَوْدَاء):أَسْوَد(سَوْدَاء):Mastering Arabic Unit 11	black:أَسْوَد(سَوْدَاء):أَسْوَد(سَوْدَاء):Colors
 blue:أَزْرَق(زَرْقَاء):أَزْرَق(زَرْقَاء):Mastering Arabic Unit 11	blue:أَزْرَق(زَرْقَاء):أَزْرَق(زَرْقَاء):Colors
@@ -11,6 +12,7 @@ chicken:دَجاج:دَجاج:BCC Words 6	chicken:دَجاج:دَجاج:Masterin
 cola:كولا:كولا:Mastering Arabic Unit 11	cola:كُولا:كُولا:Mastering Arabic Unit 13
 cold:بارِد:بارِد:BCC Words 6	cold:بارِد:بارِد:Mastering Arabic Unit 12
 color:لَوْن(أَلْوان):لَوْن(أَلْوان):Mastering Arabic Unit 11	color:لَوْن(أَلْوان):لَوْن(أَلْوان):Colors
+desert:صَحْراء:صَحْراء:Mastering Arabic Unit 17	desert:صَحْرَاء:صَحْرَاء:BAS Countryside
 doctor:دُكْتور،دُكْتورة:دُكْتور،دُكْتورة:BCC Words 6	doctor:طَبيب:طَبيب:Mastering Arabic Unit 9
 door:باب،أَبْواب:باب،أَبْواب:BCC Words 1	door:باب:باب:Mastering Arabic Unit 6
 to drink:شَرِب/يَشْرَب:شَرِب/يَشْرَب:Mastering Arabic Unit 16	to drink:شَرِبَ / يَشْرَبُ:شَرِبَ / يَشْرَبُ:BAS Verbs
@@ -18,42 +20,56 @@ easy:سَهْل،سَهْلة:سَهْل،سَهْلة:BCC Words 8	easy:سَهْ
 to eat:أَكَل/يَأْكُل:أَكَل/يَأْكُل:Mastering Arabic Unit 16	to eat:أَكَلَ / يَأْكُلُ:أَكَلَ / يَأْكُلُ:BAS Verbs
 eggs:بَيْض:بَيْض:BCC Words 9	eggs:بَيْض:بَيْض:Mastering Arabic Unit 12
 eight:ثَمانية:ثَمانية:Numerals	eight:ثَمانِيَة:ثَمانِيَة:Mastering Arabic Unit 10
+field:حَقْل(حُقول):حَقْل(حُقول):Mastering Arabic Unit 17	field:حَقْل:حَقْل:BAS Countryside
 five:خَمْسَة:خَمْسَة:Numerals	five:خَمْسَة:خَمْسَة:Mastering Arabic Unit 10
 forty:أَرْبَعِينَ:أَرْبَعِينَ:Mastering Arabic Unit 12	forty:أربعين:أربعين:Mastering Arabic Unit 14
 four:أربَعة:أربَعة:Numerals	four:أرْبَعَة:أرْبَعَة:Mastering Arabic Unit 10
+Friday:(يَوْم)الجُمعَة:(يَوْم)الجُمعَة:Mastering Arabic Unit 17	Friday:الْجُمُعَة, الجُمْعَة; يَوْم الْجُمُعَة:الْجُمُعَة, الجُمْعَة; يَوْم الْجُمُعَة:Weekdays
 from:مِن،مِن ال:مِن،مِن ال:BCC Words 5	from:مِنْ:مِنْ:Mastering Arabic Unit 9
 green:أَخْضَر:أَخْضَر:BCC Words 9	green:أَخْضَر(خَضْرَاء):أَخْضَر(خَضْرَاء):Mastering Arabic Unit 11	green:أَخْضَر(خَضْرَاء):أَخْضَر(خَضْرَاء):Colors
 he writes:يَكْتُب:يَكْتُب:BCC Words 2	He writes:يَكْتُبُ:يَكْتُبُ:Present Conjugations
 house:بَيْت،بُيُوت:بَيْت،بُيُوت:BCC Words 1	house:بَيْت:بَيْت:Mastering Arabic Unit 1
+I was:كُنْت:كُنْت:BCC Words 4	I was:كُنْتُ:كُنْتُ:Mastering Arabic Unit 17
 man:رَجُل،رِجال:رَجُل،رِجال:BCC Words 5	man:رَجُل/رِجَال:رَجُل/رِجَال:Mastering Arabic Unit 14
 market:سوق/أَسْوَاق:سوق/أَسْوَاق:Mastering Arabic Unit 10	market:سوق(أسْواق):سوق(أسْواق):Mastering Arabic Unit 11
+Monday:(يَوْم)الاِثْنَيْن:(يَوْم)الاِثْنَيْن:Mastering Arabic Unit 17	Monday:الْاِثْنَيْنِ; يَوْم الاِثْنَيْن:الْاِثْنَيْنِ; يَوْم الاِثْنَيْن:Weekdays
 morning:صَباح:صَباح:BCC Words 8	morning:صَبَاح:صَبَاح:Mastering Arabic Unit 13
 mountain:جَبَل/جِبَال:جَبَل/جِبَال:Mastering Arabic Unit 14	mountain:جَبَل:جَبَل:BAS Countryside
 nine:تِسْعَة:تِسْعَة:Numerals	nine:تِسْعَة:تِسْعَة:Mastering Arabic Unit 10
 no:لا:لا:BCC Words 3	no:لا:لا:Mastering Arabic Unit 6
+now:الآن:الآن:BCC Words 4	now:الآن:الآن:Mastering Arabic Unit 17
 one:واحِد:واحِد:Numerals	one:واحِد:واحِد:Mastering Arabic Unit 10
 plate:طَبَق/أَطْبَاق:طَبَق/أَطْبَاق:Mastering Arabic Unit 10	plate:طَبَق(أَطْباق):طَبَق(أَطْباق):Mastering Arabic Unit 11
 to play:لَعِب/يَلْعَب:لَعِب/يَلْعَب:Mastering Arabic Unit 16	to play:لَعِبَ / يَلْعَبُ:لَعِبَ / يَلْعَبُ:BAS Verbs
 red:أَحْمَر(حَمْرَاء):أَحْمَر(حَمْرَاء):Mastering Arabic Unit 11	red:أَحْمَر(حَمْرَاء):أَحْمَر(حَمْرَاء):Colors
 river:نَهْر:نَهْر:Mastering Arabic Unit 3	river:نَهْر:نَهْر:Mastering Arabic Unit 6	river:نَهْر:نَهْر:BAS Countryside
 room:غُرْفة،غُرَف:غُرْفة،غُرَف:BCC Words 7	room:غُرْفة:غُرْفة:Mastering Arabic Unit 7
+to run:جَرى/يَجري:جَرى/يَجري:Mastering Arabic Unit 17	to run:جَرَى / يَجْرِي:جَرَى / يَجْرِي:BAS Verbs
+Saturday:(يَوْم)السَّبْت:(يَوْم)السَّبْت:Mastering Arabic Unit 17	Saturday:السَّبْت; يَوْمُ ٱلسَّبْتِ:السَّبْت; يَوْمُ ٱلسَّبْتِ:Weekdays
 seven:سَبْعَة:سَبْعَة:Numerals	seven:سَبْعَة:سَبْعَة:Mastering Arabic Unit 10
 sister:أُخْت،أَخَوات:أُخْت،أَخَوات:BCC Words 5	sister:أُخت:أُخت:Mastering Arabic Unit 3
 six:سِتّة:سِتّة:Numerals	six:سِتَّة:سِتَّة:Mastering Arabic Unit 10
 to sleep:نَام/يَنام:نَام/يَنام:Mastering Arabic Unit 16	to sleep:نَامَ  / يَنَامُ:نَامَ  / يَنَامُ:BAS Verbs
 sugar:سُكَّر:سُكَّر:BCC Words 2	sugar:سُكَّر:سُكَّر:Mastering Arabic Unit 12
+Sunday:(يَوْم)الأحَد:(يَوْم)الأحَد:Mastering Arabic Unit 17	Sunday:الْأَحَد;  يَوْم الْأَحَد:الْأَحَد;  يَوْم الْأَحَد:Weekdays
 tea:شاي:شاي:BCC Words 3	tea:شاي:شاي:Mastering Arabic Unit 12
+to teach:دَرَّسَ / يُدَرِّس:دَرَّسَ / يُدَرِّس:Mastering Arabic Unit 19	to teach:عَلَّمَ  / يُعَلِّمُ:عَلَّمَ  / يُعَلِّمُ:BAS Verbs
 ten:عَشْرة:عَشْرة:Numerals	ten:عَشَرَة:عَشَرَة:Mastering Arabic Unit 10
 The Middle East:الشَّرْق الأَوْسَط:الشَّرْق الأَوْسَط:BCC Words 8	The Middle East:الشَّرْق الأَوْسَط:الشَّرْق الأَوْسَط:Mastering Arabic Unit 9
 three:ثَلاثَة:ثَلاثَة:Numerals	three:ثَلاثة،۳:ثَلاثة،۳:BCC Words 4	three:ثَلاثَة:ثَلاثَة:Mastering Arabic Unit 10
+Thursday:(يَوْم)الخَميس:(يَوْم)الخَميس:Mastering Arabic Unit 17	Thursday:الْخَمِيس; يَوْم الْخَمِيس:الْخَمِيس; يَوْم الْخَمِيس:Weekdays
+Tuesday:(يَوْم)الثُلاثَاء:(يَوْم)الثُلاثَاء:Mastering Arabic Unit 17	Tuesday:الثُّلَاثَاء, الثَّلَاثَاء; يَوْم الثُّلَاثَاء:الثُّلَاثَاء, الثَّلَاثَاء; يَوْم الثُّلَاثَاء:Weekdays
 two:اِثْنَان:اِثْنَان:Numerals	two:اِثْنان:اِثْنان:Mastering Arabic Unit 10
-until:حَتَّى:حَتَّى:BCC Words 3	until:حَتَّى:حَتَّى:Mastering Arabic Unit 11
+until:حَتَّى:حَتَّى:BCC Words 3	until:حَتَّى:حَتَّى:Mastering Arabic Unit 11	until:حَتَّى:حَتَّى:Mastering Arabic Unit 18
+to walk:مَشى/يَمشي:مَشى/يَمشي:Mastering Arabic Unit 17	to walk:مَشَى / يَمْشِي:مَشَى / يَمْشِي:BAS Verbs
 water:ماء:ماء:BCC Words 5	water:مَاء:مَاء:Mastering Arabic Unit 13
+Wednesday:(يَوْم)الأَرْبِعَاء:(يَوْم)الأَرْبِعَاء:Mastering Arabic Unit 17	Wednesday:الْأَرْبِعَاء; يَوْم الْأَرْبِعَاء:الْأَرْبِعَاء; يَوْم الْأَرْبِعَاء:Weekdays
+week:أُسْبُوع:أُسْبُوع:Mastering Arabic Unit 14	week:أُسْبُوع:أُسْبُوع:Mastering Arabic Unit 17
 when?:مَتى؟:مَتى؟:Mastering Arabic Unit 13	when?:مَتى؟:مَتى؟:Mastering Arabic Unit 16
 white:أبْيَض:أبْيَض:Mastering Arabic Unit 5	white:أَبْيَض(بَيْضَاء):أَبْيَض(بَيْضَاء):Mastering Arabic Unit 11	white:أَبْيَض(بَيْضَاء):أَبْيَض(بَيْضَاء):Colors
 who?:مَن؟:مَن؟:BCC Words 5	who?:مَن؟:مَن؟:Mastering Arabic Unit 3	who?:مَن:مَن:Mastering Arabic Unit 3
 with:مَعَ:مَعَ:Mastering Arabic Unit 3	with:مَعَ:مَعَ:Mastering Arabic Unit 13
 to write:كَتَب/يَكْتُب:كَتَب/يَكْتُب:Mastering Arabic Unit 16	to write:كَتَبَ / يَكْتُبُ:كَتَبَ / يَكْتُبُ:BAS Verbs
-year:سَنَة،سَنَوات:سَنَة،سَنَوات:BCC Words 9	year:عام(أَعْوام):عام(أَعْوام):Mastering Arabic Unit 11
+year:سَنَة،سَنَوات:سَنَة،سَنَوات:BCC Words 9	year:عام(أَعْوام):عام(أَعْوام):Mastering Arabic Unit 11	year:سَنَة(سَنوات):سَنَة(سَنوات):Mastering Arabic Unit 17
 yellow:أَصْفَر(صَفْراَء):أَصْفَر(صَفْراَء):Mastering Arabic Unit 11	yellow:أَصْفَر(صَفْراَء):أَصْفَر(صَفْراَء):Colors
 zero:صِفْر:صِفْر:Numerals	zero:صِفْر،۰:صِفْر،۰:BCC Words 8	zero:صِفْر:صِفْر:Mastering Arabic Unit 10	zero:صِفْر:صِفْر:Mastering Arabic Unit 14
