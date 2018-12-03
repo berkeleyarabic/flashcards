@@ -5,5 +5,8 @@
 # Tool to add missing unit numbers to vocab table after typing new
 # entries
 
+# e.g.
+# ./add-units -n ma-unit-17.tab
+
 #perl -pe '(/#.*unit ([\d]+)/i) and $unit=$1; (split /:/) == 2 && s/$/:$unit+/' $1
-replace '(/#.*unit ([\d]+)/i) and $unit=$1; (split /:/) == 2 && s/$/:$unit+/' "$@"
+replace '(/#.*unit ([\d\+]+)/i) and $unit=$1; (split /:/) == 2 && s/$/:$unit+/' "$@"
