@@ -1,42 +1,38 @@
 ##@ MA Unit %g
 # unit 17 "was/were" p. 238
 
-كُنْتُ:I was
-كُنْتَ:you (masc.) were
-كُنْتِ:you (fem.) were
-كانَ:he was
-كانَت:she was
-كُنَّا:we were
-كُنْتُم:you (pl.) were
-كانُوا:they were
+كُنْتُ:I was:17+
+كُنْتَ:you (masc.) were:17+
+كُنْتِ:you (fem.) were:17+
+كانَ:he was:17+
+كانَت:she was:17+
+كُنَّا:we were:17+
+كُنْتُم:you (pl.) were:17+
+كانُوا:they were:17+
 
 # unit 17, p. 244
 
-العالَم:the world
+العالَم:the world:17+
+قارّة(قَارَّات):continent:17+
+أَفْرِيقِيَا:Africa:17+ : Textbook translit. wrong
 
-قارّة(قَارَّات):continent
+آسِيَا:Asia:17+ : Textbook translit. wrong
+بُرْج(أَبْراج):tower:17+
+حَقْل(حُقول):field:17+
 
-أفريقيا:Africa
-
-آسيا:Asia
-
-بُرْج(أَبْراج):tower
-
-حَقْل(حُقول):field
-
-بِناء:building/structure
+بِناء:building/structure:17+
 
 صَحْراء:desert:17
 
 سَريع:fast:17
 
-حِلْو:sweet
+حِلْو:sweet:17+
 
 غَنيّ:rich:17
 
 فَقير:poor:17:Origin of Hindu "fakir"
 
-هَامّ:important
+هَامّ:important:17+
 
 رَخيص:inexpensive/cheap:17
 
@@ -44,45 +40,45 @@
 
 كَثير:many/a lot:17
 
-أَكْثَر:more/most
+أَكْثَر:more/most:17+
 
-أَفْضَل:better/best
+أَفْضَل:better/best:17+
 
-اِسْتِئْجار السيّارات:car rental
+اِسْتِئْجار السيّارات:car rental:17+
 
-مُمَثَّل(مُمَثّلون):actor
+مُمَثِّل(مُمَثِّلون):actor:17+
 
-مُمَثَّلة(مُمَثَّلات):actress
+مُمَثِّلة(مُمَثِّلات):actress:17+
 
-جَدّ/جَدّة:grandfather/grandmother
+جَدّ/جَدّة:grandfather/grandmother:17+
 
 أُسْبُوع:week:17
 
-(يَوْم)السَّبْت:Saturday
+(يَوْم)السَّبْت:Saturday:17+
 
-(يَوْم)الأحَد:Sunday
+(يَوْم)الأحَد:Sunday:17+
 
-(يَوْم)الاِثْنَيْن:Monday
+(يَوْم)الاِثْنَيْن:Monday:17+
 
-(يَوْم)الثُلاثَاء:Tuesday
+(يَوْم)الثُلاثَاء:Tuesday:17+
 
-(يَوْم)الأَربِعَاء:Wednesday
+(يَوْم)الأَرْبِعَاء:Wednesday:17+
 
-(يَوْم)الجَميس:Thursday
+(يَوْم)الخَميس:Thursday:17+
 
-(يَوْم)الجُمعَة:Friday
+(يَوْم)الجُمعَة:Friday:17+
 
-بَعْدَ:after
+بَعْدَ:after:17+
 
-قَبْلَ:before
+قَبْلَ:before:17+
 
 الماضي:the past:17
 
 مُنْذُ:since, ago:17
 
-سَنَة(سَنوات):year
+سَنَة(سَنوات):year:17+
 
-مُنْذُ عشرين سنة:20 years ago
+مُنْذُ عشرين سنة:20 years ago:17+
 
 الْيَوْم:today:17
 
@@ -98,9 +94,9 @@
 
 زار/يزور:to visit:17
 
-عاد/يَعود:to go back/return
+عاد/يَعود:to go back/return:17+
 
-زاد/يَعود:to increase/go up (in price, etc.)
+زاد/يَزيد:to increase/go up (in price, etc.):17+
 
 مَشى/يَمشي:to walk:17
 
@@ -108,5 +104,5 @@
 
 جَرى/يَجري:to run:17
 
-شَكا/يَشكو:to complain
+شَكا/يَشكو:to complain:17+
 
