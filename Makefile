@@ -2,9 +2,12 @@ TABLES:=$(shell cat tables.txt)
 
 #$(warning TABLES=$(TABLES))
 
-ALLDEPS=$(TABLES:.tab=.pdf) \
-	$(TABLES:.tab=-words.html) all-words.html \
-	index.html howtostudy.html berkeleyarabic-glossary.pdf
+ALLDEPS= \
+	$(TABLES:.tab=-words.html) \
+	all-words.html \
+	index.html howtostudy.html \
+	$(TABLES:.tab=.pdf) \
+	berkeleyarabic-glossary.pdf
 
 all: $(ALLDEPS)
 
