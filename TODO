@@ -1,3 +1,17 @@
+- notes should be in separate file? link to cards with hash
+
+- move unit level field to comments preceding each line (or groups of
+  lines rather) in preparation for sharing lines between files
+
+- page numbers on flashcard pdfs
+
+- change ++ to +, + to '', '' to *
+
+- correct mistake "professor/lecturer"
+
+    # from https://quizlet.com/157380368/mastering-arabic-unit-19-flash-cards/:19+
+    # (user "wmayo003")
+
 - introduce labels for each line. base-64:
 
     <@gKGR1d> line of text
