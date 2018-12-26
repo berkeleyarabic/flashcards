@@ -1,46 +1,47 @@
+# -*- my-source-command: "make ma-unit-19-words.html" -*-
 ##@ MA Unit %g
 # unit 19, p. 272
 # from https://quizlet.com/157380368/mastering-arabic-unit-19-flash-cards/:19+
 # (user "wmayo003")
-شَهْر (شُهور,أَشْهُر):month:19+
+شَهْر (أَشْهُر/شُهور):month:19+
 يَنايِر:January:19+
 فِبْرايِر:February:19+
-مارِس:March:19+
+مَارِِس:March:19+
 أَبْريل:April:19+
-مايو:May:19+
+مايُو:May:19+
 يونِيو:June:19+
 يولِيو:July:19+
 أَغُسْطُس:August:19+
 سِبْتَمْبِر:September:19+
-أُكْتوبِر:October:19+
+أُكْتُوبِر:October:19+ : (error in textbook vowels)
 نوفَمْبِر:November:19+
 ديسَمْبِر:December:19+
 المُسْتَقْبَل:the future:19
 غَداً:tomorrow:19
-بعد غَد:the day after tomorrow:19+
-أَوَّل أَمس:the day before yesterday:19+
+بَعْدَ‎ غَد:the day after tomorrow:19+
+أَوَّل أَمْس:the day before yesterday:19+ : Literally "the first yesterday"
 عيد ميلاد:birthday:19
 زِيارة (زِيارات):visit (noun):19+
 نائِب (نُوّاب):deputy:19+
 الاِقْتِصاد:the economy:19+
 عُطْلة (عُطَل):holiday:19
-دِراسة:study (noun):19
+دِراسة (دِرَاسَات):study (noun):19
 اِمْتِحان (اِمْتِحانات):exam:19
-خُطّة (خِطَط):plan:19
-حَضَرَ / يَحْضُر:to attend:19
-أَمَلَ / يَأْمُل:to hope:19
-سَأَلَ / يَسْأَل:to ask:19
-فَضَّلَ / يُفَضِّلْ:to prefer:19
-سَخَّنَ / يُسَخِّن:to heat:19
-صَلَّحَ / يُصَلِّح:to mend/fix:19+
-نَظَّفَ / يُنَظِّف:to clean:19
-دَرَّسَ / يُدَرِّس:to teach:19
-سافَرَ / يُسافِر:to travel:19
-قابَلَ / يُقابِل:to meet:19
-حاوَلَ / يُحاوِل:to try/attempt:19
-اِسْتَقْبَلَ / يَسْتَقْبِلْ:to receive (guests, etc.):19
-اسْتَخْدَمَ / يَسْتَخْدِم:to use:19
-اسْتَعْلَمَ / يَسْتَعْلِم:to ask/inquire:19
+خِطّة (خِطَط):plan:19 : Also خُطَّة‎
+حَضَر / يَحْضُر:to attend:19
+أَمَل / يَأْمُل:to hope:19 : (error in textbook vowels)
+سَأَل / يَسْأَل:to ask:19
+فَضَّل / يُفَضِّل:to prefer:19
+سَخَّن / يُسَخِّن:to heat:19
+صَلَّح / يُصَلِّح:to mend/fix:19+
+نَظَّف / يُنَظِّف:to clean:19
+دَرَّس / يُدَرِّس:to teach:19
+سافَرَ / يُسافِر:to travel:19 : Root of "safari", via Swahili
+قابَل / يُقابِل:to meet:19
+حاوَل / يُحاوِل:to try/attempt:19
+اِسْتَقْبَل / يَسْتَقْبِل:to receive (guests, etc.):19
+اِسْتَخْدَم / يَسْتَخْدِم:to use:19 : (error in textbook vowels)
+اِسْتَعْلَم / يَسْتَعْلِم:to ask/inquire:19
 مَشْغول:busy:19
 رَسْميّ:official:19+
 الريف:the countryside:19+
