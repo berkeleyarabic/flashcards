@@ -64,7 +64,7 @@ until:حَتَّى:حَتَّى:BCC Words 3	until:حَتَّى:حَتَّى:Mast
 to walk:مَشى/يَمشي:مَشى/يَمشي:Mastering Arabic Unit 17	to walk:مَشَى / يَمْشِي:مَشَى / يَمْشِي:BAS Verbs
 water:ماء:ماء:BCC Words 5	water:مَاء:مَاء:Mastering Arabic Unit 13
 Wednesday:(يَوْم)الأَرْبِعَاء:(يَوْم)الأَرْبِعَاء:Mastering Arabic Unit 17	Wednesday:الْأَرْبِعَاء; يَوْم الْأَرْبِعَاء:الْأَرْبِعَاء; يَوْم الْأَرْبِعَاء:Weekdays
-week:أُسْبُوع:أُسْبُوع:Mastering Arabic Unit 14	week:أُسْبُوع:أُسْبُوع:Mastering Arabic Unit 17
+week:أُسْبُوع:أُسْبُوع:Mastering Arabic Unit 14	week:أُسْبُوع(أَسَابِيع):أُسْبُوع(أَسَابِيع):Mastering Arabic Unit 17
 when?:مَتى؟:مَتى؟:Mastering Arabic Unit 13	when?:مَتى؟:مَتى؟:Mastering Arabic Unit 16
 white:أبْيَض:أبْيَض:Mastering Arabic Unit 5	white:أَبْيَض(بَيْضَاء):أَبْيَض(بَيْضَاء):Mastering Arabic Unit 11	white:أَبْيَض(بَيْضَاء):أَبْيَض(بَيْضَاء):Colors
 who?:مَن؟:مَن؟:BCC Words 5	who?:مَن؟:مَن؟:Mastering Arabic Unit 3	who?:مَن:مَن:Mastering Arabic Unit 3

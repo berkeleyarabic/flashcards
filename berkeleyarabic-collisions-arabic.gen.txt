@@ -2,7 +2,6 @@
 أَحْمَر(حَمْرَاء):أَحْمَر(حَمْرَاء):red:Mastering Arabic Unit 11	أَحْمَر(حَمْرَاء):أَحْمَر(حَمْرَاء):red:Colors
 أَخْضَر(خَضْرَاء):أَخْضَر(خَضْرَاء):green:Mastering Arabic Unit 11	أَخْضَر(خَضْرَاء):أَخْضَر(خَضْرَاء):green:Colors
 أَزْرَق(زَرْقَاء):أَزْرَق(زَرْقَاء):blue:Mastering Arabic Unit 11	أَزْرَق(زَرْقَاء):أَزْرَق(زَرْقَاء):blue:Colors
-أُسْبُوع:أُسْبُوع:week:Mastering Arabic Unit 14	أُسْبُوع:أُسْبُوع:week:Mastering Arabic Unit 17
 أَسْوَد(سَوْدَاء):أَسْوَد(سَوْدَاء):black:Mastering Arabic Unit 11	أَسْوَد(سَوْدَاء):أَسْوَد(سَوْدَاء):black:Colors
 أَصْفَر(صَفْراَء):أَصْفَر(صَفْراَء):yellow:Mastering Arabic Unit 11	أَصْفَر(صَفْراَء):أَصْفَر(صَفْراَء):yellow:Colors
 أَفْضَل:أَفْضَل:best:Mastering Arabic Unit 11	أَفْضَل:أَفْضَل:better/best:Mastering Arabic Unit 17
