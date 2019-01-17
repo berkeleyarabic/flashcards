@@ -9,7 +9,7 @@ sub foot_fmt {
   my ($f) = @_;
   $f = foot_fold $f;
   $f =~ s/^MA /Mastering Arabic /;
-  $f =~ s/[?+-]*$//g;
+  $f =~ s/[?+*-]*$//g;
   $f =~ s/\s+$//g;
   $f =~ s/^\s+//g;
   return $f;
@@ -27,7 +27,7 @@ sub foot_fmt_idx {
   $f =~ s/^Possessive/Poss/;
   $f =~ s/Suffixes/Suff/;
   # $f =~ s/^MA /Mastering Arabic /;
-  # $f =~ s/[?+-]*$//g;
+  # $f =~ s/[?+*-]*$//g;
   return $f;
 }
 
