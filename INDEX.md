@@ -40,6 +40,7 @@ Miscellaneous:
 - [Middle-East country capitals](capitals.pdf) *([word list](capitals-words.html), 10 words)*
 - [Colors](colors.pdf) *([word list](colors-words.html), 13 words)*
 - [Weekdays](weekdays.pdf) *([word list](weekdays-words.html), 8 words)*
+- [Blanks](blanks.pdf) (blank flashcard sheet)
 
 Vocabulary lists from Berkeley Adult School:
 
@@ -47,20 +48,16 @@ Vocabulary lists from Berkeley Adult School:
 - [Verbs](bas-verbs.pdf) *([word list](bas-verbs-words.html), 21 words)*
 - [Body parts](bas-body-parts.pdf) *([word list](bas-body-parts-words.html), 12 words)*
 
-Blank flashcard sheet:
-
-- [Blanks](blanks.pdf)
-
 ### Word lists and glossary
 
 * [English-Arabic and Arabic-English
 glossary](berkeleyarabic-glossary.pdf) for the above card decks (PDF)
 * [List of all words](all-words.html) with some notes (HTML)
 
-The glossary includes all of the Mastering Arabic 1 words (up to Unit
-16). It may be useful for review and also for reference, since the
-glossary in the Mastering Arabic book is only in the English to Arabic
-direction, and doesn't list chapter numbers.
+The glossary includes all of the Mastering Arabic 1 words. It may be
+useful for review and also for reference, since the glossary in the
+Mastering Arabic book is only in the English to Arabic direction, and
+doesn't list chapter numbers.
 
 Etymologies in the word list notes are mostly copied from each word's
 entry in [Wiktionary](https://en.wiktionary.org), which are in turn
