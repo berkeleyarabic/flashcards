@@ -1,3 +1,9 @@
+- don't put <tr> on same line as <tbody> in wordlist
+
+- move make-wordlist
+
+- format_group to foot_fmt.pl
+
 - notes should be in separate file? link to cards with hash
 
 - move unit level field to comments preceding each line (or groups of
@@ -6,11 +12,6 @@
 - page numbers on flashcard pdfs
 
 - change ++ to +, + to '', '' to *
-
-- correct mistake "professor/lecturer"
-
-    # from https://quizlet.com/157380368/mastering-arabic-unit-19-flash-cards/:19+
-    # (user "wmayo003")
 
 - introduce labels for each line. base-64:
 
