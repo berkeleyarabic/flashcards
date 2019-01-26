@@ -30,7 +30,8 @@ green:أَخْضَر:أَخْضَر:BCC Words 9	green:أَخْضَر(خَضْر�
 he writes:يَكْتُب:يَكْتُب:BCC Words 2	He writes:يَكْتُبُ:يَكْتُبُ:Present Conjugations
 house:بَيْت،بُيُوت:بَيْت،بُيُوت:BCC Words 1	house:بَيْت:بَيْت:Mastering Arabic Unit 1
 I was:كُنْت:كُنْت:BCC Words 4	I was:كُنْتُ:كُنْتُ:Mastering Arabic Unit 17
-man:رَجُل،رِجال:رَجُل،رِجال:BCC Words 5	man:رَجُل/رِجَال:رَجُل/رِجَال:Mastering Arabic Unit 14
+Internet:إنترنت:إنترنت:Mastering Arabic Unit 8	Internet:الإنترنت:الإنترنت:Mastering Arabic Unit 11
+man:رَجُل،رِجال:رَجُل،رِجال:BCC Words 5	man:رَجُل:رَجُل:Mastering Arabic Unit 7	man:رَجُل/رِجَال:رَجُل/رِجَال:Mastering Arabic Unit 14
 market:سوق/أَسْوَاق:سوق/أَسْوَاق:Mastering Arabic Unit 10	market:سوق(أسْواق):سوق(أسْواق):Mastering Arabic Unit 11
 Monday:(يَوْم)الاِثْنَيْن:(يَوْم)الاِثْنَيْن:Mastering Arabic Unit 17	Monday:الْاِثْنَيْنِ; يَوْم الاِثْنَيْن:الْاِثْنَيْنِ; يَوْم الاِثْنَيْن:Weekdays
 morning:صَباح:صَباح:BCC Words 8	morning:صَبَاح:صَبَاح:Mastering Arabic Unit 13
@@ -44,6 +45,7 @@ to play:لَعِب/يَلْعَب:لَعِب/يَلْعَب:Mastering Arabic Uni
 red:أَحْمَر(حَمْرَاء):أَحْمَر(حَمْرَاء):Mastering Arabic Unit 11	red:أَحْمَر(حَمْرَاء):أَحْمَر(حَمْرَاء):Colors
 river:نَهْر:نَهْر:Mastering Arabic Unit 3	river:نَهْر:نَهْر:Mastering Arabic Unit 6	river:نَهْر:نَهْر:BAS Countryside
 room:غُرْفة،غُرَف:غُرْفة،غُرَف:BCC Words 7	room:غُرْفة:غُرْفة:Mastering Arabic Unit 7
+rose:وَرْدَة:وَرْدَة:Mastering Arabic Unit 7	rose:وَرْدَة:وَرْدَة:BAS Countryside
 to run:جَرى/يَجري:جَرى/يَجري:Mastering Arabic Unit 17	to run:جَرَى / يَجْرِي:جَرَى / يَجْرِي:BAS Verbs
 Saturday:(يَوْم)السَّبْت:(يَوْم)السَّبْت:Mastering Arabic Unit 17	Saturday:السَّبْت; يَوْمُ ٱلسَّبْتِ:السَّبْت; يَوْمُ ٱلسَّبْتِ:Weekdays
 seven:سَبْعَة:سَبْعَة:Numerals	seven:سَبْعَة:سَبْعَة:Mastering Arabic Unit 10
@@ -58,6 +60,7 @@ ten:عَشْرة:عَشْرة:Numerals	ten:عَشَرَة:عَشَرَة:Masteri
 The Middle East:الشَّرْق الأَوْسَط:الشَّرْق الأَوْسَط:BCC Words 8	The Middle East:الشَّرْق الأَوْسَط:الشَّرْق الأَوْسَط:Mastering Arabic Unit 9
 three:ثَلاثَة:ثَلاثَة:Numerals	three:ثَلاثة،۳:ثَلاثة،۳:BCC Words 4	three:ثَلاثَة:ثَلاثَة:Mastering Arabic Unit 10
 Thursday:(يَوْم)الخَميس:(يَوْم)الخَميس:Mastering Arabic Unit 17	Thursday:الْخَمِيس; يَوْم الْخَمِيس:الْخَمِيس; يَوْم الْخَمِيس:Weekdays
+train:قطأر:قطأر:Mastering Arabic Unit 3	train:قِطار(قِطارات):قِطار(قِطارات):Mastering Arabic Unit 16
 Tuesday:(يَوْم)الثُلاثَاء:(يَوْم)الثُلاثَاء:Mastering Arabic Unit 17	Tuesday:الثُّلَاثَاء, الثَّلَاثَاء; يَوْم الثُّلَاثَاء:الثُّلَاثَاء, الثَّلَاثَاء; يَوْم الثُّلَاثَاء:Weekdays
 two:اِثْنَان:اِثْنَان:Numerals	two:اِثْنان:اِثْنان:Mastering Arabic Unit 10
 until:حَتَّى:حَتَّى:BCC Words 3	until:حَتَّى:حَتَّى:Mastering Arabic Unit 11	until:حَتَّى:حَتَّى:Mastering Arabic Unit 18
