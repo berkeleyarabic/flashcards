@@ -63,6 +63,14 @@ sub foot_sortable {
     $order = 1000;
   }
   $f = pad_digits($order).$f;
+  
+  # we want asterisk to come before "nothing", so replace empty string
+  # with % and asterisk with " "
+  
+  $f =~ s/(\d)$/$1%/;
+  $f =~ s/\*$/!/;
+#  warn "$f";
+  $f
 }
 
 sub foot_cmp {
