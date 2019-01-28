@@ -14,6 +14,9 @@ BEGIN { push @INC, ".", "utils", "perl"; }
 # the HTML wordlists. Footers which differ from the previous footer
 # only by an appended "+" or "-" are indicated with a horizontal line.
 
+# It takes a half-second to run this command, seems this is mostly
+# time spent by Perl loading libraries.
+
 use ArabicTeX;
 use ReadTable;
 
@@ -125,10 +128,12 @@ sub add_entry {
   };
 }
 
+warn "Reading table\n";
 read_vocab_table(\&add_entry, \@tab_files);
 
 my %entries_by_feet;
 
+warn "Formatting entries\n";
 for my $e (@entries) {
   push @{$entries_by_feet{$e->{foot}}}, $e;
 }
@@ -144,6 +149,7 @@ sub html_fixup {
 }
 
 if($outputting) {
+  warn "Writing output\n";
   my $prev_ffmt=undef;
   for my $f (sort {foot_cmp($a,$b)} keys %entries_by_feet) {
 
