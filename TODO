@@ -1,3 +1,9 @@
+- use e.g. % instead of : in tables? to allow ":" in notes
+    - or allow \ escaping, change letter-positions \\ -> \\\\
+
+- arabic regex match facility. absence of diacritic matches any
+  diacritic; diacritics match in any order
+
 - don't put <tr> on same line as <tbody> in wordlist
 
 - move make-wordlist
@@ -53,8 +59,6 @@
     - checkbox to hide notes?
 
     - proportional column widths in HTML
-
-- use e.g. % instead of : in tables? to allow ":" in notes
 
 - clean up notes, fill them in.
 
