@@ -24,16 +24,16 @@
 
 use warnings;
 use strict;
-BEGIN { push @INC, ".", "utils", "perl"; }
+BEGIN { unshift @INC, "perl"; }
 
 use ArabicTeX;
 use ReadTable;
 
 use utf8;
-binmode(STDOUT, ":utf8");
-binmode(STDERR, ":utf8");
+use open (":encoding(UTF-8)", ":std" );
 
-use U qw(sh pv);
+use Sh;
+use PV;
 
 use Getopt::Long;
 Getopt::Long::Configure ("bundling", "no_ignore_case");

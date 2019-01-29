@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use warnings;
 use strict;
-BEGIN { unshift @INC, "utils", "perl"; }
+BEGIN { unshift @INC, "perl"; }
 
 # Generate an HTML word list from flashcard vocabulary table files.
 # These include etymology notes and we chose HTML because that makes
@@ -21,14 +21,12 @@ use ArabicTeX;
 use ReadTable;
 
 use utf8;
-binmode(STDOUT, ":utf8");
-binmode(STDERR, ":utf8");
+use open (":encoding(UTF-8)", ":std" );
 
-use U qw(sh pv);
+use Sh;
+use PV;
 
-use CGI qw(:all meta *table *tbody);
-# help us get clean diffs
-$CGI::Util::SORT_ATTRIBUTES=1;
+use CGI qw(:all meta *table *tbody "-utf8");
 use HTML::Entities;
 
 use Getopt::Long;
@@ -57,6 +55,9 @@ GetOptions('-v' => \$verbose,
 usage 0 if $help;
 
 $PV::debug = $ReadTable::verbose = $verbose;
+
+# help us get clean diffs
+$CGI::Util::SORT_ATTRIBUTES=1;
 
 @tab_files = @ARGV or do {
   die "Need to specify an input table\n";

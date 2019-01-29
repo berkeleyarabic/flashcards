@@ -2,8 +2,9 @@
 use warnings;
 use strict;
 
-BEGIN { push @INC, ".", "utils", "perl"; }
+BEGIN { unshift @INC, "perl"; }
 use ArabicTeX;
+use open ( ":encoding(UTF-8)", ":std" );
 
 while(<>) {
   #  /[\p{Script=Arabic}]/ && print "Found Arabic\n";
