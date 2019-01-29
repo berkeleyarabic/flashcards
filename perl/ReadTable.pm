@@ -7,9 +7,12 @@ require Exporter;
 use warnings;
 use strict;
 
+use String::Unquotemeta;
 use PV;
 
 our ($foot_fmt, $tab_fn, $curr_line, $verbose);
+
+our $secret = sprintf("%08x",rand(16**8));
 
 sub format_group {
   my ($group) = @_;
@@ -63,12 +66,17 @@ sub read_vocab_table ($$) {
       s/#.*$//;
       next if /^\s*$/;
       $curr_line = $_;
-      my (@c) = split /%/, $_;
+
+      $curr_line =~ s/\\\\/$secret/g;
+      # split on :, not following \
+      my (@c) = split /(?<!\\):/, $_;
       if(@c>5) {
         print "$_\n";
         die "Too many fields";
       }
 
+      # restore \\, and unquote escapes
+      @c = map { s/$secret/\\\\/g; unquotemeta $_ } @c;
       # remove spaces
       @c = map { s/^\s*(.*?)\s*$/$1/; $_ } @c;
 
