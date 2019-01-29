@@ -1,5 +1,9 @@
-- use e.g. % instead of : in tables? to allow ":" in notes
-    - or allow \ escaping, change letter-positions \\ -> \\\\
+- generalize LTR logic
+
+\- separate out Perl utils: shell stuff, PV
+
+/- use e.g. % instead of : in tables? to allow ":" in notes
+    \- or allow \ escaping, change letter-positions \\ -> \\\\
 
 - arabic regex match facility. absence of diacritic matches any
   diacritic; diacritics match in any order
