@@ -63,7 +63,7 @@ sub read_vocab_table ($$) {
       s/#.*$//;
       next if /^\s*$/;
       $curr_line = $_;
-      my (@c) = split /:/, $_;
+      my (@c) = split /%/, $_;
       if(@c>5) {
         print "$_\n";
         die "Too many fields";

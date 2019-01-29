@@ -1,20 +1,20 @@
 ##@ Colors %g
-لَوْن(أَلْوان) : color
-أَبْيَض(بَيْضَاء) : white
-أَسْوَد(سَوْدَاء) : black
-أَخْضَر(خَضْرَاء) : green
-أَحْمَر(حَمْرَاء) : red
-أَزْرَق(زَرْقَاء) : blue
-أَصْفَر(صَفْراَء) : yellow
+لَوْن(أَلْوان) % color
+أَبْيَض(بَيْضَاء) % white
+أَسْوَد(سَوْدَاء) % black
+أَخْضَر(خَضْرَاء) % green
+أَحْمَر(حَمْرَاء) % red
+أَزْرَق(زَرْقَاء) % blue
+أَصْفَر(صَفْراَء) % yellow
 
 # other colors, not in textbook
 
-وَرْدِيّ : pink (synonym 1) : + :
-بَمْبِيّ : pink (synonym 2) : + :
-بُرْتُقَانِيّ : orange (color) : + : Nisbah of orange (fruit)
-بُنِّيّ : brown, coffee-colored : + : Nisbah of coffee beans
+وَرْدِيّ % pink (synonym 1) % + %
+بَمْبِيّ % pink (synonym 2) % + %
+بُرْتُقَانِيّ % orange (color) % + % Nisbah of orange (fruit)
+بُنِّيّ % brown, coffee-colored % + % Nisbah of coffee beans
 
-أشْقَرُ(شَقْراءُ) : blond, light-skinned : ++ : From "All the Arabic you never learned the first time around". Feminine plural شَقْراوات and masculine plural شُقْرٌ
-أسْمَرُ(سَمراءُ) : brown-skinned : ++ : From "All the Arabic you never learned the first time around". Feminine plural سَمْراوات and masculine plural سُمْرٌ. Also referring to the color of baked bread, according to comment on website.
+أشْقَرُ(شَقْراءُ) % blond, light-skinned % ++ % From "All the Arabic you never learned the first time around". Feminine plural شَقْراوات and masculine plural شُقْرٌ
+أسْمَرُ(سَمراءُ) % brown-skinned % ++ % From "All the Arabic you never learned the first time around". Feminine plural سَمْراوات and masculine plural سُمْرٌ. Also referring to the color of baked bread, according to comment on website.
 
-أَغْبَر(غَبْرَاء) : dust-colored : ++ : From WK. "dust-colored; dust-covered, dusty, dingy; roan". Color or defect adjective from the root غ ب ر‎ (ḡ-b-r), "related to being dusty, lagging; tarried; left behind; recrudescent"
+أَغْبَر(غَبْرَاء) % dust-colored % ++ % From WK. "dust-colored; dust-covered, dusty, dingy; roan". Color or defect adjective from the root غ ب ر‎ (ḡ-b-r), "related to being dusty, lagging; tarried; left behind; recrudescent"

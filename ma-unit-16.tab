@@ -3,98 +3,98 @@
 
 # present tense full endings, p. 226
 
-أشْرَبُ:I drink: 16
+أشْرَبُ%I drink% 16
 
-تَشْرَبُ:you (m) drink: 16 :: indexby=you
+تَشْرَبُ%you (m) drink% 16 %% indexby=you
 
-تَشْرَبينَ:you (f) drink: 16
+تَشْرَبينَ%you (f) drink% 16
 
-يَشْرَبُ:he drinks: 16
+يَشْرَبُ%he drinks% 16
 
-تَشْرَبُ:she drinks: 16 :: indexby=she
+تَشْرَبُ%she drinks% 16 %% indexby=she
 
-نَشْرَبُ:we drink: 16
+نَشْرَبُ%we drink% 16
 
-تَشْرَبونَ:you (pl) drink: 16
+تَشْرَبونَ%you (pl) drink% 16
 
-يَشْرَبونَ:they drink: 16
+يَشْرَبونَ%they drink% 16
 
 # main vocab
 
-سَاعَة(سَاعَات):hour/watch/clock/o'clock: 16*
+سَاعَة(سَاعَات)%hour/watch/clock/o'clock% 16*
 
-كَم الساعة؟:what's the time?: 16
+كَم الساعة؟%what's the time?% 16
 
-مَتى؟:when?: 16*
+مَتى؟%when?% 16*
 
-دَقيقة(دَقائِق):minute: 16
+دَقيقة(دَقائِق)%minute% 16
 
-نِصْف:half: 16
+نِصْف%half% 16
 
-ثُلْث:third: 16
+ثُلْث%third% 16
 
 # XXX include alternate form and plural. Why does ayin not have a vowel?
-# https://en.wiktionary.org/wiki/%D8%B1%D8%A8%D8%B9#Arabic
-رُبْع:quarter: 16
+# https%//en.wiktionary.org/wiki/%D8%B1%D8%A8%D8%B9#Arabic
+رُبْع%quarter% 16
 
-كُلّ:every/all: 16
+كُلّ%every/all% 16
 
-كُلّ يَوم:every day: 16
+كُلّ يَوم%every day% 16
 
-عادةً || ʿādatan:usually: 16*: Note pronunciation عَادَةً • (ʿādatan) "usually, customarily, ordinarily, habitually". Adverbial accusative of عَادَة‎ (ʿāda, “custom, manner, habit”). From the root ع و د‎ (ʿ-w-d) "related to returning, to coming back"; compare عَادَ‎ (ʿāda, “to return, go back”).
+عادةً || ʿādatan%usually% 16*% Note pronunciation عَادَةً • (ʿādatan) "usually, customarily, ordinarily, habitually". Adverbial accusative of عَادَة‎ (ʿāda, “custom, manner, habit”). From the root ع و د‎ (ʿ-w-d) "related to returning, to coming back"; compare عَادَ‎ (ʿāda, “to return, go back”).
 
-إفْطار:breakfast: 16*
+إفْطار%breakfast% 16*
 
-غَداء:lunch: 16* : From the root غ د و‎ (ḡ-d-w); compare غَدًا‎ (ḡadan, “tomorrow”), غَدَاة‎ (ḡadāh, “morning”). See also تَغَدَّى • (taḡaddā) V "to have lunch".
+غَداء%lunch% 16* % From the root غ د و‎ (ḡ-d-w); compare غَدًا‎ (ḡadan, “tomorrow”), غَدَاة‎ (ḡadāh, “morning”). See also تَغَدَّى • (taḡaddā) V "to have lunch".
 
-عَشاء:dinner/supper: 16*
+عَشاء%dinner/supper% 16*
 
-أُوتوبيس(ـات):bus: 16
+أُوتوبيس(ـات)%bus% 16
 
-قِطار(قِطارات):train: 16* : Also "row; row of camels". From the root ق ط ر‎ (q-ṭ-r).
+قِطار(قِطارات)%train% 16* % Also "row; row of camels". From the root ق ط ر‎ (q-ṭ-r).
 
-فَعَل/يَفْعَل:to do/to make: 16
+فَعَل/يَفْعَل%to do/to make% 16
 
-ذَهَب/يَذْهَب:to go: 16*
+ذَهَب/يَذْهَب%to go% 16*
 
-دَرَس/يَدْرُس:to study: 16*
+دَرَس/يَدْرُس%to study% 16*
 
-غَسَل/يَغْسِل:to wash: 16*
+غَسَل/يَغْسِل%to wash% 16*
 
-كَتَب/يَكْتُب:to write: 16*
+كَتَب/يَكْتُب%to write% 16*
 
-خَرَج/يَخْرُج:to go out, to leave: 16*
+خَرَج/يَخْرُج%to go out, to leave% 16*
 
-رَجَع/يَرْجِع:to return: 16*
+رَجَع/يَرْجِع%to return% 16*
 
-لَبِسَ/يَلْبَس:to wear, to put on: 16*
+لَبِسَ/يَلْبَس%to wear, to put on% 16*
 
-شَرِب/يَشْرَب:to drink: 16*
+شَرِب/يَشْرَب%to drink% 16*
 
-أَكَل/يَأْكُل:to eat: 16*
+أَكَل/يَأْكُل%to eat% 16*
 
-طَبَخ/يَطْبُخ:to cook: 16*
+طَبَخ/يَطْبُخ%to cook% 16*
 
-صَحا/يَصْحو:to wake up: 16* : From the root ص ح و‎ (ṣ-ḥ-w). Related to purity and clearing. Compare Hebrew צַח‎ (“pure, clear”) and Classical Syriac ܨܚܘܐ‎ (“good weather, clear sky; (figuratively) serenity, peace”)
+صَحا/يَصْحو%to wake up% 16* % From the root ص ح و‎ (ṣ-ḥ-w). Related to purity and clearing. Compare Hebrew צַח‎ (“pure, clear”) and Classical Syriac ܨܚܘܐ‎ (“good weather, clear sky; (figuratively) serenity, peace”)
 
-نَام/يَنام:to sleep: 16*
+نَام/يَنام%to sleep% 16*
 
-لَعِب/يَلْعَب:to play: 16*
+لَعِب/يَلْعَب%to play% 16*
 
-وَجْه(وُجُوه):(anatomy) face : 16:  "(anatomy) face; face, countenance; front, façade; watch dial; outside, exterior, surface". From the root و ج ه‎ (w-j-h). Note verbal association with honor- وَجُهَ • (wajuha) I, non-past يَوْجُهُ‎ (yawjuhu) "to be a man of distinction, to be notable"
+وَجْه(وُجُوه)%(anatomy) face % 16%  "(anatomy) face; face, countenance; front, façade; watch dial; outside, exterior, surface". From the root و ج ه‎ (w-j-h). Note verbal association with honor- وَجُهَ • (wajuha) I, non-past يَوْجُهُ‎ (yawjuhu) "to be a man of distinction, to be notable"
 
-دَرْس(دُرُوس):lesson/class: 16
+دَرْس(دُرُوس)%lesson/class% 16
 
-غُرفة الجُلوس:sitting room: 16
+غُرفة الجُلوس%sitting room% 16
 
-النادي:the club: 16
+النادي%the club% 16
 
-كُرة الريشة:badminton: 16: "feather ball"
+كُرة الريشة%badminton% 16% "feather ball"
 
-رِيشَة : feather : 16+ : Also "quill; writing pen; brush; guitar pick; lancet; reed"
-كُرة : ball : 16+
+رِيشَة % feather % 16+ % Also "quill; writing pen; brush; guitar pick; lancet; reed"
+كُرة % ball % 16+
 
-خارِج:outside (of): 16
+خارِج%outside (of)% 16
 
-طائرة:plane:16-:In memrize but not in textbook
+طائرة%plane%16-%In memrize but not in textbook
 
