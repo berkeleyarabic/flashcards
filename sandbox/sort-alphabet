@@ -5,11 +5,9 @@ use strict;
 # Tool to check that alphabet-order, from Wikipedia, agrees with
 # Perl's (unicode's?) sorting order
 
-binmode(STDOUT, ":utf8");
-binmode(STDIN, ":utf8");
-binmode(STDERR, ":utf8");
+use open (":encoding(UTF-8)", ":std" );
 
-open IN, "<:encoding(UTF-8)", "alphabet-order" or die;
+open IN, "<", "alphabet-order" or die;
 
 my @l;
 while(<IN>) {

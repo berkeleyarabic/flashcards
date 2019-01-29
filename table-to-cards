@@ -58,7 +58,7 @@ if($outputting) {
 
     $out_tex = "$output_base.gen.tex";
     warn "Writing to $out_tex\n";
-    open OUT, ">:encoding(UTF-8)", $out_tex or die "Couldn't open $out_tex for writing\n";
+    open OUT, ">", $out_tex or die "Couldn't open $out_tex for writing\n";
 
     print OUT <<\EOF;
 % my-latex-command: xelatex

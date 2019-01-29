@@ -91,7 +91,7 @@ if($outputting) {
   }
   $out_tex = "$output_base$fnsuff.gen.tex";
   warn "Writing to $out_tex\n" if $verbose;
-  open OUT, ">:encoding(UTF-8)", $out_tex or die "Couldn't open $out_tex for writing";
+  open OUT, ">", $out_tex or die "Couldn't open $out_tex for writing";
 
   print OUT <<\EOF;
 % my-latex-command: xelatex
@@ -244,7 +244,7 @@ sub write_entries {
   # l2 = other language
   my $collfn = "$output_base-collisions-$l1.gen.txt";
   warn "Writing collisions to $collfn\n" if $verbose;
-  open COLL, ">:encoding(UTF-8)", $collfn or
+  open COLL, ">", $collfn or
       die "Couldn't open $collfn for writing";
 
   my ($entries, $l2);
@@ -334,7 +334,7 @@ if($outputting) {
 if(0) {
   my $collfn = "$output_base-collisions.gen.txt";
   warn "Writing collisions to $collfn\n" if $verbose;
-  open COLL, ">:encoding(UTF-8)", $collfn or
+  open COLL, ">", $collfn or
       die "Couldn't open $collfn for writing";
   
   print OUT <<\EOF;

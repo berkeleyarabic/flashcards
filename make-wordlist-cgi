@@ -79,7 +79,7 @@ if($outputting) {
   pv '$output_base';
   $out_html = "$output_base$fnsuff.html";
   warn "Writing to $out_html\n" if $verbose;
-  open OUT, ">:encoding(UTF-8)", $out_html or die "Couldn't open $out_html for writing";
+  open OUT, ">", $out_html or die "Couldn't open $out_html for writing";
 
   print OUT start_html(
     -title => 'Word list',
