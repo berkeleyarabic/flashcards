@@ -19,7 +19,7 @@ sub foot_fmt {
 sub foot_fmt_idx {
   my ($f) = @_;
 #  $f = foot_fold $f;
-  $f =~ s/^MA Unit/MA/;
+  $f =~ s/^MA (\d+) Unit (\d+)/MA $1.$2/;
   $f =~ s/^BCC Words/BCC/;
   $f =~ s/^Classroom/Class/;
   $f =~ s/Conjugations/Conj/;
