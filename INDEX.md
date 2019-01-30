@@ -18,20 +18,20 @@ Vocabulary from our textbook Wightwick & Gaafar "Mastering Arabic 1":
 
 Units covered in BCC Arabic 1A:
 
-- [Mastering Arabic Units 1-4](ma-unit-1-4.pdf) *([word list](ma-unit-1-4-words.html), 82 words)*
-- [Mastering Arabic Units 5-7](ma-unit-5-7.pdf) *([word list](ma-unit-5-7-words.html), 88 words)*
-- [Mastering Arabic Units 9-10](ma-unit-9-10.pdf) *([word list](ma-unit-9-10-words.html), 88 words)*
-- [Mastering Arabic Unit 11](ma-unit-11.pdf) *([word list](ma-unit-11-words.html), 47 words)*
-- [Mastering Arabic Unit 12](ma-unit-12.pdf) *([word list](ma-unit-12-words.html), 94 words)*
+- [Mastering Arabic 1 Units 1-4](ma-unit-1-4.pdf) *([word list](ma-unit-1-4-words.html), 82 words)*
+- [Mastering Arabic 1 Units 5-7](ma-unit-5-7.pdf) *([word list](ma-unit-5-7-words.html), 88 words)*
+- [Mastering Arabic 1 Units 9-10](ma-unit-9-10.pdf) *([word list](ma-unit-9-10-words.html), 88 words)*
+- [Mastering Arabic 1 Unit 11](ma-unit-11.pdf) *([word list](ma-unit-11-words.html), 47 words)*
+- [Mastering Arabic 1 Unit 12](ma-unit-12.pdf) *([word list](ma-unit-12-words.html), 94 words)*
 
-BCC Arabic 1B (in progress):
+Units covered in BCC Arabic 1B (up to end of Mastering Arabic 1):
 
-- [Mastering Arabic Unit 13](ma-unit-13.pdf) *([word list](ma-unit-13-words.html), 38 words)*
-- [Mastering Arabic Unit 14](ma-unit-14.pdf) *([word list](ma-unit-14-words.html), 61 words)*
-- [Mastering Arabic Unit 16](ma-unit-16.pdf) *([word list](ma-unit-16-words.html), 44 words)*
-- [Mastering Arabic Unit 17](ma-unit-17.pdf) *([word list](ma-unit-17-words.html), 57 words)*
-- [Mastering Arabic Unit 18](ma-unit-18.pdf) *([word list](ma-unit-18-words.html), 57 words)*
-- [Mastering Arabic Unit 19](ma-unit-19.pdf) *([word list](ma-unit-19-words.html), 43 words)*
+- [Mastering Arabic 1 Unit 13](ma-unit-13.pdf) *([word list](ma-unit-13-words.html), 38 words)*
+- [Mastering Arabic 1 Unit 14](ma-unit-14.pdf) *([word list](ma-unit-14-words.html), 61 words)*
+- [Mastering Arabic 1 Unit 16](ma-unit-16.pdf) *([word list](ma-unit-16-words.html), 44 words)*
+- [Mastering Arabic 1 Unit 17](ma-unit-17.pdf) *([word list](ma-unit-17-words.html), 57 words)*
+- [Mastering Arabic 1 Unit 18](ma-unit-18.pdf) *([word list](ma-unit-18-words.html), 57 words)*
+- [Mastering Arabic 1 Unit 19](ma-unit-19.pdf) *([word list](ma-unit-19-words.html), 43 words)*
 
 Miscellaneous:
 
@@ -85,11 +85,13 @@ flashcards provided by the publisher, these have vowel diacritics. The
 publishers seem to have been very conservative in their inclusion of
 vocabulary on memrise.com, which lacks over half of the words in the
 textbook. In case you are planning to use both paper cards and the
-website, the words which are in the textbook but not in memrise are
-marked with a "+" after the unit number on the front. Words that are
-not even in the textbook vocabulary sections are marked with a "++";
-some of these are introduced only in the chapter text, or the
-workbook.
+website, the words which are in the textbook but not in Memrise are
+marked with a "*" after the unit number on the front. Words that are
+not in the textbook vocabulary sections are marked with a "+". Some of
+these extra words are introduced only in the chapter text, or the
+workbook; others are introduced by me to support the original chapter
+vocabulary (e.g. badminton, lit. "feather ball" - I added "feather"
+and "ball" so you can learn these words separately).
 
 **Pronouns:** The pronouns come from Wikipedia and include some extra
 endings, and numbers (i.e. dual), which we don't study in class.
