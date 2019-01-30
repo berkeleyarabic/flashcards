@@ -1,0 +1,25 @@
+\usepackage{fancyhdr,xfp} % xfp=floating point
+\usepackage[pdfusetitle]{hyperref}
+\usepackage{titling}
+
+% FHE 26 Jan 2019
+% adapted https://tex.stackexchange.com/questions/443115/page-numbers-only-on-even-pages
+\fancyhf{}% Clear header/footer
+\fancyhead[L]{
+  \ifodd\value{page}
+  \textsc{\thetitle}
+  \else
+  \myurl
+  \fi
+}
+\fancyhead[R]{%
+  Sheet \inteval{\value{page} / 2}% Divide even page number by 2
+%  \enspace
+  %% \ifodd\value{page}front
+  %% \else
+  %% back
+  %% \fi
+}
+\renewcommand{\headrulewidth}{0pt}% Remove header rule
+
+\pagestyle{fancy}

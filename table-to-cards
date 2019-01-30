@@ -27,11 +27,13 @@ my (@tab_files,
     $output_base,
     $keep_aux
     );
+our $doctitle;
 
 GetOptions('-v' => \$verbose,
            '-f|foot=s' => \$foot_fmt,
            '-o=s' => \$output_base,
            '-h|help' => \$help,
+           '-t|title=s' => \$doctitle,
            '-K|keep-aux' => \$keep_aux
     ) or usage 1;
 
@@ -46,28 +48,48 @@ $PV::debug = $ReadTable::verbose = $verbose;
 my $out_tex;
 my $outputting = 1;
 
+if(!defined $output_base) {
+  if(@tab_files>1) {
+    die "Need to specify output basename when using multiple inputs";
+  } else {
+    ($output_base = $tab_files[0]) =~ s/\..*?$//;
+  }
+}
+
+if(!defined $doctitle) {
+  $doctitle = $output_base;
+  do "./titles.pl";
+  pv '$doctitle';
+}
+
 if($outputting) {
-  if(!defined $output_base) {
-    if(@tab_files>1) {
-      die "Need to specify output basename when using multiple inputs";
-    } else {
-      ($output_base = $tab_files[0]) =~ s/\..*?$//;
-    }
-    warn "Writing to $output_base.*\n";
-    pv '$output_base';
+  warn "Writing to $output_base.*\n";
+  pv '$output_base';
 
-    $out_tex = "$output_base.gen.tex";
-    warn "Writing to $out_tex\n";
-    open OUT, ">", $out_tex or die "Couldn't open $out_tex for writing\n";
+  $out_tex = "$output_base.gen.tex";
+  warn "Writing to $out_tex\n";
+  open OUT, ">", $out_tex or die "Couldn't open $out_tex for writing\n";
 
-    print OUT <<\EOF;
+  print OUT <<\EOF;
 % my-latex-command: xelatex
-\input{tex/arab_fc_common.tex}
+\documentclass[avery5371,grid,frame]{flashcards}
+\input{tex/page_headings.tex}
+\input{tex/arabic_common.tex}
+EOF
+  print OUT "\\title{$doctitle}\n";
+  print OUT <<\EOF;
+\newcommand{\myurl}{\url{http://berkeleyarabic.github.io/flashcards/}}
 \begin{document}
 \cardfrontstyle{headings}
 EOF
-  }
 }
+#     print OUT <<\EOF;
+# % my-latex-command: xelatex
+# \input{tex/arab_fc_common.tex}
+# \begin{document}
+# \cardfrontstyle{headings}
+# EOF
+#   }
 
 sub card {
   my ($arabic,$artransl,$english,$foot) = @_;
@@ -78,7 +100,7 @@ sub card {
   # $arabic = arabic_fixup $arabic;
   # $english = arabic_fixup $english;
   pv '$foot';
-  pv '$group';
+#  pv '$group';
   my $arabic_side;
 
   # if a transliteration is provided, use a tabularx to get left/right

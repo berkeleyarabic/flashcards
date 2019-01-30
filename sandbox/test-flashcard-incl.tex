@@ -1,44 +1,9 @@
 % my-latex-command: xelatex
 \documentclass[avery5371,grid,frame]{flashcards}
-\usepackage{fancyhdr,xfp} % xfp=floating point
-\usepackage[pdfusetitle]{hyperref}
-\usepackage{titling}
-\usepackage{polyglossia}
-\setmainlanguage{english}
-\setotherlanguage{arabic}
-%\newfontfamily\arabicfont[Script = Arabic]{Simplified Arabic}
-\newfontfamily\arabicfont[Script = Arabic]{Scheherazade-Regular}
-%\usepackage[free]{ARfonts}
-
-\usepackage[utf8x]{inputenc}
-
-\usepackage{relsize}
-\newcommand{\ta}[1]{\textarabic{\larger[2] #1}}
-
-% FHE 26 Jan 2019
-% adapted https://tex.stackexchange.com/questions/443115/page-numbers-only-on-even-pages
-\fancyhf{}% Clear header/footer
-\fancyhead[L]{
-  \ifodd\value{page}
-  \thetitle
-  \else
-  \url{http://berkeleyarabic.github.io/}
-  \fi
-}
-\fancyhead[R]{%
-  sheet \inteval{\value{page} / 2}% Divide even page number by 2
-  \enspace
-  \ifodd\value{page}front
-  \else
-  back
-  \fi
-}
-\renewcommand{\headrulewidth}{0pt}% Remove header rule
-
-\pagestyle{fancy}
-
+\input{../tex/page_headings.tex}
+\input{../tex/arabic_common.tex}
 \title{BAS Body Parts}
-
+\newcommand{\myurl}{\url{http://berkeleyarabic.github.io/flashcards/}}
 \begin{document}
 
 \cardfrontstyle{headings}
