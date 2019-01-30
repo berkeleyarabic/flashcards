@@ -21,10 +21,12 @@ Units covered in BCC Arabic 1A:
 - [Mastering Arabic Units 1-4](ma-unit-1-4.pdf) *([word list](ma-unit-1-4-words.html), 82 words)*
 - [Mastering Arabic Units 5-7](ma-unit-5-7.pdf) *([word list](ma-unit-5-7-words.html), 88 words)*
 - [Mastering Arabic Units 9-10](ma-unit-9-10.pdf) *([word list](ma-unit-9-10-words.html), 88 words)*
-- [Mastering Arabic Units 11-13](ma-unit-11-13.pdf) *([word list](ma-unit-11-13-words.html), 178 words)*
+- [Mastering Arabic Unit 11](ma-unit-11.pdf) *([word list](ma-unit-11-words.html), 47 words)*
+- [Mastering Arabic Unit 12](ma-unit-12.pdf) *([word list](ma-unit-12-words.html), 94 words)*
 
 BCC Arabic 1B (in progress):
 
+- [Mastering Arabic Unit 13](ma-unit-13.pdf) *([word list](ma-unit-13-words.html), 38 words)*
 - [Mastering Arabic Unit 14](ma-unit-14.pdf) *([word list](ma-unit-14-words.html), 61 words)*
 - [Mastering Arabic Unit 16](ma-unit-16.pdf) *([word list](ma-unit-16-words.html), 44 words)*
 - [Mastering Arabic Unit 17](ma-unit-17.pdf) *([word list](ma-unit-17-words.html), 57 words)*
