@@ -1,4 +1,42 @@
-- generalize LTR logic
+- warn when missing a card front, or when group field is suspiciously
+  long
+
+- change english sides to remind student if there is a m, f version on
+  the Arabic side, or if singular / pl, or different verb forms...? or
+  preposition needed ("thanks (for)")
+
+- what to do with cards with missing plurals etc. because they were
+  introduced early?
+
+- alphabet final kaaf is different from classroom one
+
+- commit
+
+- generalize LTR logic (e.g. support Hebrew)
+    - be more intelligent
+    - use regexes
+    - force uniformity within quotes, parentheses (or at least both
+      ends should match)
+
+- finalize UCB class vocab
+
+- add examples to verb form cards
+
+- think about "small" size. think about fixing alignment
+
+- deck as Perl hash structure. file specifying deck. defaults being
+  overridden. re-implement existing functionality in this form.
+  immediate goal is to make it easy to define a deck outside of this
+  project directory
+
+- "free-form" deck for e.g. for pronouns.tab, also Hebrew alphabet
+
+- 2-cards and 4-cards deck type. based on standard deck, use regexes
+  to specify which cards form groups
+
+- fix/update study tips
+
+- SE post
 
 \- separate out Perl utils: shell stuff, PV
 
@@ -70,7 +108,7 @@
 
 - generalize fixup subs to multiple language scripts?
 
-- PV.pm, U.pm - remove unnecessary stuff
+\- PV.pm, U.pm - remove unnecessary stuff
 
 - do something like publish-latest to manage generated files? https://blog.kentcdodds.com/why-i-don-t-commit-generated-files-to-master-a4d76382564?gi=c8d63c52d50d
 
