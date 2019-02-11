@@ -70,34 +70,42 @@ corrections or additions.
 
 ### Deck notes
 
-**Alphabet with positions**: List with pronunciations sourced from
+* **Alphabet with positions**: List with pronunciations sourced from
 quizlet.com. I added hamza.
 
-**BCC workbook words:** These are from Dr. Gaye's handwriting practice
+* **BCC workbook words:** These are from Dr. Gaye's handwriting practice
 workbook.
 
-**Mastering Arabic words:** Unlike the words on the
-[memrise.com](https://www.memrise.com/course/1322444/mastering-arabic-1/)
-flashcards provided by the publisher, these have vowel diacritics. The
-publishers seem to have been very conservative in their inclusion of
-vocabulary on memrise.com, which lacks over half of the words in the
-textbook. In case you are planning to use both paper cards and the
-website, the words which are in the textbook but not in Memrise are
-marked with a "*" after the unit number on the front. Words that are
-not in the textbook vocabulary sections are marked with a "+". Some of
-these extra words are introduced only in the chapter text, or the
-workbook; others are introduced by me to support the original chapter
-vocabulary (e.g. badminton, lit. "feather ball" - I added "feather"
-and "ball" so you can learn these words separately).
+* **Mastering Arabic words:** These are words from the chapter
+    vocabulary sections of Mastering Arabic 1. Most of my chapter word
+    lists were initially copied from user-contributed Quizlet decks,
+    or from the
+    [memrise.com](https://www.memrise.com/course/1322444/mastering-arabic-1/)
+    flashcards provided by the publisher. I've studied with them and
+    corrected errors as I found them, but some errors may remain.
+    Unlike the words on memrise.com, these have vowel diacritics. I've
+    also attempted to include any extra words appearing in the chapter
+    dialogs, the workbook exercises, or the publisher's online videos,
+    as well as to clarify other vocabulary phrases (e.g. badminton,
+    lit. "feather ball" - I added "feather" and "ball" so you can
+    learn these words separately).
 
-**Pronouns:** The pronouns come from Wikipedia and include some extra
+    Annotations: The publishers seem to have been very conservative in
+    their inclusion of vocabulary on memrise.com, which lacks over
+    half of the words in the textbook. In case you are planning to use
+    both paper cards and the website, the words which are in Memrise
+    are marked with a "*" after the unit number on the front. Words
+    that are not in the textbook vocabulary sections are marked with a
+    "+".
+
+* **Pronouns:** The pronouns come from Wikipedia and include some extra
 endings, and numbers (i.e. dual), which we don't study in class.
 Please [read about
 them](https://en.wikipedia.org/wiki/Arabic_grammar#Pronouns) first.
 Note the Mastering Arabic cards already include pronouns and endings
 as they are introduced by the textbook.
 
-**Berkeley Adult School words:** These are some words from Mr. Omer's
+* **Berkeley Adult School words:** These are some words from Mr. Omer's
 Arabic class at the Berkeley Adult School. The "body parts" list is a
 work in progress, I tried to include the plurals from Wiktionary but
 most entries have multiple plurals corresponding to different usages.
