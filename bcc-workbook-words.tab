@@ -1,9 +1,9 @@
 
 ##@ BCC Words %g
 
-أَوْ : or : 1-
+أَوْ : or : 1
 
-بَيْت،بُيُوت : house : 1+
+# بَيْت،بُيُوت : house : 1+
 
 باب،أَبْواب : door : 1
 
@@ -11,9 +11,9 @@
 
 وَ : and : 1
 
-كَأْس،كُؤُوس : glass : 2+
+# كَأْس،كُؤُوس : glass : 2+
 
-سَيَّارَة،سَيَّارَات : car : 2+
+# سَيَّارَة،سَيَّارَات : car : 2+
 
 سُكَّر : sugar : 2
 
@@ -25,11 +25,11 @@
 
 يَكْتُب : he writes : 2
 
-يَسار : left (vs right) : 2-
+يَسار : left (vs right) : 2
 
 بِسَبَب : on account of : 2 : on + reason
 
-(كَـ)كَ : like, as (preposition) : 2-
+(كَـ)كَ : like, as (preposition) : 2
 
 حَتَّى : until : 3 : Either from the root ح ت ت‎ (ḥ-t-t) in the senses of "to scrape or rub off", "to remove or destroy", "to end something", "to drive back or repel"; or from the root ع ت ي‎ (ʿ-t-y), meaning "to be excessive", "to push the limits or be at the threshold", "to be extremely old or at the extreme end of life"
 
@@ -51,7 +51,7 @@
 
 لا شَيْء : nothing (no thing) : 3
 
-حُلْو،حُلْوَة : sweet, delicious, charming : 3+
+# حُلْو،حُلْوَة : sweet, delicious, charming : 3+
 
 النّاس : people : 4
 
@@ -84,7 +84,7 @@
 
 مَن؟ : who? : 5
 
-حمام : pigeon : 5-
+حمام : pigeon : 5
 
 حَمَّام،حَمَّامَات : bathroom : 5+ : Also- bathhouse; spa; watering hole; swimming pool. From the root ح م م‎ (ḥ-m-m); related to heating.
 

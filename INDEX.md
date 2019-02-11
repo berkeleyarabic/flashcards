@@ -73,11 +73,8 @@ corrections or additions.
 **Alphabet with positions**: List with pronunciations sourced from
 quizlet.com. I added hamza.
 
-**BCC workbook words:** There are slight differences between the
-vocabulary lists in the printed workbook versus the eyeVocab software.
-Cards with a minus (-) after the group number are in the workbook but
-not eyeVocab; cards with a plus (+) after the group number are in
-eyeVocab but not the workbook.
+**BCC workbook words:** These are from Dr. Gaye's handwriting practice
+workbook.
 
 **Mastering Arabic words:** Unlike the words on the
 [memrise.com](https://www.memrise.com/course/1322444/mastering-arabic-1/)
