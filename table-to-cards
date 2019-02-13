@@ -71,7 +71,7 @@ if($outputting) {
   open OUT, ">", $out_tex or die "Couldn't open $out_tex for writing\n";
 
   print OUT <<\EOF;
-% my-latex-command: xelatex
+%!TEX TS-program = xelatex
 \documentclass[avery5371,grid,frame]{flashcards}
 \input{tex/page_headings.tex}
 \input{tex/arabic_common.tex}
@@ -84,7 +84,7 @@ EOF
 EOF
 }
 #     print OUT <<\EOF;
-# % my-latex-command: xelatex
+# %!TEX TS-program = xelatex
 # \input{tex/arab_fc_common.tex}
 # \begin{document}
 # \cardfrontstyle{headings}

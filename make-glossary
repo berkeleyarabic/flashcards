@@ -94,7 +94,7 @@ if($outputting) {
   open OUT, ">", $out_tex or die "Couldn't open $out_tex for writing";
 
   print OUT <<\EOF;
-% my-latex-command: xelatex
+%!TEX TS-program = xelatex
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8
 %% longtable doesn't work with multiple columns, but there is a
