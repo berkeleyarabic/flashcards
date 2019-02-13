@@ -1,5 +1,24 @@
+- word-list: way to highlight changes since particular git revision
+
+- how to fix alignment problems?
+
+- try 6x3 format cards
+
+- syntax for four corners, e.g. ||| to separate vertically, or %%. Use
+  ^^ for under-transliteration?
+
+- mark "Beta" decks in INDEX.md
+
+- glossary should automatically separate "," and "/" and ";" so that
+  multiple entries appear, e.g. "afternoon/evening" should produce
+  entry under "evening"
+
 - warn when missing a card front, or when group field is suspiciously
-  long
+  long, to detect extra or missing ":" field delimiters
+
+- group fields should be "short" "standard" names, e.g. MA2.1. decks
+  should specify a mapping from these to (1) card fronts (2) glossary
+  abbrev.s (3) word list headings (4) sortable strings
 
 - change english sides to remind student if there is a m, f version on
   the Arabic side, or if singular / pl, or different verb forms...? or
