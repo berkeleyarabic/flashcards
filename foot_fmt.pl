@@ -1,3 +1,5 @@
+# Change ^{+} and ^{-} to + and -
+# (for word lists)
 sub foot_fold {
   my ($f) = @_;
   $f =~ s/\$\^\{(.*)\}\$/$1/;
