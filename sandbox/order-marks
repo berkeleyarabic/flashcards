@@ -1,0 +1,11 @@
+export PERL_UNICODE=SDL
+
+# right to left mark: "‏"
+
+perl -le 'print "\x{200f}"'
+perl -MHTML::Entities -le 'print decode_entities("&rlm;")'
+
+# left-to-right mark: "‎"
+
+perl -le 'print "\x{200e}"'
+perl -MHTML::Entities -le 'print decode_entities("&lrm;")'
