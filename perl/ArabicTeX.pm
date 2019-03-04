@@ -10,6 +10,8 @@ use strict;
 use Encode;
 use PV;
 
+use utf8;
+
 # FHE 05 Jul 2018 todo: rename this
 
 # FHE 08 Jul 2018 todo: fix parenthesis problems. what we need to do:
@@ -36,7 +38,12 @@ sub tex_fixup {
 # our arabic regex matches all-punctuation words; exclude these
 sub wrap_if_arabic {
   local $_ = shift;
-  /$c1/ ? "\\ta{$_}" : $_;
+  if(/$c1/) {
+    s/,/،/g; # use Arabic comma inside \ta
+    return "\\ta{$_}";
+  } else {
+    return $_;
+  }
 }
 
 # FHE 09 Jul 2018 old version, worked badly on arabic words joined by
