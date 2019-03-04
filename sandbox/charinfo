@@ -6,7 +6,8 @@ use Unicode::UCD 'charinfo';
 use charnames qw(:full);
 use Data::Dumper;
 use Encode;
-binmode STDOUT, ':utf8';
+use open (":encoding(UTF-8)", ":std" );
+#binmode STDOUT, ':utf8';
 
 # my $charinfo   = charinfo(
 #         ord( "\N{SMILING CAT FACE WITH OPEN MOUTH}" )
@@ -15,7 +16,7 @@ binmode STDOUT, ':utf8';
 
 while(<>) {
   chomp;
-  $_ = decode('utf-8', $_);
+#  $_ = decode('utf-8', $_);
   my (@cs) = split //, $_;
   for my $c (@cs) {
     print "$c\n";
