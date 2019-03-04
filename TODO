@@ -1,3 +1,13 @@
+- desired features based on Git:
+
+    - export only new/changed cards in a deck, since a given
+      version/date
+
+    - field-granular three-way merge: if two decks share the same word
+      (having been copied) and one of them changes front, back, or
+      notes, then detect this and prompt whether to propagate change
+      to the other deck
+
 - word-list: way to highlight changes since particular git revision
 
 - how to fix alignment problems?
