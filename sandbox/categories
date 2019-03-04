@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Unicode::UCD 'charinfo';
+use Encode;
+use open (":encoding(UTF-8)", ":std" );
+
+while(<>) {
+  chomp;
+  my (@cs) = split //, $_;
+  for my $c (@cs) {
+    print charinfo(ord($c))->{category}.": $c\n";
+  }
+}

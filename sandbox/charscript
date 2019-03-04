@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use Unicode::UCD qw(charinfo charscript);
+use charnames qw(:full);
+use Data::Dumper;
+use Encode;
+use open (":encoding(UTF-8)", ":std" );
+
+while(<>) {
+  chomp;
+  my (@cs) = split //, $_;
+  for my $c (@cs) {
+    print "$c: ", charscript(ord($c)), "\n";
+  }
+}

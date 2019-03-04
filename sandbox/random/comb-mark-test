@@ -1,0 +1,35 @@
+https://www.fileformat.info/info/unicode/category/Mn/list.htm
+
+# e.g.
+N=033c; (echo -n "$N: "; echo "hello    world" | PERL_UNICODE=SDL perl -pe 's/(\w)/$1\x{'$N'}/g') >> t
+
+0310: h̐e̐l̐l̐o̐    w̐o̐r̐l̐d̐
+0350: h͐e͐l͐l͐o͐    w͐o͐r͐l͐d͐
+0592: h֒e֒l֒l֒o֒    w֒o֒r֒l֒d֒
+030F: h̏ȅl̏l̏ȍ    w̏ȍȑl̏d̏
+031F: h̟e̟l̟l̟o̟    w̟o̟r̟l̟d̟
+0321: h̡e̡l̡l̡o̡    w̡o̡r̡l̡d̡
+0328: h̨ęl̨l̨ǫ    w̨ǫr̨l̨d̨
+033B: h̻e̻l̻l̻o̻    w̻o̻r̻l̻d̻
+033E: h̾e̾l̾l̾o̾    w̾o̾r̾l̾d̾
+0344: ḧ́ë́l̈́l̈́ö́    ẅ́ö́r̈́l̈́d̈́
+0347: h͇e͇l͇l͇o͇    w͇o͇r͇l͇d͇
+0356: h͖e͖l͖l͖o͖    w͖o͖r͖l͖d͖
+035B: h͛e͛l͛l͛o͛    w͛o͛r͛l͛d͛
+036B: hͫeͫlͫlͫoͫ    wͫoͫrͫlͫdͫ
+05A1: h֡e֡l֡l֡o֡    w֡o֡r֡l֡d֡
+05BC: hּeּlּlּoּ    wּoּrּlּdּ
+0619: hؙeؙlؙlؙoؙ    wؙoؙrؙlؙdؙ
+0656: hٖeٖlٖlٖoٖ    wٖoٖrٖlٖdٖ
+06DC: hۜeۜlۜlۜoۜ    wۜoۜrۜlۜdۜ
+20d0: h⃐e⃐l⃐l⃐o⃐    w⃐o⃐r⃐l⃐d⃐
+20d4: h⃔e⃔l⃔l⃔o⃔    w⃔o⃔r⃔l⃔d⃔
+20e1: h⃡e⃡l⃡l⃡o⃡    w⃡o⃡r⃡l⃡d⃡
+20d7: h⃗e⃗l⃗l⃗o⃗    w⃗o⃗r⃗l⃗d⃗
+20d6: h⃖e⃖l⃖l⃖o⃖    w⃖o⃖r⃖l⃖d⃖
+20ee: h⃮e⃮l⃮l⃮o⃮    w⃮o⃮r⃮l⃮d⃮
+3099: h゙e゙l゙l゙o゙    w゙o゙r゙l゙d゙
+033b: h̻e̻l̻l̻o̻    w̻o̻r̻l̻d̻
+033c: h̼e̼l̼l̼o̼    w̼o̼r̼l̼d̼
+20dd: h⃝e⃝l⃝l⃝o⃝    w⃝o⃝r⃝l⃝d⃝
+20de: h⃞e⃞l⃞l⃞o⃞    w⃞o⃞r⃞l⃞d⃞

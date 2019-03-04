@@ -1,0 +1,42 @@
+time ./charscript < ~/study/berkeleyarabic/flashcards/ma-unit-*.tab | grep Inherited | cut -d : -f 1 | sort | uniq -c
+     21 ً
+      4 ٍ
+   1363 َ
+    277 ُ
+    385 ِ
+    190 ّ
+    458 ْ
+     13 ٰ
+./charscript < ~/study/berkeleyarabic/flashcards/ma-unit-*.tab  1.07s user 0.03s system 94% cpu 1.163 total
+grep Inherited  0.02s user 0.00s system 1% cpu 1.160 total
+cut -d : -f 1  0.00s user 0.00s system 0% cpu 1.158 total
+sort  0.01s user 0.00s system 0% cpu 1.162 total
+uniq -c  0.00s user 0.00s system 0% cpu 1.160 total
+
+
+$ echo <064f> | ./charinfo
+
+$VAR1 = {
+          'combining' => 31,
+          'block' => 'Arabic',
+          'decimal' => '',
+          'script' => 'Inherited',
+          'name' => 'ARABIC DAMMA',
+          'title' => '',
+          'upper' => '',
+          'lower' => '',
+          'code' => '064F',
+          'unicode10' => 'ARABIC DAMMAH',
+          'numeric' => '',
+          'category' => 'Mn',
+          'comment' => '',
+          'decomposition' => '',
+          'digit' => '',
+          'bidi' => 'NSM',
+          'mirrored' => 'N'
+        };
+
+
+Manual page perlunicode(1perl) line 428 (press h for help or q to quit)
+ ...
+           Mn          Nonspacing_Mark

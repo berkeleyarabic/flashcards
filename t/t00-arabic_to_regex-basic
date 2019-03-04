@@ -1,0 +1,45 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+
+use ArabicRegex;
+use utf8;
+
+use PV;
+
+use Test::Simple tests => 10;
+
+sub exp_match {
+  my ($r, $s) = @_;
+  my $re = arabic_to_regex($r);
+  my $matches = ($s =~ /^$re$/);
+  if(!$matches) {
+    pv '$r';
+    pv '$s';
+  }
+  ok($matches, "$r matches $s");
+}
+sub exp_no_match {
+  my ($r, $s) = @_;
+  my $re = arabic_to_regex($r);
+  ok($s !~ /^$re$/, "$r doesn't match $s");
+}
+
+my $s = "أعَدَّ";
+exp_match $s, "أعَدّ";
+exp_match $s, "أعد";
+exp_match $s, "أعد";
+exp_no_match $s, "أعِد";
+exp_no_match $s, "أعدْ";
+# XXX TODO want to detect extra shadda
+#exp_no_match $s, "أعّد";
+
+# check whitespace matching
+exp_match "سبحان\tالله", "سبحان    \nالله";
+# with fatha
+exp_match "سبحَان\tالله", "سبحان    \nالله";
+# with damma, kasra
+exp_no_match "سبحَانُ\tالله", "سبحانِ    \nالله";
+
+exp_match "جدّ", "جدّ";
+ok ("جدّ" eq "جدّ");

@@ -1,0 +1,71 @@
+#!/usr/bin/perl
+use warnings;
+use strict;
+
+use open (":encoding(UTF-8)", ":std" );
+use utf8;
+
+use ArabicRegex;
+use PV;
+
+
+# Arguments are a number of files, with lines starting with Arabic strings
+
+# Create a list of lines with source file and line number information,
+# in order of appearance on command-line
+
+# Use ArabicRegex to collect matching lines. Remove the head of the list.
+
+my @lines;
+
+for my $fn (@ARGV) {
+  open IN, "<", $fn or die "Couldn't open $fn";
+
+  while(<IN>) {
+    chomp;
+    next if /^#/;
+    next if /^\s*$/;
+    push @lines, [$_, "$fn:$."];
+  }
+
+  close IN;
+}
+
+#pv '\@lines';
+
+sub put_lines {
+  map {
+    print "$_->[0] # $_->[1]\n";
+  } @_;
+}
+
+
+while(@lines) {
+  my $l = shift @lines;
+  my $t = $l->[0];
+#  $t =~ /^\s*(.*?)\s*:/ or die "$t, $l->[0]";
+  $t =~ /^\s*(\w+)/ or die "$t, $l->[1]";
+  my ($str) = $1;
+  warn "t=$t";
+  warn "str=$str";
+  my ($re) = arabic_to_regex $str;
+#  pv '$re';
+  $re = qr/^\s*$re\b/;
+  warn "re=$re";
+  $t =~ /$re/ or die "$t, $l->[1]";
+  my @matches=();
+  my @match_ids=();
+  for my $i (0..$#lines) {
+    defined $lines[$i]->[0] or die;
+    if($lines[$i]->[0] =~ $re) {
+      push @matches, $lines[$i];
+      push @match_ids, $i;
+    }
+  }
+  # remove matching lines, in reverse order to preserve indices
+  for my $i (reverse @match_ids) {
+    splice @lines, $i, 1;
+  }
+  put_lines ($l, @matches);
+  print "\n";
+}
