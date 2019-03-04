@@ -1,0 +1,167 @@
+##@ MA 2 Unit %g
+
+طَعام (أطعِمة) : food : 6* # ma-2-unit-6.tab:2
+# طعام/أطعمة : food : 6* # ma-2-unit-6-memrise.tab:15
+
+غذاء (أغذية) : foodstuff, nourishment : 6* : Split from "food" following Memrise list
+#غذاء/أغذية : food(stuff) : 6* # ma-2-unit-6-memrise.tab:16
+
+مَحَلّ (مَحَلات) : shop/store : 6* # ma-2-unit-6.tab:3
+# محلّ/محلّات : shop (store) : 6* # ma-2-unit-6-memrise.tab:22
+
+مَخبَز (مَخابِز) : bakery : 6* # ma-2-unit-6.tab:4
+# مخبز/مخابز : bakery : 6* # ma-2-unit-6-memrise.tab:23
+
+سمّاك (ون/ين) : fishmonger : 6* # ma-2-unit-6.tab:5
+#سمّاك/سمّاكون : fishmonger : 6* # ma-2-unit-6-memrise.tab:13
+
+جَزّارة(ات) : butcher shop : 6* # ma-2-unit-6.tab:6
+#جزّارة/جزّارات : butcher shop : 6* # ma-2-unit-6-memrise.tab:8
+
+بَقّالة(ات) : grocery : 6* # ma-2-unit-6.tab:7
+#بقّالة/بقّالات : grocery : 6* # ma-2-unit-6-memrise.tab:4
+
+لَبّان (ون/ين) : dairy/milkman : 6* # ma-2-unit-6.tab:8
+# لبّان/لبّانون : dairy, milkman : 6* # ma-2-unit-6-memrise.tab:20
+
+خُضَريّ (ون/ين) : greengrocer : 6* # ma-2-unit-6.tab:9
+# خضريّ/خضريّون : greengrocer : 6* # ma-2-unit-6-memrise.tab:10
+
+كَمّية (ات) : measure/quantity : 6* # ma-2-unit-6.tab:10
+# كمّية/كمّيات : quantity : 6* # ma-2-unit-6-memrise.tab:18
+
+أُسلوب (أساليب) : method : 6* # ma-2-unit-6.tab:11
+# أسلوب/أساليب : method : 6* # ma-2-unit-6-memrise.tab:1
+
+تَحضير : preparation : 6 # ma-2-unit-6.tab:12
+
+كوب (أكواب) : glass/cup (measuring) : 6* # ma-2-unit-6.tab:13
+# كوب/أكواب : glass, cup (for measuring) : 6* # ma-2-unit-6-memrise.tab:19
+
+مِلعَقة (مَلاعِق) : spoon : 6* # ma-2-unit-6.tab:14
+# ملعقة/ملاعق : spoon : 6* # ma-2-unit-6-memrise.tab:28
+
+سيخ (أسياخ) : skewer : 6 # ma-2-unit-6.tab:15
+
+كُفتة : minced meat skewers : 6 # ma-2-unit-6.tab:16
+
+ضأني : lamb/mutton : 6 # ma-2-unit-6.tab:17
+
+سَلاطة (ات) : salad : 6* # ma-2-unit-6.tab:18
+# سلاطة : salad : 6* # ma-2-unit-6-memrise.tab:12
+
+خِيار : cucumber : 6 # ma-2-unit-6.tab:19
+
+كَمّون : cumin : 6 # ma-2-unit-6.tab:20
+
+نَعناع : mint : 6* # ma-2-unit-6.tab:21
+# نعناع : mint : 6* # ma-2-unit-6-memrise.tab:29
+
+ثوم : garlic : 6* # ma-2-unit-6.tab:22
+# ثوم : garlic : 6* # ma-2-unit-6-memrise.tab:7
+
+فَصّ (فُصوص) : clove/segment : 6 # ma-2-unit-6.tab:23
+
+تَمْر : dates : 6* : Added sukun # ma-2-unit-6.tab:24
+# تمر : dates : 6* # ma-2-unit-6-memrise.tab:5
+
+حلويّات : sweets/desserts : 6* # ma-2-unit-6.tab:25
+# حلويات : sweets, desserts : 6* # ma-2-unit-6-memrise.tab:9
+
+وَجبة(ات) : meal : 6* # ma-2-unit-6.tab:26
+# وجبة/وجبات : meal : 6* # ma-2-unit-6-memrise.tab:30
+#X غِذاء (أغذِية) : Meal : 6 # ma-2-unit-6.tab:68
+
+شخص (أشخاص) : person : 6 # ma-2-unit-6.tab:27
+
+مُستَهلِك(ون/ين) : consumer : 6 # ma-2-unit-6.tab:28
+
+حِساب (ات) : bill : 6 # ma-2-unit-6.tab:29
+
+سِعر(أسعار) : price : 6* # ma-2-unit-6.tab:30
+# سعر/أسعار : price : 6* # ma-2-unit-6-memrise.tab:11
+
+خَطأ(أخطاء) : mistake/error : 6 # ma-2-unit-6.tab:31
+
+سِنّ (أسنان) : tooth : 6 # ma-2-unit-6.tab:32
+
+صَوم : fast(ing) : 6* # ma-2-unit-6.tab:33
+# صوم : fast, fasting : 6* # ma-2-unit-6-memrise.tab:14
+
+صائم (ون/ين) : person fasting : 6 # ma-2-unit-6.tab:34
+
+آذان : call to prayer : 6 # ma-2-unit-6.tab:35
+
+صَلاة (صَلَوات) : prayer : 6 # ma-2-unit-6.tab:36
+
+مشويّ : grilled : 6* # ma-2-unit-6.tab:37
+# مشوي : grilled : 6* # ma-2-unit-6-memrise.tab:25
+
+مقليّ : fried : 6* # ma-2-unit-6.tab:38
+# مقلي : fried : 6* # ma-2-unit-6-memrise.tab:27
+
+محمر : fried/pan-fried : 6 # ma-2-unit-6.tab:39
+
+مَسلوق : boiled : 6* # ma-2-unit-6.tab:40
+# مسلوق : boiled : 6* # ma-2-unit-6-memrise.tab:24
+
+مَحشي : stuffed : 6* # ma-2-unit-6.tab:41
+# محشي : stuffed : 6* # ma-2-unit-6-memrise.tab:21
+
+مُخَلِّل : pickled : 6 # ma-2-unit-6.tab:42
+
+مَهروس : creamed/mashed : 6 # ma-2-unit-6.tab:43
+
+مَفروم : minced : 6* # ma-2-unit-6.tab:44
+# مفروم : minced : 6* # ma-2-unit-6-memrise.tab:26
+
+مَبشور : grated : 6 # ma-2-unit-6.tab:45
+
+مُقَطَّع : chopped : 6 # ma-2-unit-6.tab:46
+
+ضارّ (بِ) : harmful/bad (for) : 6 # ma-2-unit-6.tab:47
+
+صَحيح : correct : 6 # ma-2-unit-6.tab:48
+
+نَسيَ، يَنسَى : forget : 6 # ma-2-unit-6.tab:49
+
+تَذَكَّرَ، يَتَذَكَّر : remember : 6 # ma-2-unit-6.tab:50
+
+تَناوَلَ، يَتَناوَل : to eat/partake : 6* # ma-2-unit-6.tab:51
+# تناول/يتناول : to eat, partake : 6* # ma-2-unit-6-memrise.tab:6
+
+أفطَرَ، يُفطِر : to eat breakfast : 6* # ma-2-unit-6.tab:52
+# أفطر/يفطر : to eat breakfast : 6* # ma-2-unit-6-memrise.tab:2
+
+اِستَهلَكَ، يَستَهلِك : to consume : 6* # ma-2-unit-6.tab:53
+# استهلك/يستهلك : to consume : 6* # ma-2-unit-6-memrise.tab:3
+
+اِنكَسَرَ، يَنكَسِر : to break/be broken : 6 # ma-2-unit-6.tab:54
+
+اِعتَقَدَ، يَعتَقِد : to believe/think : 6 # ma-2-unit-6.tab:55
+
+اِختَلَفَ، يَختَلِف : to differ : 6 # ma-2-unit-6.tab:56
+
+زادَ، يزيد : to increase : 6 # ma-2-unit-6.tab:57
+
+طبق اليوم : dish of the day : 6 # ma-2-unit-6.tab:58
+
+زجاجة مياه : bottle of water : 6 # ma-2-unit-6.tab:59
+
+في الفرن : baked (in the oven) : 6* # ma-2-unit-6.tab:60
+# في الفرن : baked : 6* # ma-2-unit-6-memrise.tab:17
+
+بسيطة : it's nothing ('easy') : 6 # ma-2-unit-6.tab:61
+
+على حَقّ : right/correct : 6 # ma-2-unit-6.tab:62
+
+تقليدياً : traditionally : 6 # ma-2-unit-6.tab:63
+
+اِخلِطوا... : mix... : 6 # ma-2-unit-6.tab:64
+
+أضيفوا... : add... : 6 # ma-2-unit-6.tab:65
+
+قَسِّموا... : divide... : 6 # ma-2-unit-6.tab:66
+
+ضَعوا : put... : 6 # ma-2-unit-6.tab:67
+
