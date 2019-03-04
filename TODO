@@ -1,3 +1,5 @@
+- fix "Class Vocab +" appearing in glossary & card foot (should be super)
+
 - desired features based on Git:
 
     - export only new/changed cards in a deck, since a given
