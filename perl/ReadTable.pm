@@ -17,6 +17,7 @@ our $secret = sprintf("%08x",rand(16**8));
 sub format_group {
   my ($group) = @_;
   if(defined $group) {
+    # XXX move this to foot_fmt.pl
     $group =~ s/([+*-]+)$/\$^{$1}\$/;
   } else {
     $group = "";
