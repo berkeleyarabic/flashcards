@@ -1,162 +1,163 @@
-عُنوان، عَناوين : Address(es) : 1 # ma-2-unit-1.tab:2
-عنوان/عناوين : address : 1* # ma-2-unit-1-memrise.tab:20
+عُنوان (عَناوين) : address : 1* # ma-2-unit-1.tab:2
+#عنوان/عناوين : address : 1* # ma-2-unit-1-memrise.tab:20
 
-إقامة، إقامات : Residence(s) : 1 # ma-2-unit-1.tab:3
+إقامة (إقامات) : residence : 1 # ma-2-unit-1.tab:3
 
-شَقّة، سُقَق : Apartment(s) : 1 # ma-2-unit-1.tab:4
-شقّة/شقق : apartment : 1* # ma-2-unit-1-memrise.tab:16
+شَقّة، سُقَق : apartment : 1* # ma-2-unit-1.tab:4
+#شقّة/شقق : apartment : 1* # ma-2-unit-1-memrise.tab:16
 
-قَرْيَة، قُرىّ : Village(s) : 1 # ma-2-unit-1.tab:5
-قرية/قرى : village : 1* # ma-2-unit-1-memrise.tab:22
+قَرْيَة، قُرىّ : village : 1* # ma-2-unit-1.tab:5
+#قرية/قرى : village : 1* # ma-2-unit-1-memrise.tab:22
 
-حَيّ، أحياء : District(s); area(s) : 1 # ma-2-unit-1.tab:6
+حَيّ، أحياء : district; area : 1 # ma-2-unit-1.tab:6
 
-عائلة، عائلات : Family (families) : 1 # ma-2-unit-1.tab:7
-عائلة/عائلات : family : 1* # ma-2-unit-1-memrise.tab:18
+عائلة، عائلات : family : 1* # ma-2-unit-1.tab:7
+#عائلة/عائلات : family : 1* # ma-2-unit-1-memrise.tab:18
 
-تُفولة، تُفولات : Childhood(s) : 1 # ma-2-unit-1.tab:8
+تُفولة، تُفولات : childhood : 1 # ma-2-unit-1.tab:8
 
-اب (آباء)/والِد : Father(s) : 1 # ma-2-unit-1.tab:9
+اب (آباء)/والِد : father : 1 # ma-2-unit-1.tab:9
 
-أُم (أُمهات)/والِدة : Mother(s) : 1 # ma-2-unit-1.tab:10
+أُم (أُمهات)/والِدة : mother : 1 # ma-2-unit-1.tab:10
 
-أخ (إخوة) : Brother(s) : 1 # ma-2-unit-1.tab:11
+والدان : parents : 1* # ma-2-unit-1-memrise.tab:29
 
-أُخْت (أخوات) : Sister(s) : 1 # ma-2-unit-1.tab:12
+أخ (إخوة) : brother : 1 # ma-2-unit-1.tab:11
 
-إبن (أَبْنَاء) : Son(s) : 1 # ma-2-unit-1.tab:13
+أُخْت (أخوات) : sister : 1 # ma-2-unit-1.tab:12
 
-إبنة (إبنات) : Daughter(s) : 1 # ma-2-unit-1.tab:14
+إبن (أَبْنَاء) : son : 1 # ma-2-unit-1.tab:13
 
-جدّ (أَجداد) : Grandfather(s) : 1 # ma-2-unit-1.tab:15
-جدّ/أجداد : grandfather : 1* # ma-2-unit-1-memrise.tab:5
+إبنة (إبنات) : daughter : 1 # ma-2-unit-1.tab:14
 
-جدّة (جدات) : Grandmother(s) : 1 # ma-2-unit-1.tab:16
-جدّة/جدّات : grandmother : 1* # ma-2-unit-1-memrise.tab:6
+جدّ (أَجداد) : grandfather : 1* # ma-2-unit-1.tab:15
+#جدّ/أجداد : grandfather : 1* # ma-2-unit-1-memrise.tab:5
 
-حفيد (أحفاد) : Grandson(s) : 1 # ma-2-unit-1.tab:17
-حفيد/أحفاد : grandson : 1* # ma-2-unit-1-memrise.tab:7
+جدّة (جدات) : grandmother : 1* # ma-2-unit-1.tab:16
+#جدّة/جدّات : grandmother : 1* # ma-2-unit-1-memrise.tab:6
 
-حفيدة (حفيدات) : Granddaughter(s) : 1 # ma-2-unit-1.tab:18
-حفيدة/حفيدات : granddaughter : 1* # ma-2-unit-1-memrise.tab:8
+حفيد (أحفاد) : grandson : 1* # ma-2-unit-1.tab:17
+#حفيد/أحفاد : grandson : 1* # ma-2-unit-1-memrise.tab:7
 
-خال (أخوال) : Maternal uncle(s) : 1 # ma-2-unit-1.tab:19
-خال/أخوال : maternal uncle : 1* # ma-2-unit-1-memrise.tab:10
+حفيدة (حفيدات) : granddaughter : 1* # ma-2-unit-1.tab:18
+#حفيدة/حفيدات : granddaughter : 1* # ma-2-unit-1-memrise.tab:8
 
-خالة (خالات) : Maternal aunt(s) : 1 # ma-2-unit-1.tab:20
-خالة/خالات : maternal aunt : 1* # ma-2-unit-1-memrise.tab:11
+خال (أخوال) : maternal uncle : 1* # ma-2-unit-1.tab:19
+#خال/أخوال : maternal uncle : 1* # ma-2-unit-1-memrise.tab:10
 
-عَمّ (أعمام) : Paternal uncle(s) : 1 # ma-2-unit-1.tab:21
-عمّ/أعمام : paternal uncle : 1* # ma-2-unit-1-memrise.tab:19
+خالة (خالات) : maternal aunt : 1* # ma-2-unit-1.tab:20
+#خالة/خالات : maternal aunt : 1* # ma-2-unit-1-memrise.tab:11
 
-عَمّة (عمات) : Paternal aunt(s) : 1 # ma-2-unit-1.tab:22
+عَمّ (أعمام) : paternal uncle : 1* # ma-2-unit-1.tab:21
+#عمّ/أعمام : paternal uncle : 1* # ma-2-unit-1-memrise.tab:19
 
-حَم (أحماء) : Father(s)-in-law : 1 # ma-2-unit-1.tab:23
+عَمّة (عمات) : paternal aunt : 1 # ma-2-unit-1.tab:22
 
-حَماة (حَمَوات) : Mother(s)-in-law : 1 # ma-2-unit-1.tab:24
+حَم (أحماء) : father-in-law : 1 # ma-2-unit-1.tab:23
 
-زَوْج (أزواج) : Husband(s) : 1 # ma-2-unit-1.tab:25
+حَماة (حَمَوات) : mother-in-law : 1 # ma-2-unit-1.tab:24
 
-زَوجة (زَوجات) : Wife (wives) : 1 # ma-2-unit-1.tab:26
+زَوْج (أزواج) : husband : 1 # ma-2-unit-1.tab:25
 
-عام (اعوام)، سنة (سنوات) : Year(s) : 1 # ma-2-unit-1.tab:27
+زَوجة (زَوجات) : wife : 1 # ma-2-unit-1.tab:26
 
-ألف، ألاف : Thousand(s) : 1 # ma-2-unit-1.tab:28
+عام (اعوام)، سنة (سنوات) : year : 1 # ma-2-unit-1.tab:27
 
-مُغَنٍ (مُغَنون/ين) : Singer(s) : 1 # ma-2-unit-1.tab:29
+ألف (ألاف) : thousand : 1 # ma-2-unit-1.tab:28
 
-طَبيب الأسنان (أطِبّاء الأسنان) : Dentist(s) : 1 # ma-2-unit-1.tab:30
+مُغَنٍ (مُغَنون/ين) : singer : 1 # ma-2-unit-1.tab:29
 
-مُهَرِج (مُهَرِجون/ين) : Clown(s) : 1 # ma-2-unit-1.tab:31
+طَبيب (أطِبّاء) الأسنان : dentist : 1 # ma-2-unit-1.tab:30
 
-صَبيّ (صُبيان) : Young boy(s) : 1 # ma-2-unit-1.tab:32
+مُهَرِج(ون/ين) : clown : 1 # ma-2-unit-1.tab:31
 
-حفلة (حفلات) : Concert(s)/party (parties) : 1 # ma-2-unit-1.tab:33
+صَبيّ (صُبيان) : young boy : 1 # ma-2-unit-1.tab:32
 
-جِنازة (جنازات) : Funeral(s) : 1 # ma-2-unit-1.tab:34
+حفلة (حفلات) : concert/party : 1 # ma-2-unit-1.tab:33
 
-شَخص (أشخاص) : Person (people) : 1 # ma-2-unit-1.tab:35
-شخص/أشخاص : person : 1* # ma-2-unit-1-memrise.tab:15
+جِنازة (جنازات) : funeral : 1 # ma-2-unit-1.tab:34
 
-مَلابِس : Clothes : 1 # ma-2-unit-1.tab:36
+شَخص (أشخاص) : person : 1* # ma-2-unit-1.tab:35
+#شخص/أشخاص : person : 1* # ma-2-unit-1-memrise.tab:15
 
-قِصّة (قِصَص) : Story (stories) : 1 # ma-2-unit-1.tab:37
+مَلابِس : clothes : 1 # ma-2-unit-1.tab:36
 
-ثُلاثيّة (ثُلاثيات) : Trilogy (trilogies) : 1 # ma-2-unit-1.tab:38
+قِصّة (قِصَص) : story : 1 # ma-2-unit-1.tab:37
 
-وَفيّ : Loyal : 1 # ma-2-unit-1.tab:39
+ثُلاثيّة (ات) : trilogy : 1 # ma-2-unit-1.tab:38
+
+وَفيّ : loyal : 1 # ma-2-unit-1.tab:39
 
 مَكّار : Cunning : 1 # ma-2-unit-1.tab:40
 
-رَشيق : Graceful : 1 # ma-2-unit-1.tab:41
-رشيق : graceful : 1* # ma-2-unit-1-memrise.tab:13
+رَشيق : graceful : 1* # ma-2-unit-1.tab:41
+#رشيق : graceful : 1* # ma-2-unit-1-memrise.tab:13
 
-مُضحِك : Funny : 1 # ma-2-unit-1.tab:42
+مُضحِك : funny : 1 # ma-2-unit-1.tab:42
 
-حَكيم : Wise : 1 # ma-2-unit-1.tab:43
-حكيم : wise : 1* # ma-2-unit-1-memrise.tab:9
+حَكيم : wise : 1* # ma-2-unit-1.tab:43
+#حكيم : wise : 1* # ma-2-unit-1-memrise.tab:9
 
-رَقيق : Delicate : 1 # ma-2-unit-1.tab:44
+رَقيق : delicate : 1 # ma-2-unit-1.tab:44
 
-عَنيد : Stubborn : 1 # ma-2-unit-1.tab:45
-عنيد : stubborn : 1* # ma-2-unit-1-memrise.tab:21
+عَنيد : Stubborn : 1* # ma-2-unit-1.tab:45
+#عنيد : stubborn : 1* # ma-2-unit-1-memrise.tab:21
 
-مَوهوب : Talented : 1 # ma-2-unit-1.tab:46
-موهوب : talented : 1* # ma-2-unit-1-memrise.tab:27
+مَوهوب : talented : 1* # ma-2-unit-1.tab:46
+#موهوب : talented : 1* # ma-2-unit-1-memrise.tab:27
 
-مَحبوب : Popular : 1 # ma-2-unit-1.tab:47
-محبوب : popular : 1* # ma-2-unit-1-memrise.tab:26
+مَحبوب : popular : 1* # ma-2-unit-1.tab:47
+#محبوب : popular : 1* # ma-2-unit-1-memrise.tab:26
 
-كَريم : Generous : 1 # ma-2-unit-1.tab:48
-كريم : generous : 1* # ma-2-unit-1-memrise.tab:23
+كَريم : generous : 1* # ma-2-unit-1.tab:48
+#كريم : generous : 1* # ma-2-unit-1-memrise.tab:23
 
-كَسول : Lazy : 1 # ma-2-unit-1.tab:49
-كسول : lazy : 1* # ma-2-unit-1-memrise.tab:24
+كَسول : lazy : 1* # ma-2-unit-1.tab:49
+#كسول : lazy : 1* # ma-2-unit-1-memrise.tab:24
 
-نَشيط : Active : 1 # ma-2-unit-1.tab:50
-نشيط : active : 1* # ma-2-unit-1-memrise.tab:28
+نَشيط : active : 1* # ma-2-unit-1.tab:50
+#نشيط : active : 1* # ma-2-unit-1-memrise.tab:28
 
-ذَكيّ : Intelligent : 1 # ma-2-unit-1.tab:51
-ذكيّ : intelligent : 1* # ma-2-unit-1-memrise.tab:12
+ذَكيّ : intelligent : 1* # ma-2-unit-1.tab:51
+#ذكيّ : intelligent : 1* # ma-2-unit-1-memrise.tab:12
 
-شَهير : Famous : 1 # ma-2-unit-1.tab:52
-شهير : famous : 1* # ma-2-unit-1-memrise.tab:17
+شَهير : famous : 1* # ma-2-unit-1.tab:52
+#شهير : famous : 1* # ma-2-unit-1-memrise.tab:17
 
-بَدَويّ : Bedouin : 1 # ma-2-unit-1.tab:53
+بَدَويّ : bedouin : 1 # ma-2-unit-1.tab:53
 
-سَكَنَ، يَسْكُن : Live : 1 # ma-2-unit-1.tab:54
-سكن/يسكن : to live/to reside (in a specific place) : 1* # ma-2-unit-1-memrise.tab:14
+سَكَنَ، يَسْكُن : to live/to reside (in a specific place) : 1* : "specific place" distinction from Memrise # ma-2-unit-1.tab:54
+#سكن/يسكن : to live/to reside (in a specific place) : 1* # ma-2-unit-1-memrise.tab:14
 
-أقامَ، يُقيم : Reside : 1 # ma-2-unit-1.tab:55
-أقام/يقيم : to live/to reside (in a general area) : 1* # ma-2-unit-1-memrise.tab:2
+أقامَ، يُقيم : to live/to reside (in a general area) : 1* : "general area" distinction from Memrise # ma-2-unit-1.tab:55
+#أقام/يقيم : to live/to reside (in a general area) : 1* # ma-2-unit-1-memrise.tab:2
 
-أمضَى، يُمضي : Spend (time) : 1 # ma-2-unit-1.tab:56
+أمضَى، يُمضي : to spend (time) : 1 # ma-2-unit-1.tab:56
 
-غَنَّى، يُغَنِّي : Sing : 1 # ma-2-unit-1.tab:57
+غَنَّى، يُغَنِّي : to sing : 1 # ma-2-unit-1.tab:57
 
-إنتَقَلَ، يَنتَقِل : Move (house, etc) : 1 # ma-2-unit-1.tab:58
+إنتَقَلَ، يَنتَقِل : to move (house, etc) : 1 # ma-2-unit-1.tab:58
+#انتقل/ينتقل : to move/to relocate : 1* # ma-2-unit-1-memrise.tab:3
 
-بَدَأ، يَبدأ : Begin : 1 # ma-2-unit-1.tab:59
-بدأ/يبدأ : to begin : 1* # ma-2-unit-1-memrise.tab:4
 
-نَشَرَ، يَنشُر : Publish : 1 # ma-2-unit-1.tab:60
+بَدَأ، يَبدأ : to begin : 1* # ma-2-unit-1.tab:59
+#بدأ/يبدأ : to begin : 1* # ma-2-unit-1-memrise.tab:4
 
-حَصَلَ، يَحْصُل على : Obtain/win (a prize, etc) : 1 # ma-2-unit-1.tab:61
+نَشَرَ، يَنشُر : to publish : 1 # ma-2-unit-1.tab:60
 
-ماتَ، يموت : Die : 1 # ma-2-unit-1.tab:62
-مات/يموت : to die : 1* # ma-2-unit-1-memrise.tab:25
+حَصَلَ، يَحْصُل على : to obtain/win (a prize, etc) : 1 # ma-2-unit-1.tab:61
 
-أصلا : Originally : 1 # ma-2-unit-1.tab:63
+ماتَ، يموت : to die : 1* # ma-2-unit-1.tab:62
+#مات/يموت : to die : 1* # ma-2-unit-1-memrise.tab:25
+
+#أصلا : originally : 1* # ma-2-unit-1.tab:63
 أصلاً : originally : 1* # ma-2-unit-1-memrise.tab:1
 
 دَلتا النيل : Nile Delta : 1 # ma-2-unit-1.tab:64
 
 وُلِدتُ : I was born : 1 # ma-2-unit-1.tab:65
 
-وُلِدَ/وُلِدَت : He/she was born : 1 # ma-2-unit-1.tab:66
+وُلِدَ/وُلِدَت : he/she was born : 1 # ma-2-unit-1.tab:66
+
 وُلِدَ : was born : 1* # ma-2-unit-1-memrise.tab:30
-
-انتقل/ينتقل : to move/to relocate : 1* # ma-2-unit-1-memrise.tab:3
-
-والدان : parents : 1* # ma-2-unit-1-memrise.tab:29
 

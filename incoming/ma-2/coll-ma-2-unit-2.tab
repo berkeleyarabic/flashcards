@@ -1,244 +1,255 @@
-دار (دِيار/دور)، مَنزِل (مَنازِل) : House(s)/home(s) : 2 # ma-2-unit-2.tab:2
-دار/ديار : house : 2* # ma-2-unit-2-memrise.tab:9
-دار (دِيار/دور)، مَنزِل (مَنازِل) : House(s)/home(s) : 2 # ma-2-unit-2-nouns.tab:2
+مَنزِل (مَنازِل) : home : 2* : Split vocab entry for "house/home"
+دار (دِيار/دور) : house : 2* : Split vocab entry for "house/home"
 
-مَسكَن (مَساكِن) : House(s)/residence(s) : 2 # ma-2-unit-2.tab:3
-مَسكَن (مَساكِن) : House(s)/residence(s) : 2 # ma-2-unit-2-nouns.tab:3
+#منزل/منازل : home : 2* # ma-2-unit-2-memrise.tab:27
 
-مَوقع (مَواقِع) : Location(s) : 2 # ma-2-unit-2.tab:4
-مَوقع (مَواقِع) : Location(s) : 2 # ma-2-unit-2-nouns.tab:4
+#دار/ديار : house : 2* # ma-2-unit-2-memrise.tab:9
+#دار (دِيار/دور)، مَنزِل (مَنازِل) : house/home : 2 # ma-2-unit-2.tab:2
+#دار (دِيار/دور)، مَنزِل (مَنازِل) : House(s)/home(s) : 2 # ma-2-unit-2-nouns.tab:2
 
-عِمارة (عِمارات) : Apartment building(s) : 2 # ma-2-unit-2.tab:5
-عِمارة (عِمارات) : Apartment building(s) : 2 # ma-2-unit-2-nouns.tab:5
+مَسكَن (مَساكِن) : house/residence : 2* # ma-2-unit-2.tab:3
+#مَسكَن (مَساكِن) : House(s)/residence(s) : 2 # ma-2-unit-2-nouns.tab:3
 
-طابِق (طَوابِق) : Floor(s)/storey(s) : 2 # ma-2-unit-2.tab:6
-طابق/طوابق : floor (storey) : 2* # ma-2-unit-2-memrise.tab:15
-طابِق (طَوابِق) : Floor(s)/storey(s) : 2 # ma-2-unit-2-nouns.tab:6
+مَوقع (مَواقِع) : location : 2 # ma-2-unit-2.tab:4
+#مَوقع (مَواقِع) : Location(s) : 2 # ma-2-unit-2-nouns.tab:4
 
-مَدخَل (مَداخِل) : Entrance(s) : 2 # ma-2-unit-2.tab:7
-مَدخَل (مَداخِل) : Entrance(s) : 2 # ma-2-unit-2-nouns.tab:7
+عِمارة (عِمارات) : apartment building : 2 # ma-2-unit-2.tab:5
+#عِمارة (عِمارات) : Apartment building(s) : 2 # ma-2-unit-2-nouns.tab:5
 
-صالة (صالات) : Hall(s) : 2 # ma-2-unit-2.tab:8
-صالة/صالات : hall : 2* # ma-2-unit-2-memrise.tab:14
-صالة (صالات) : Hall(s) : 2 # ma-2-unit-2-nouns.tab:8
+طابِق (طَوابِق) : floor, storey : 2* # ma-2-unit-2.tab:6
+#طابق/طوابق : floor (storey) : 2* # ma-2-unit-2-memrise.tab:15
+#طابِق (طَوابِق) : Floor(s)/storey(s) : 2 # ma-2-unit-2-nouns.tab:6
 
-سُلَّم (سُلالِم) : Stairs : 2 # ma-2-unit-2.tab:9
-سلّم/سلالم : stairs : 2* # ma-2-unit-2-memrise.tab:12
-سُلَّم (سُلالِم) : Stairs : 2 # ma-2-unit-2-nouns.tab:9
+مَدخَل (مَداخِل) : entrance : 2 # ma-2-unit-2.tab:7
+#مَدخَل (مَداخِل) : Entrance(s) : 2 # ma-2-unit-2-nouns.tab:7
 
-سَطح (سُطوح) : Roof(s) : 2 # ma-2-unit-2.tab:10
-سَطح (سُطوح) : Roof(s) : 2 # ma-2-unit-2-nouns.tab:10
+صالة (صالات) : hall : 2* # ma-2-unit-2.tab:8
+# صالة/صالات : hall : 2* # ma-2-unit-2-memrise.tab:14
+# صالة (صالات) : Hall(s) : 2 # ma-2-unit-2-nouns.tab:8
 
-غُرفة (غُرَف) : Room(s) : 2 # ma-2-unit-2.tab:11
-غُرفة نَوْم : Bedroom : 2 # ma-2-unit-2.tab:12
-غُرفة مَعِيشَة : Living room : 2 # ma-2-unit-2.tab:13
-غُرفة جُلوس : Sitting room : 2 # ma-2-unit-2.tab:14
-غرفة جلوس : sitting room : 2* # ma-2-unit-2-memrise.tab:16
-غرفة معيشة : living room : 2* # ma-2-unit-2-memrise.tab:17
-غرفة نوم : bedroom : 2* # ma-2-unit-2-memrise.tab:18
-غرفة/غرف : room : 2* # ma-2-unit-2-memrise.tab:19
-غُرفة (غُرَف) : Room(s) : 2 # ma-2-unit-2-nouns.tab:11
-غُرفة نَوْم : Bedroom : 2 # ma-2-unit-2-nouns.tab:12
-غُرفة مَعِيشَة : Living room : 2 # ma-2-unit-2-nouns.tab:13
-غُرفة جُلوس : Sitting room : 2 # ma-2-unit-2-nouns.tab:14
+سُلَّم (سُلالِم) : stairs : 2* # ma-2-unit-2.tab:9
+# سلّم/سلالم : stairs : 2* # ma-2-unit-2-memrise.tab:12
+# سُلَّم (سُلالِم) : Stairs : 2 # ma-2-unit-2-nouns.tab:9
 
-سُفرة (سُفرات) : Dining room(s) : 2 # ma-2-unit-2.tab:15
-سفرة/سفرات : dining room : 2* # ma-2-unit-2-memrise.tab:11
-سُفرة (سُفرات) : Dining room(s) : 2 # ma-2-unit-2-nouns.tab:15
+سَطح (سُطوح) : roof : 2 # ma-2-unit-2.tab:10
+#سَطح (سُطوح) : Roof(s) : 2 # ma-2-unit-2-nouns.tab:10
 
-مَطبَخ (مَطابِخ) : Kitchen(s) : 2 # ma-2-unit-2.tab:16
-مطبخ/مطابخ : kitchen : 2* # ma-2-unit-2-memrise.tab:25
-مَطبَخ (مَطابِخ) : Kitchen(s) : 2 # ma-2-unit-2-nouns.tab:16
+غُرفة (غُرَف) : room : 2 # ma-2-unit-2.tab:11
 
-حَمام (حَمامات) : Bathroom(s) : 2 # ma-2-unit-2.tab:17
-حَمّام السِباحة : Swimming pool : 2 # ma-2-unit-2.tab:36
-حمّام/حمّامات : bathroom : 2* # ma-2-unit-2-memrise.tab:7
-حَمام (حَمامات) : Bathroom(s) : 2 # ma-2-unit-2-nouns.tab:17
-حَمّام السِباحة : Swimming pool : 2 # ma-2-unit-2-nouns.tab:36
+غُرفة نَوْم : bedroom : 2* # ma-2-unit-2.tab:12
+#غرفة نوم : bedroom : 2* # ma-2-unit-2-memrise.tab:18
+#غُرفة نَوْم : Bedroom : 2 # ma-2-unit-2-nouns.tab:12
 
-دَورة مِياه (دَورات مِياه) : Toilet(s) : 2 # ma-2-unit-2.tab:18
-دَورة مِياه (دَورات مِياه) : Toilet(s) : 2 # ma-2-unit-2-nouns.tab:18
+غُرفة مَعِيشَة : living room : 2* # ma-2-unit-2.tab:13
+#غرفة معيشة : living room : 2* # ma-2-unit-2-memrise.tab:17
+#غُرفة مَعِيشَة : Living room : 2 # ma-2-unit-2-nouns.tab:13
 
-شُرفة (شُرفات) : Balcony (balconies) : 2 # ma-2-unit-2.tab:19
-شرفة/شرفات : balcony : 2* # ma-2-unit-2-memrise.tab:13
-شُرفة (شُرفات) : Balcony (balconies) : 2 # ma-2-unit-2-nouns.tab:19
+غُرفة جُلوس : sitting room : 2* # ma-2-unit-2.tab:14
+#غرفة جلوس : sitting room : 2* # ma-2-unit-2-memrise.tab:16
+#غُرفة جُلوس : Sitting room : 2 # ma-2-unit-2-nouns.tab:14
 
-جَراج (جَراجات) : Garage(s) : 2 # ma-2-unit-2.tab:20
-جَراج (جَراجات) : Garage(s) : 2 # ma-2-unit-2-nouns.tab:20
+غُرفة (غُرَف) : room : 2* # ma-2-unit-2-nouns.tab:11
+#غرفة/غرف : room : 2* # ma-2-unit-2-memrise.tab:19
 
-سِرداب (سِراديب) : Cellar(s) : 2 # ma-2-unit-2.tab:21
-سِرداب (سِراديب) : Cellar(s) : 2 # ma-2-unit-2-nouns.tab:21
+سُفرة (سُفرات) : dining room : 2* # ma-2-unit-2.tab:15
+#سفرة/سفرات : dining room : 2* # ma-2-unit-2-memrise.tab:11
+#سُفرة (سُفرات) : Dining room(s) : 2 # ma-2-unit-2-nouns.tab:15
 
-حَديقة (حَدائِق) : Garden(s) : 2 # ma-2-unit-2.tab:22
-حديقة/حدائق : garden : 2* # ma-2-unit-2-memrise.tab:6
-حَديقة (حَدائِق) : Garden(s) : 2 # ma-2-unit-2-nouns.tab:22
+مَطبَخ (مَطابِخ) : kitchen : 2* # ma-2-unit-2.tab:16
+# مطبخ/مطابخ : kitchen : 2* # ma-2-unit-2-memrise.tab:25
+# مَطبَخ (مَطابِخ) : Kitchen(s) : 2 # ma-2-unit-2-nouns.tab:16
 
-مِرآة (مِرات) : Mirror(s) : 2 # ma-2-unit-2.tab:23
-مِرآة (مِرات) : Mirror(s) : 2 # ma-2-unit-2-nouns.tab:23
+حَمام (حَمامات) : bathroom : 2* # ma-2-unit-2.tab:17
+# حمّام/حمّامات : bathroom : 2* # ma-2-unit-2-memrise.tab:7
+# حَمام (حَمامات) : Bathroom(s) : 2 # ma-2-unit-2-nouns.tab:17
 
-مِصعَد (مَصاعِد) : Lift(s) : 2 # ma-2-unit-2.tab:24
-مصعد/مصاعد : elevator : 2* # ma-2-unit-2-memrise.tab:24
-مِصعَد (مَصاعِد) : Lift(s) : 2 # ma-2-unit-2-nouns.tab:24
+#حَمّام السِباحة : Swimming pool : 2 # ma-2-unit-2-nouns.tab:36
+حَمّام السِباحة : swimming pool : 2 # ma-2-unit-2.tab:36
 
-غَسالة (غَسالات) : Washing machine(s) : 2 # ma-2-unit-2.tab:25
-غَسالة (غَسالات) : Washing machine(s) : 2 # ma-2-unit-2-nouns.tab:25
+دَورة مِياه (دَورات مِياه) : toilet : 2 # ma-2-unit-2.tab:18
+#دَورة مِياه (دَورات مِياه) : Toilet(s) : 2 # ma-2-unit-2-nouns.tab:18
 
-حَوض (أحواض) : Sink(s) : 2 # ma-2-unit-2.tab:26
-حَوض (أحواض) : Sink(s) : 2 # ma-2-unit-2-nouns.tab:26
+شُرفة (شُرفات) : balcony (balconies) : 2* # ma-2-unit-2.tab:19
+# شرفة/شرفات : balcony : 2* # ma-2-unit-2-memrise.tab:13
+# شُرفة (شُرفات) : Balcony (balconies) : 2 # ma-2-unit-2-nouns.tab:19
+
+جَراج (جَراجات) : garage : 2 # ma-2-unit-2.tab:20
+#جَراج (جَراجات) : Garage(s) : 2 # ma-2-unit-2-nouns.tab:20
+
+سِرداب (سِراديب) : cellar : 2 # ma-2-unit-2.tab:21
+#سِرداب (سِراديب) : Cellar(s) : 2 # ma-2-unit-2-nouns.tab:21
+
+حَديقة (حَدائِق) : garden : 2* # ma-2-unit-2.tab:22
+# حديقة/حدائق : garden : 2* # ma-2-unit-2-memrise.tab:6
+# حَديقة (حَدائِق) : Garden(s) : 2 # ma-2-unit-2-nouns.tab:22
+
+مِرآة (مِرات) : mirror : 2 # ma-2-unit-2.tab:23
+#مِرآة (مِرات) : Mirror(s) : 2 # ma-2-unit-2-nouns.tab:23
+
+مِصعَد (مَصاعِد) : elevator : 2* # ma-2-unit-2.tab:24
+# مصعد/مصاعد : elevator : 2* # ma-2-unit-2-memrise.tab:24
+# مِصعَد (مَصاعِد) : Lift(s) : 2 # ma-2-unit-2-nouns.tab:24
+
+غَسالة (غَسالات) : washing machine : 2 # ma-2-unit-2.tab:25
+# غَسالة (غَسالات) : Washing machine(s) : 2 # ma-2-unit-2-nouns.tab:25
+
+حَوض (أحواض) : sink : 2 # ma-2-unit-2.tab:26
+# حَوض (أحواض) : Sink(s) : 2 # ma-2-unit-2-nouns.tab:26
 
 كَنَبة (كنبات)، أريكة (أَرائِك) : Sofa(s) : 2 # ma-2-unit-2.tab:27
-كَنَبة (كنبات)، أريكة (أَرائِك) : Sofa(s) : 2 # ma-2-unit-2-nouns.tab:27
+# كَنَبة (كنبات)، أريكة (أَرائِك) : Sofa(s) : 2 # ma-2-unit-2-nouns.tab:27
 
-ثَلاجة (ثَلاجات) : Fridge(s) : 2 # ma-2-unit-2.tab:28
-ثلّاجة/ثلّاجات : fridge : 2* # ma-2-unit-2-memrise.tab:4
-ثَلاجة (ثَلاجات) : Fridge(s) : 2 # ma-2-unit-2-nouns.tab:28
+ثَلاجة (ثَلاجات) : fridge : 2* # ma-2-unit-2.tab:28
+# ثلّاجة/ثلّاجات : fridge : 2* # ma-2-unit-2-memrise.tab:4
+# ثَلاجة (ثَلاجات) : Fridge(s) : 2 # ma-2-unit-2-nouns.tab:28
 
-فُرن (أفران) : Cooker(s) : 2 # ma-2-unit-2.tab:29
-فرن/أفران : cooker/oven : 2* # ma-2-unit-2-memrise.tab:20
-فُرن (أفران) : Cooker(s) : 2 # ma-2-unit-2-nouns.tab:29
+فُرن (أفران) : cooker, oven : 2* # ma-2-unit-2.tab:29
+# فرن/أفران : cooker/oven : 2* # ma-2-unit-2-memrise.tab:20
+# فُرن (أفران) : Cooker(s) : 2 # ma-2-unit-2-nouns.tab:29
 
-سَتائِر : Curtains : 2 # ma-2-unit-2.tab:30
-سَتائِر : Curtains : 2 # ma-2-unit-2-nouns.tab:30
+سَتائِر : curtains : 2 # ma-2-unit-2.tab:30
+# سَتائِر : Curtains : 2 # ma-2-unit-2-nouns.tab:30
 
-دُش : Shower : 2 # ma-2-unit-2.tab:31
-دُش : Shower : 2 # ma-2-unit-2-nouns.tab:31
+دُش : shower : 2 # ma-2-unit-2.tab:31
+# دُش : Shower : 2 # ma-2-unit-2-nouns.tab:31
 
-سَجاد : Carpets : 2 # ma-2-unit-2.tab:32
-سَجاد : Carpets : 2 # ma-2-unit-2-nouns.tab:32
+سَجاد : carpets : 2 # ma-2-unit-2.tab:32
+# سَجاد : Carpets : 2 # ma-2-unit-2-nouns.tab:32
 
-عُشب : Grass/plants : 2 # ma-2-unit-2.tab:33
-عُشب : Grass/plants : 2 # ma-2-unit-2-nouns.tab:33
+عُشب : grass/plants : 2 # ma-2-unit-2.tab:33
+# عُشب : Grass/plants : 2 # ma-2-unit-2-nouns.tab:33
 
-ورد : Flowers : 2 # ma-2-unit-2.tab:34
-ورد : Flowers : 2 # ma-2-unit-2-nouns.tab:34
+وَرد : flowers : 2 # ma-2-unit-2.tab:34
+# ورد : Flowers : 2 # ma-2-unit-2-nouns.tab:34
 
-مُدخِّن (مُدخِّنون/ين) : Smoker(s) : 2 # ma-2-unit-2.tab:35
-مُدخِّن (مُدخِّنون/ين) : Smoker(s) : 2 # ma-2-unit-2-nouns.tab:35
+مُدخِّن (ون/ين) : smoker : 2 # ma-2-unit-2.tab:35
+#مُدخِّن (مُدخِّنون/ين) : Smoker(s) : 2 # ma-2-unit-2-nouns.tab:35
 
-مَلعَب تَنِس : Tennis court : 2 # ma-2-unit-2.tab:37
-مَلعَب تَنِس : Tennis court : 2 # ma-2-unit-2-nouns.tab:37
+مَلعَب تَنِس : tennis court : 2 # ma-2-unit-2.tab:37
+#مَلعَب تَنِس : Tennis court : 2 # ma-2-unit-2-nouns.tab:37
 
-تَكييف هَواء : Air-conditioning : 2 # ma-2-unit-2.tab:38
-تَكييف هَواء : Air-conditioning : 2 # ma-2-unit-2-nouns.tab:38
+تَكييف هَواء : air-conditioning : 2 # ma-2-unit-2.tab:38
+#تَكييف هَواء : Air-conditioning : 2 # ma-2-unit-2-nouns.tab:38
 
-سَاكِن (سُكَّان) : Resident(s) : 2 # ma-2-unit-2.tab:39
-ساكن/سكّان : resident : 2* # ma-2-unit-2-memrise.tab:10
-سَاكِن (سُكَّان) : Resident(s) : 2 # ma-2-unit-2-nouns.tab:39
+سَاكِن (سُكَّان) : resident : 2 # ma-2-unit-2.tab:39
+#ساكن/سكّان : resident : 2* # ma-2-unit-2-memrise.tab:10
+#سَاكِن (سُكَّان) : Resident(s) : 2 # ma-2-unit-2-nouns.tab:39
 
-رُخام : Marble : 2 # ma-2-unit-2.tab:40
-رُخام : Marble : 2 # ma-2-unit-2-nouns.tab:40
+رُخام : marble : 2 # ma-2-unit-2.tab:40
+#رُخام : Marble : 2 # ma-2-unit-2-nouns.tab:40
 
-شاطِئ (شَواطِئ) : Beach : 2 # ma-2-unit-2.tab:41
-شاطِئ (شَواطِئ) : Beach : 2 # ma-2-unit-2-nouns.tab:41
+شاطِئ (شَواطِئ) : beach : 2 # ma-2-unit-2.tab:41
+#شاطِئ (شَواطِئ) : Beach : 2 # ma-2-unit-2-nouns.tab:41
 
-ريف : Countryside : 2 # ma-2-unit-2.tab:42
-ريف : Countryside : 2 # ma-2-unit-2-nouns.tab:42
+ريف : countryside : 2 # ma-2-unit-2.tab:42
+#ريف : Countryside : 2 # ma-2-unit-2-nouns.tab:42
 
-مَنظَر (مَناظِر) : View(s) : 2 # ma-2-unit-2.tab:43
-مَنظَر (مَناظِر) : View(s) : 2 # ma-2-unit-2-nouns.tab:43
+مَنظَر (مَناظِر) : view : 2 # ma-2-unit-2.tab:43
+#مَنظَر (مَناظِر) : View(s) : 2 # ma-2-unit-2-nouns.tab:43
 
-حَقل (حُقول) : Field(s) : 2 # ma-2-unit-2.tab:44
-حَقل (حُقول) : Field(s) : 2 # ma-2-unit-2-nouns.tab:44
+حَقل (حُقول) : field : 2 # ma-2-unit-2.tab:44
+#حَقل (حُقول) : Field(s) : 2 # ma-2-unit-2-nouns.tab:44
 
-باحة (باحات) : Courtyard(s) : 2 # ma-2-unit-2.tab:45
-باحة (باحات) : Courtyard(s) : 2 # ma-2-unit-2-nouns.tab:45
+باحة (باحات) : courtyard : 2 # ma-2-unit-2.tab:45
+#باحة (باحات) : Courtyard(s) : 2 # ma-2-unit-2-nouns.tab:45
 
-نافورة (نافورات) : Fountain(s) : 2 # ma-2-unit-2.tab:46
-نافورة (نافورات) : Fountain(s) : 2 # ma-2-unit-2-nouns.tab:46
+نافورة (نافورات) : fountain : 2 # ma-2-unit-2.tab:46
+#نافورة (نافورات) : Fountain(s) : 2 # ma-2-unit-2-nouns.tab:46
 
-خَزن : Storage : 2 # ma-2-unit-2.tab:47
-خَزن : Storage : 2 # ma-2-unit-2-nouns.tab:47
+خَزن : storage : 2 # ma-2-unit-2.tab:47
+#خَزن : Storage : 2 # ma-2-unit-2-nouns.tab:47
 
-هاتِف (هَواتِف) : Phone(s) : 2 # ma-2-unit-2.tab:48
-هاتِف محمول : Mobile phone(s) : 2 # ma-2-unit-2.tab:49
-هاتِف (هَواتِف) : Phone(s) : 2 # ma-2-unit-2-nouns.tab:48
-هاتِف محمول : Mobile phone(s) : 2 # ma-2-unit-2-nouns.tab:49
+هاتِف (هَواتِف) : phone : 2 # ma-2-unit-2.tab:48
+#هاتِف (هَواتِف) : Phone(s) : 2 # ma-2-unit-2-nouns.tab:48
+هاتِف محمول : mobile phone : 2 # ma-2-unit-2.tab:49
+#هاتِف محمول : Mobile phone(s) : 2 # ma-2-unit-2-nouns.tab:49
 
-حَديث : Modern : 2 # ma-2-unit-2.tab:50
-حَديث : Modern : 2 # ma-2-unit-2-adj-other.tab:2
-حديث : modern : 2* # ma-2-unit-2-memrise.tab:5
+حَديث : modern : 2* # ma-2-unit-2.tab:50
+# حَديث : Modern : 2 # ma-2-unit-2-adj-other.tab:2
+# حديث : modern : 2* # ma-2-unit-2-memrise.tab:5
 
-تَقليديّ : Traditional : 2 # ma-2-unit-2.tab:51
-تَقليديّ : Traditional : 2 # ma-2-unit-2-adj-other.tab:3
-تقليديّ : traditional : 2* # ma-2-unit-2-memrise.tab:2
+تَقليديّ : traditional : 2* # ma-2-unit-2.tab:51
+# تَقليديّ : Traditional : 2 # ma-2-unit-2-adj-other.tab:3
+# تقليديّ : traditional : 2* # ma-2-unit-2-memrise.tab:2
 
-هادِئ : Quiet : 2 # ma-2-unit-2.tab:52
-هادِئ : Quiet : 2 # ma-2-unit-2-adj-other.tab:4
-هادئ : quiet : 2* # ma-2-unit-2-memrise.tab:28
+هادِئ : quiet : 2* # ma-2-unit-2.tab:52
+# هادِئ : Quiet : 2 # ma-2-unit-2-adj-other.tab:4
+# هادئ : quiet : 2* # ma-2-unit-2-memrise.tab:28
 
-مُزدَحِم : Crowded : 2 # ma-2-unit-2.tab:53
-مُزدَحِم : Crowded : 2 # ma-2-unit-2-adj-other.tab:5
-مزدحم : crowded : 2* # ma-2-unit-2-memrise.tab:23
+مُزدَحِم : crowded : 2* # ma-2-unit-2.tab:53
+# مُزدَحِم : Crowded : 2 # ma-2-unit-2-adj-other.tab:5
+# مزدحم : crowded : 2* # ma-2-unit-2-memrise.tab:23
 
-واسِع : Spacious : 2 # ma-2-unit-2.tab:54
-واسِع : Spacious : 2 # ma-2-unit-2-adj-other.tab:6
-واسع : spacious : 2* # ma-2-unit-2-memrise.tab:29
+واسِع : spacious : 2* # ma-2-unit-2.tab:54
+# واسِع : Spacious : 2 # ma-2-unit-2-adj-other.tab:6
+# واسع : spacious : 2* # ma-2-unit-2-memrise.tab:29
 
-فاخِر : Luxurious : 2 # ma-2-unit-2.tab:55
-فاخِر : Luxurious : 2 # ma-2-unit-2-adj-other.tab:7
+فاخِر : luxurious : 2 # ma-2-unit-2.tab:55
+# فاخِر : Luxurious : 2 # ma-2-unit-2-adj-other.tab:7
 
-بَسيط : Simple/basic : 2 # ma-2-unit-2.tab:56
-بَسيط : Simple/basic : 2 # ma-2-unit-2-adj-other.tab:8
+بَسيط : simple/basic : 2 # ma-2-unit-2.tab:56
+# بَسيط : Simple/basic : 2 # ma-2-unit-2-adj-other.tab:8
 
-مُريح : Comfortable : 2 # ma-2-unit-2.tab:57
-مُريح : Comfortable : 2 # ma-2-unit-2-adj-other.tab:9
-مريح : comfortable : 2* # ma-2-unit-2-memrise.tab:22
+مُريح : comfortable : 2* # ma-2-unit-2.tab:57
+# مُريح : Comfortable : 2 # ma-2-unit-2-adj-other.tab:9
+# مريح : comfortable : 2* # ma-2-unit-2-memrise.tab:22
 
-مُناسِب : Suitable : 2 # ma-2-unit-2.tab:58
-مُناسِب : Suitable : 2 # ma-2-unit-2-adj-other.tab:10
-مناسب : suitable : 2* # ma-2-unit-2-memrise.tab:26
+مُناسِب : suitable : 2* # ma-2-unit-2.tab:58
+# مُناسِب : Suitable : 2 # ma-2-unit-2-adj-other.tab:10
+# مناسب : suitable : 2* # ma-2-unit-2-memrise.tab:26
 
-خاص : Private : 2 # ma-2-unit-2.tab:59
-خاص : Private : 2 # ma-2-unit-2-adj-other.tab:11
-خاصّ : private : 2* # ma-2-unit-2-memrise.tab:8
+خاصّ : private : 2* # ma-2-unit-2.tab:59
+# خاص : Private : 2 # ma-2-unit-2-adj-other.tab:11
+# خاصّ : private : 2* # ma-2-unit-2-memrise.tab:8
 
-مَمنوع : Forbidden : 2 # ma-2-unit-2.tab:60
-مَمنوع : Forbidden : 2 # ma-2-unit-2-adj-other.tab:12
+مَمنوع : forbidden : 2 # ma-2-unit-2.tab:60
+# مَمنوع : Forbidden : 2 # ma-2-unit-2-adj-other.tab:12
 
-تَكَوَّن، يَتَكَوَّن من : Consist of : 2 # ma-2-unit-2.tab:61
-تَكَوَّن، يَتَكَوَّن من : Consist of : 2 # ma-2-unit-2-adj-other.tab:13
-تكوّن/يتكوّن : to consist : 2* # ma-2-unit-2-memrise.tab:3
+تَكَوَّن، يَتَكَوَّن من : to consist of : 2* # ma-2-unit-2.tab:61
+# تَكَوَّن، يَتَكَوَّن من : Consist of : 2 # ma-2-unit-2-adj-other.tab:13
+# تكوّن/يتكوّن : to consist : 2* # ma-2-unit-2-memrise.tab:3
 
-أَطَلَّ، يُطِلّ على : Look onto : 2 # ma-2-unit-2.tab:62
-أَطَلَّ، يُطِلّ على : Look onto : 2 # ma-2-unit-2-adj-other.tab:14
-أطلّ/يطلّ على : to look onto : 2* # ma-2-unit-2-memrise.tab:1
+أَطَلَّ، يُطِلّ على : to look onto : 2* # ma-2-unit-2.tab:62
+# أَطَلَّ، يُطِلّ على : Look onto : 2 # ma-2-unit-2-adj-other.tab:14
+# أطلّ/يطلّ على : to look onto : 2* # ma-2-unit-2-memrise.tab:1
 
-تَوَجّهَ، يَتَوَجّه (نَحْو) : Face towards : 2 # ma-2-unit-2.tab:63
-تَوَجّهَ، يَتَوَجّه (نَحْو) : Face towards : 2 # ma-2-unit-2-adj-other.tab:15
+تَوَجّهَ، يَتَوَجّه (نَحْو) : to face towards : 2 # ma-2-unit-2.tab:63
+# تَوَجّهَ، يَتَوَجّه (نَحْو) : Face towards : 2 # ma-2-unit-2-adj-other.tab:15
 
-إختَلَف، يَختَلِف : Vary : 2 # ma-2-unit-2.tab:64
-إختَلَف، يَختَلِف : Vary : 2 # ma-2-unit-2-adj-other.tab:16
+إختَلَف، يَختَلِف : vary : 2 # ma-2-unit-2.tab:64
+# إختَلَف، يَختَلِف : Vary : 2 # ma-2-unit-2-adj-other.tab:16
 
-الطابِق الأرضيّ : Ground floor : 2 # ma-2-unit-2.tab:65
-الطابق الأوّل : First floor : 2 # ma-2-unit-2.tab:66
-الطابِق الأرضيّ : Ground floor : 2 # ma-2-unit-2-adj-other.tab:17
-الطابق الأوّل : First floor : 2 # ma-2-unit-2-adj-other.tab:18
+الطابِق الأرضيّ : ground floor : 2 # ma-2-unit-2.tab:65
+# الطابِق الأرضيّ : Ground floor : 2 # ma-2-unit-2-adj-other.tab:17
 
-يوجَد، توجَد : Can be found : 2 # ma-2-unit-2.tab:67
-يوجَد، توجَد : Can be found : 2 # ma-2-unit-2-adj-other.tab:19
-يوجد/توجد : can be found : 2* # ma-2-unit-2-memrise.tab:30
+الطابق الأوّل : first floor : 2 # ma-2-unit-2.tab:66
+# الطابق الأوّل : First floor : 2 # ma-2-unit-2-adj-other.tab:18
 
-يُستَخدَم، تُستَخدَم : Is used : 2 # ma-2-unit-2.tab:68
-يُستَخدَم، تُستَخدَم : Is used : 2 # ma-2-unit-2-adj-other.tab:20
+يوجَد، توجَد : can be found : 2* # ma-2-unit-2.tab:67
+# يوجَد، توجَد : Can be found : 2 # ma-2-unit-2-adj-other.tab:19
+# يوجد/توجد : can be found : 2* # ma-2-unit-2-memrise.tab:30
 
-لِلإيجار : For rent : 2 # ma-2-unit-2.tab:69
+يُستَخدَم، تُستَخدَم : is used : 2 # ma-2-unit-2.tab:68
+# يُستَخدَم، تُستَخدَم : Is used : 2 # ma-2-unit-2-adj-other.tab:20
+
+لِلإيجار : for rent : 2* # ma-2-unit-2.tab:69
 لِلإيجار : For rent : 2 # ma-2-unit-2-adj-other.tab:21
 للإيجار : for rent : 2* # ma-2-unit-2-memrise.tab:21
 
-بِطِراز : In the style of..... : 2 # ma-2-unit-2.tab:70
-بِطِراز : In the style of..... : 2 # ma-2-unit-2-adj-other.tab:22
+بِطِراز : in the style of..... : 2 # ma-2-unit-2.tab:70
+# بِطِراز : In the style of..... : 2 # ma-2-unit-2-adj-other.tab:22
 
-في النهار : In the daytime : 2 # ma-2-unit-2.tab:71
-في النهار : In the daytime : 2 # ma-2-unit-2-adj-other.tab:23
+في النهار : in the daytime : 2 # ma-2-unit-2.tab:71
+# في النهار : In the daytime : 2 # ma-2-unit-2-adj-other.tab:23
 
-أمّا : As for : 2 # ma-2-unit-2.tab:72
-أمّا : As for : 2 # ma-2-unit-2-adj-other.tab:24
+أمّا : as for ... : 2 # ma-2-unit-2.tab:72
+# أمّا : As for : 2 # ma-2-unit-2-adj-other.tab:24
 
-لِذالِك : For that reason : 2 # ma-2-unit-2.tab:73
-لِذالِك : For that reason : 2 # ma-2-unit-2-adj-other.tab:25
+لِذالِك : for that reason : 2 # ma-2-unit-2.tab:73
+# لِذالِك : For that reason : 2 # ma-2-unit-2-adj-other.tab:25
 
-غَير : Non-/not : 2 # ma-2-unit-2.tab:74
-غَير : Non-/not : 2 # ma-2-unit-2-adj-other.tab:26
+غَير : non-/not : 2 # ma-2-unit-2.tab:74
+# غَير : Non-/not : 2 # ma-2-unit-2-adj-other.tab:26
 
-منزل/منازل : home : 2* # ma-2-unit-2-memrise.tab:27
+
 
