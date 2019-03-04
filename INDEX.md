@@ -24,7 +24,7 @@ Units covered in BCC Arabic 1A:
 - [Mastering Arabic 1 Unit 11](ma-unit-11.pdf) *([word list](ma-unit-11-words.html), 47 words)*
 - [Mastering Arabic 1 Unit 12](ma-unit-12.pdf) *([word list](ma-unit-12-words.html), 94 words)*
 
-Units covered in BCC Arabic 1B (up to end of Mastering Arabic 1):
+Units covered in BCC Arabic 1B, remaining MA 1 chapters...:
 
 - [Mastering Arabic 1 Unit 13](ma-unit-13.pdf) *([word list](ma-unit-13-words.html), 38 words)*
 - [Mastering Arabic 1 Unit 14](ma-unit-14.pdf) *([word list](ma-unit-14-words.html), 61 words)*
@@ -33,10 +33,19 @@ Units covered in BCC Arabic 1B (up to end of Mastering Arabic 1):
 - [Mastering Arabic 1 Unit 18](ma-unit-18.pdf) *([word list](ma-unit-18-words.html), 57 words)*
 - [Mastering Arabic 1 Unit 19](ma-unit-19.pdf) *([word list](ma-unit-19-words.html), 43 words)*
 
+... and the second textbook:
+
+- [Mastering Arabic 2 Unit 1](ma-2-unit-1.pdf) (*beta*) *([word list](ma-2-unit-1-words.html), 67 words)*
+- [Mastering Arabic 2 Unit 2](ma-2-unit-2.pdf) (*beta*) *([word list](ma-2-unit-2-words.html), 75 words)*
+- [Mastering Arabic 2 Unit 3](ma-2-unit-3.pdf) (*beta*) *([word list](ma-2-unit-3-words.html), 63 words)*
+- [Mastering Arabic 2 Unit 4](ma-2-unit-4.pdf) (*beta*) *([word list](ma-2-unit-4-words.html), 71 words)*
+- [Mastering Arabic 2 Unit 5](ma-2-unit-5.pdf) (*beta*) *([word list](ma-2-unit-5-words.html), 68 words)*
+- [Mastering Arabic 2 Unit 6](ma-2-unit-6.pdf) (*beta*) *([word list](ma-2-unit-6-words.html), 67 words)*
+
 Miscellaneous:
 
 - [Numerals with Arabic pronunciation](numerals.pdf) *([word list](numerals-words.html), 11 words)*
-- [Classroom vocabulary](classroom-vocab.pdf) *([word list](classroom-vocab-words.html), 37 words)*
+- [Classroom vocabulary](classroom-vocab.pdf) (*beta*) *([word list](classroom-vocab-words.html), 37 words)*
 - [Pronouns, with possessive suffixes](pronouns-possessives.pdf) *([word list](pronouns-possessives-words.html), 12 words)*
 - [Past and present conjugations of "to write"](verb-conj-ktb.pdf) *([word list](verb-conj-ktb-words.html), 26 words)*
 - [Middle-East country capitals](capitals.pdf) *([word list](capitals-words.html), 10 words)*
