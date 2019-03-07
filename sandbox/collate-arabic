@@ -8,6 +8,27 @@ use utf8;
 use ArabicRegex;
 use PV;
 
+use Getopt::Long;
+Getopt::Long::Configure ("bundling", "no_ignore_case");
+
+sub usage {
+  warn "Usage: collate-arabic [-d|--only-dups] FILES\n";
+  exit shift;
+}
+
+my ($help,
+    $only_dups,
+    $verbose
+    );
+
+GetOptions('-h|help' => \$help,
+           '-v|verbose' => \$verbose,
+           '-D|only-dups' => \$only_dups
+    ) or usage 1;
+
+usage 0 if $help;
+
+$PV::debug = $verbose;
 
 # Arguments are a number of files, with lines starting with Arabic strings
 
@@ -46,12 +67,12 @@ while(@lines) {
 #  $t =~ /^\s*(.*?)\s*:/ or die "$t, $l->[0]";
   $t =~ /^\s*(\w+)/ or die "$t, $l->[1]";
   my ($str) = $1;
-  warn "t=$t";
-  warn "str=$str";
+  # warn "t=$t";
+  # warn "str=$str";
   my ($re) = arabic_to_regex $str;
 #  pv '$re';
   $re = qr/^\s*$re\b/;
-  warn "re=$re";
+  # warn "re=$re";
   $t =~ /$re/ or die "$t, $l->[1]";
   my @matches=();
   my @match_ids=();
@@ -66,6 +87,8 @@ while(@lines) {
   for my $i (reverse @match_ids) {
     splice @lines, $i, 1;
   }
-  put_lines ($l, @matches);
-  print "\n";
+  if(!$only_dups || @matches > 0) {
+    put_lines ($l, @matches);
+    print "\n";
+  }
 }
