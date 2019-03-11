@@ -31,7 +31,7 @@ pronouns.pdf : pronouns.tab pronouns.Ttex
 %-words.html : %.tab
 	./make-wordlist-cgi $<
 
-all-words.html : $(TABLES)
+all-words.html : $(GLOSS_TABLES)
 	./make-wordlist-cgi $^ -o all
 
 berkeleyarabic-glossary.pdf : $(GLOSS_TABLES)
