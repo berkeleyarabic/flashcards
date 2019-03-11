@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use warnings;
 use strict;
-BEGIN { unshift @INC "perl"; }
+BEGIN { unshift @INC, "perl"; }
 
 use ReadTable;
 
@@ -25,13 +25,15 @@ my (@tab_files,
     $search_str,
     $whole_word,
     $foreign_only,
-    $notes_only
+    $notes_only,
+    $match
     );
 
 GetOptions('-v' => \$verbose,
            '-w' => \$whole_word,
            '-F' => \$foreign_only,
            '-N' => \$notes_only,
+           '-m=s' => \$match,
            '-h|help' => \$help,
     ) or usage 1;
 
@@ -42,6 +44,15 @@ $ReadTable::verbose = $verbose;
 @ARGV or die "Need to provide a search string\n";
 
 $search_str = shift;
+if(defined $match) {
+  if($match eq "arabic") {
+    use ArabicRegex;
+    $search_str = arabic_to_regex $search_str;
+#    warn "$search_str";
+  } else {
+    die "Unknown pattern match type \"$match\"";
+  }
+}
 $search_str = "\\b$search_str\\b" if $whole_word;
 
 @tab_files = @ARGV or 
