@@ -1,3 +1,14 @@
+- tool to automatically get translations from WK
+
+- tool to insert RTL markers on Emacs region
+
+\- Arabic search command
+
+- work out problems with generalizing to other formats/languages. use
+  verb-forms cards as an example. also, Hebrew, alphabet. Korean.
+  Figure out what a "deck" is, each .tab file needs a .deck file, but
+  what is in it. something like a .Ttex file but shorter
+
 - fix "Class Vocab +" appearing in glossary & card foot (should be super)
 
 - desired features based on Git:
@@ -41,8 +52,6 @@
 
 - alphabet final kaaf is different from classroom one
 
-- commit
-
 - generalize LTR logic (e.g. support Hebrew)
     - be more intelligent
     - use regexes
@@ -51,7 +60,7 @@
 
 - finalize UCB class vocab
 
-- add examples to verb form cards
+\- add examples to verb form cards
 
 - think about "small" size. think about fixing alignment
 
