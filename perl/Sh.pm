@@ -13,7 +13,6 @@ require Exporter;
            *sh_ev *sh_failed *sh_sig
            *sh_core *sh_errno *sh_cmd
            esh *sh_stderr *sh_stdout
-           read_headers zip
            unshellwords
            shellwords sQ
            *verbose);
