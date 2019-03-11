@@ -1,5 +1,6 @@
 after that:بَعْدَ ذٰلِكَ:بَعْدَ ذٰلِكَ:Mastering Arabic 1 Unit 12	after that:بَعْدَ ذٰلِكَ:بَعْدَ ذٰلِكَ:Mastering Arabic 1 Unit 13
 and:وَ:وَ:BCC Words 1	and:وَ:وَ:Mastering Arabic 1 Unit 2
+to attend:حَضَر / يَحْضُر:حَضَر / يَحْضُر:Mastering Arabic 1 Unit 18	to attend:حَضَر / يَحْضُر:حَضَر / يَحْضُر:Mastering Arabic 1 Unit 19
 beautiful:جَميل،جَميلة:جَميل،جَميلة:BCC Words 5	beautiful:جَميل:جَميل:Mastering Arabic 1 Unit 5
 before:قَبْلَ:قَبْلَ:Mastering Arabic 1 Unit 13	before:قَبْلَ:قَبْلَ:Mastering Arabic 1 Unit 17
 between:بَيْنَ:بَيْنَ:Mastering Arabic 1 Unit 1	between:بَيْنَ:بَيْنَ:Mastering Arabic 1 Unit 6
@@ -8,6 +9,7 @@ blue:أَزْرَق(زَرْقَاء):أَزْرَق(زَرْقَاء):Mastering
 bread:خُبْز:خُبْز:BCC Words 6	bread:خُبْز:خُبْز:Mastering Arabic 1 Unit 12
 bus:باص:باص:Mastering Arabic 1 Unit 4	bus:أُوتوبيس(ـات):أُوتوبيس(ـات):Mastering Arabic 1 Unit 16
 chicken:دَجاج:دَجاج:BCC Words 6	chicken:دَجاج:دَجاج:Mastering Arabic 1 Unit 5	chicken:دَجاج:دَجاج:Mastering Arabic 1 Unit 12
+to clean:نَظَّف / يُنَظِّف:نَظَّف / يُنَظِّف:Mastering Arabic 1 Unit 18	to clean:نَظَّف / يُنَظِّف:نَظَّف / يُنَظِّف:Mastering Arabic 1 Unit 19
 cola:كولا:كولا:Mastering Arabic 1 Unit 11	cola:كُولا:كُولا:Mastering Arabic 1 Unit 13
 cold:بارِد:بارِد:BCC Words 6	cold:بارِد:بارِد:Mastering Arabic 1 Unit 12
 color:لَوْن(أَلْوان):لَوْن(أَلْوان):Mastering Arabic 1 Unit 11	color:لَوْن(أَلْوان):لَوْن(أَلْوان):Colors
@@ -64,6 +66,7 @@ train:قطأر:قطأر:Mastering Arabic 1 Unit 3	train:قِطار(قِطارا�
 Tuesday:(يَوْم)الثُلاثَاء:(يَوْم)الثُلاثَاء:Mastering Arabic 1 Unit 17	Tuesday:الثُّلَاثَاء, الثَّلَاثَاء; يَوْم الثُّلَاثَاء:الثُّلَاثَاء, الثَّلَاثَاء; يَوْم الثُّلَاثَاء:Weekdays
 two:اِثْنَان:اِثْنَان:Numerals	two:اِثْنان:اِثْنان:Mastering Arabic 1 Unit 10
 until:حَتَّى:حَتَّى:BCC Words 3	until:حَتَّى:حَتَّى:Mastering Arabic 1 Unit 11	until:حَتَّى:حَتَّى:Mastering Arabic 1 Unit 18
+visit (noun):زِيارة (زِيارات):زِيارة (زِيارات):Mastering Arabic 1 Unit 18	visit (noun):زِيارة (زِيارات):زِيارة (زِيارات):Mastering Arabic 1 Unit 19
 to walk:مَشى/يَمشي:مَشى/يَمشي:Mastering Arabic 1 Unit 17	to walk:مَشَى / يَمْشِي:مَشَى / يَمْشِي:BAS Verbs
 water:ماء:ماء:BCC Words 5	water:مَاء:مَاء:Mastering Arabic 1 Unit 13
 Wednesday:(يَوْم)الأَرْبِعَاء:(يَوْم)الأَرْبِعَاء:Mastering Arabic 1 Unit 17	Wednesday:الْأَرْبِعَاء; يَوْم الْأَرْبِعَاء:الْأَرْبِعَاء; يَوْم الْأَرْبِعَاء:Weekdays
