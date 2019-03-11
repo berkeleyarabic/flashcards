@@ -41,7 +41,7 @@ sub parse_props ($) {
   my (@l) = split /;/, $p;
   my (%props) = ();
   for my $kv (@l) {
-    $kv =~ /^\s*(\w+)\s*=(.*)$/ or die "Malformed key-value \"$kv\" in $p";
+    $kv =~ /^\s*(\w+)\s*=(.*)$/ or die "Malformed key-value \"$kv\" in $p, $tab_fn line $.";
     my ($k,$v) = ($1,$2);
     $props{$k} = $v;
   }
