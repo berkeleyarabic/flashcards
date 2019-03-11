@@ -1,6 +1,6 @@
 
 # set some environment variables to help use this software
-export PERL5LIB=$PWD/perl
+export PERL5LIB=$PWD/perl:$PERL5LIB
 export PATH=$PWD:$PATH
 
 # make perl assume UTF8 arguments
