@@ -42,7 +42,7 @@ Units covered in BCC Arabic 1B, remaining MA 1 chapters...:
 - [Mastering Arabic 2 Unit 5](ma-2-unit-5.pdf) (*beta*) *([word list](ma-2-unit-5-words.html), 68 words)*
 - [Mastering Arabic 2 Unit 6](ma-2-unit-6.pdf) (*beta*) *([word list](ma-2-unit-6-words.html), 67 words)*
 
-Vocabulary from Sahlawayhi 1 Story 4:
+Vocabulary from Sahlawayhi 1 Story 4 (BCC Arabic 1B):
 
 - [Sahlawayhi 1.4](sahlawayhi.pdf) (*beta*) *([word list](sahlawayhi-words.html))*
 
