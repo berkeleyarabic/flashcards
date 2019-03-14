@@ -8,6 +8,9 @@ use ReadTable;
 use utf8;
 use open (":encoding(UTF-8)", ":std" );
 
+# same as: export PERL5OPT=-CA
+@ARGV = map { Encode::decode('UTF-8', $_) } @ARGV;
+
 use PV;
 
 use Getopt::Long;
