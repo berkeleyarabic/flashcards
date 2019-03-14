@@ -1,3 +1,5 @@
+- whatever depends on . ./setup.sh, should warn if not sourced
+
 - tool to automatically get translations from WK
 
 - tool to insert RTL markers on Emacs region
